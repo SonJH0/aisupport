@@ -1,0 +1,225 @@
+{
+  "type": "technical_integration_test",
+  "real_user_feedback": false,
+  "tested_at": "2026-10-28T09:35:57.398480+09:00",
+  "cases": [
+    {
+      "title": "문서 검색",
+      "question": "백엔드 API 요청 본문과 입력 검증을 배우려면 어떤 자료를 참고하나요?",
+      "expected_tool": "search_documents",
+      "tools": [
+        "search_documents"
+      ],
+      "trace": [
+        {
+          "action": "initial_retrieval",
+          "status": "ok",
+          "document_ids": [
+            "backend-1",
+            "backend-2"
+          ]
+        },
+        {
+          "action": "tool_protocol",
+          "status": "native_no_tool_json_plan",
+          "document_ids": []
+        },
+        {
+          "action": "search_documents",
+          "status": "ok",
+          "document_ids": [
+            "backend-1",
+            "job-KAKAO-S-4752",
+            "backend-2"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "backend-1",
+          "title": "백엔드 API 개발 학습 자료",
+          "url": "https://fastapi.tiangolo.com/tutorial/",
+          "note": "FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님."
+        },
+        {
+          "id": "backend-2",
+          "title": "백엔드 API 개발 학습 자료",
+          "url": "https://fastapi.tiangolo.com/tutorial/",
+          "note": "FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님."
+        },
+        {
+          "id": "job-KAKAO-S-4752",
+          "title": "백엔드 개발자(내비 서비스)",
+          "url": "https://careers.kakao.com/jobs/S-4752",
+          "note": "검색 결과 기준으로 정리했으며 원문 페이지와 현재 채용 여부를 직접 확인해야 합니다."
+        }
+      ],
+      "answer": "추천 자료(우선순위)\n- FastAPI 공식 튜토리얼 — 요청 본문(request body)과 입력 검증을 직접 다룹니다. 경로/쿼리 매개변수, 요청 본문 정의, 잘못된 입력 처리 등 실습에 유용합니다. [backend-1] (https://fastapi.tiangolo.com/tutorial/)\n- FastAPI 학습 요약(팀 제안) — 응답 모델, 상태 코드, 오류 처리, 의존성, 보안, CORS, DB 연동, 테스트 등 더 넓은 항목을 포함하며, “입력 검증이 있는 API와 테스트를 만들어 문서화”할 것을 권합니다. [backend-2] (https://fastapi.tiangolo.com/tutorial/)\n\n권장 학습 순서(간단)\n1) 튜토리얼 따라하기: 요청 본문 모델 정의와 유효성 검사 실습 → 오류 응답 확인. [backend-1]  \n2) 테스트 추가: 입력 검증 케이스(유효/무효) 작성 및 자동화. [backend-2]  \n3) 문서화: 검사 기준과 예외 처리 방식 기록(팀 학습 제안). [backend-2]\n\n참고·주의\n- 위 자료는 팀이 요약한 공식 튜토리얼 학습 항목으로, 채용 필수 요건은 아닙니다. [backend-1]\n\n원하시면 튜토리얼의 어떤 장(예: Pydantic 모델, 요청 본문, 예외 처리)을 먼저 보실지 추천해 드리거나, 연습용 미니 과제(예: 사용자 생성 API와 검증 테스트)를 제안해 드리겠습니다.",
+      "passed": true,
+      "seconds": 37.45
+    },
+    {
+      "title": "공고 비교",
+      "question": "[지원자의 경험]\nPython으로 REST API를 만들었습니다. Java는 아직 못합니다.\n[채용공고]\nPython API 개발 경험\nJava 개발 경험\nKotlin 개발 경험\n각 요건을 제 경험과 비교해 주세요.",
+      "expected_tool": "compare_requirements",
+      "tools": [
+        "compare_requirements"
+      ],
+      "trace": [
+        {
+          "action": "initial_retrieval",
+          "status": "ok",
+          "document_ids": [
+            "job-KAKAO-S-4752",
+            "backend-1",
+            "job-KAKAO-S-4750"
+          ]
+        },
+        {
+          "action": "compare_requirements",
+          "status": "ok",
+          "document_ids": []
+        }
+      ],
+      "sources": [
+        {
+          "id": "job-KAKAO-S-4752",
+          "title": "백엔드 개발자(내비 서비스)",
+          "url": "https://careers.kakao.com/jobs/S-4752",
+          "note": "검색 결과 기준으로 정리했으며 원문 페이지와 현재 채용 여부를 직접 확인해야 합니다."
+        },
+        {
+          "id": "backend-1",
+          "title": "백엔드 API 개발 학습 자료",
+          "url": "https://fastapi.tiangolo.com/tutorial/",
+          "note": "FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님."
+        },
+        {
+          "id": "job-KAKAO-S-4750",
+          "title": "서버 개발자 - 데이터 플랫폼",
+          "url": "https://careers.kakao.com/jobs/S-4750",
+          "note": "검색 결과 기준으로 정리했으며 원문 페이지와 현재 채용 여부를 직접 확인해야 합니다."
+        }
+      ],
+      "answer": "비교 도구를 실행해 요건별로 정리했습니다(결과 요약을 아래에 반영). 추가 확인이 필요하면 답해 주세요.\n\n요건별 비교\n- Python API 개발 경험  \n  귀하 근거: \"Python으로 REST API를 만들었습니다.\" → 요건과 직접적으로 일치하는 표현이 있습니다(관련 표현 있음). Python API 학습 자료 예시는 REST API 설계·검증을 다루는 FastAPI 튜토리얼입니다[backend-1]. 해당 경험의 범위(프레임워크, 테스트·배포·운영 여부, 기간)를 알려주시면 더 정확히 대응 가능합니 다. [backend-1]\n\n- Java 개발 경험  \n  귀하 근거: \"Java는 아직 못합니다.\" → 부정문으로 명시되어 있어 현재로서는 Java 관련 요건을 충족하지 않는 것으로 해석됩니다(관련 표현 있음; 부정). 일부 공고는 Java 또는 Kotlin을 요구합니다(예: 내비 백엔드 공고에 Java/Kotlin 명시)[job-KAKAO-S-4752]. Java 숙련도·학습 의사·관련 OOP/JVM 경험이 있다면 알려 주세요. [job-KAKAO-S-4752]\n\n- Kotlin 개발 경험  \n  귀하 근거: 언급 없음 → 정보 부족(언급되지 않았으므로 미보유라고 단정할 수 없음). Kotlin을 요구하는 공고 사례가 있습니다(예: 데이터 플랫폼/서버 공고에 Kotlin 표기)[job-KAKAO-S-4750]. Kotlin 경험 또는 JVM 생태계 경험 여부를 알려 주세요. [job-KAKAO-S-4750]\n\n권장 다음 단계 (간단)\n- 이력서/자기소개서: Python REST API 프로젝트(기술스택, 본인 역할, 엔드포인트·인증·테스트·배포 등)를 구체적으로 적으세요.  \n- Java/Kotlin 보완: 단기간 학습(예: Spring Boot 튜토리얼, Kotlin 기본 문법 실습)으로 보완 가능하니 학습 의사와 예상 기간을 알려 주시면 추천 학습 로드맵을 제시하겠습니다.\n\n원하시면 Python 경험 상세(프로젝트 예, 프레임워크, 기간)을 보내 주세요. 그에 맞춰 구체적 문장 제안과 학습 계획을 도와드리겠습니다.",
+      "passed": true,
+      "seconds": 23.1
+    },
+    {
+      "title": "실시간 검색",
+      "question": "백엔드 개발자 채용공고 후보를 검색해 주세요.",
+      "expected_tool": "search_live_jobs",
+      "tools": [
+        "search_live_jobs"
+      ],
+      "trace": [
+        {
+          "action": "initial_retrieval",
+          "status": "ok",
+          "document_ids": [
+            "job-KAKAO-S-4752",
+            "backend-1",
+            "backend-2"
+          ]
+        },
+        {
+          "action": "search_live_jobs",
+          "status": "ok",
+          "document_ids": []
+        }
+      ],
+      "sources": [
+        {
+          "id": "job-KAKAO-S-4752",
+          "title": "백엔드 개발자(내비 서비스)",
+          "url": "https://careers.kakao.com/jobs/S-4752",
+          "note": "검색 결과 기준으로 정리했으며 원문 페이지와 현재 채용 여부를 직접 확인해야 합니다."
+        },
+        {
+          "id": "backend-1",
+          "title": "백엔드 API 개발 학습 자료",
+          "url": "https://fastapi.tiangolo.com/tutorial/",
+          "note": "FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님."
+        },
+        {
+          "id": "backend-2",
+          "title": "백엔드 API 개발 학습 자료",
+          "url": "https://fastapi.tiangolo.com/tutorial/",
+          "note": "FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님."
+        },
+        {
+          "id": "web-1-1",
+          "title": "'백엔드 개발자 신입' 관련 📢 채용공고 | 총 145건의 검색결과",
+          "url": "https://www.jobkorea.co.kr/Search?stext=%EB%B0%B1%EC%97%94%EB%93%9C+%EA%B0%9C%EB%B0%9C%EC%9E%90+%EC%8B%A0%EC%9E%85",
+          "note": "검색 결과; 실제 모집 상태 미확인"
+        },
+        {
+          "id": "web-1-2",
+          "title": "South Korea에 있는 23명 백엔드 개발자 채용공고 (New 2)",
+          "url": "https://kr.linkedin.com/jobs/%EB%B0%B1%EC%97%94%EB%93%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-jobs",
+          "note": "검색 결과; 실제 모집 상태 미확인"
+        },
+        {
+          "id": "web-1-3",
+          "title": "백엔드 개발자 채용 공고 | 스타트업 백엔드 채용 - 그룹바이",
+          "url": "https://groupby.kr/jobs/backend",
+          "note": "검색 결과; 실제 모집 상태 미확인"
+        },
+        {
+          "id": "web-1-4",
+          "title": "백엔드 개발자 채용 공고 | 오퍼센트",
+          "url": "https://offercent.co.kr/list?jobCategories=0010001%2C0010002%2C0010005%2C0010004",
+          "note": "검색 결과; 실제 모집 상태 미확인"
+        },
+        {
+          "id": "web-1-5",
+          "title": "'백엔드 개발자 spring' 관련 📢 채용공고 | 총 540건의 검색결과",
+          "url": "https://www.jobkorea.co.kr/Search/?stext=%EB%B0%B1%EC%97%94%EB%93%9C+%EA%B0%9C%EB%B0%9C%EC%9E%90++spring",
+          "note": "검색 결과; 실제 모집 상태 미확인"
+        },
+        {
+          "id": "web-1-6",
+          "title": "백엔드/서버개발 취업 | 직업별 채용정보 - 사람인",
+          "url": "https://www.saramin.co.kr/zf_user/jobs/list/job-category?cat_kewd=84",
+          "note": "검색 결과; 실제 모집 상태 미확인"
+        },
+        {
+          "id": "web-1-7",
+          "title": "백엔드 개발자 채용 공고",
+          "url": "https://offercent.co.kr/list?jobCategories=0010001%2C0010002%2C0010003%2C0010004%2C0010005",
+          "note": "검색 결과; 실제 모집 상태 미확인"
+        },
+        {
+          "id": "web-1-8",
+          "title": "'백엔드' 관련 📢 채용공고 | 총 2544건의 검색결과",
+          "url": "https://www.jobkorea.co.kr/Search?stext=%EB%B0%B1%EC%97%94%EB%93%9C",
+          "note": "검색 결과; 실제 모집 상태 미확인"
+        },
+        {
+          "id": "web-1-9",
+          "title": "대한민국 백 엔드 개발자 채용공고 ...",
+          "url": "https://kr.linkedin.com/jobs/%EB%B0%B1-%EC%97%94%EB%93%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-jobs",
+          "note": "검색 결과; 실제 모집 상태 미확인"
+        },
+        {
+          "id": "web-1-10",
+          "title": "[똑똑한개발자] Java 백엔드 개발자 채용 공고 | 원티드",
+          "url": "https://www.wanted.co.kr/wd/231645",
+          "note": "검색 결과; 실제 모집 상태 미확인"
+        }
+      ],
+      "answer": "요청하신 “백엔드 개발자” 공고 후보 검색 결과입니다. 초기 문서 검색 결과와 실시간 검색 목록을 함께 드립니다.\n\n1) 초기 문서(자료 요약)\n- 카카오모빌리티: 백엔드 개발자(내비 서비스) 후보 — 서버 개발 경력 3년 이상, Java 또는 Kotlin, Spring, REST API, RDBMS/NoSQL 관련 경험 필요(원문 확인 권장) [job-KAKAO-S-4752].  \n- 참고 학습자료(팀 요약): FastAPI 튜토리얼 관련 학습 노트(경로·쿼리·입력검증·응답모델 등) [backend-1][backend-2].\n\n2) 실시간 검색 목록 (검색 시각: 2026-10-28T09:37:11+09:00, 모집 상태·마감일 미확인 — 반드시 원문 확인)\n- '백엔드 개발자 신입' 관련 채용(잡코리아 검색 결과) — https://www.jobkorea.co.kr/Search?stext=%EB%B0%B1%EC%97%94%EB%93%9C+%EA%B0%9C%EB%B0%9C%EC%9E%90+%EC%8B%A0%EC%9E%85  \n- LinkedIn: South Korea 백엔드 개발자 채용 목록 — https://kr.linkedin.com/jobs/%EB%B0%B1%EC%97%94%EB%93%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-jobs  \n- 그룹바이(스타트업 백엔드 채용 정리) — https://groupby.kr/jobs/backend  \n- 오퍼센트 백엔드 공고 목록 — https://offercent.co.kr/list?jobCategories=0010001%2C0010002%2C0010005%2C0010004  \n- 사람인 백엔드/서버개발 채용정보 — https://www.saramin.co.kr/zf_user/jobs/list/job-category?cat_kewd=84  \n- 잡코리아 '백엔드 spring' 검색 결과 — https://www.jobkorea.co.kr/Search/?stext=%EB%B0%B1%EC%97%94%EB%93%9C+%EA%B0%9C%EB%B0%9C%EC%9E%90++spring  \n- 원티드: Java 백엔드 개발자 공고 예시 — https://www.wanted.co.kr/wd/231645\n\n다음으로 원하시면:\n- 경력(신입/경력), 사용 언어(Java/Kotlin/Python), 지역, 연봉 등 조건을 알려주시면 후보 필터링해 드립니다.\n- 특정 공고 ID 확인을 원하면 get_job으로 상세 조회 가능합니다.",
+      "passed": true,
+      "seconds": 34.62
+    }
+  ],
+  "code_sha256": {
+    "ai/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ai/agent.py": "b617eb1406c260641a1f015a09426cd5748d3016d07f5f5e6fa24900c0e699c0",
+    "ai/comparison.py": "10bafaf48a03b8cc218ed2df1236f0e596ec9ab83cd91672b29115a058b5edae",
+    "ai/errors.py": "380e4ae2fca3494e7f0d4394fdd0e768e7e88361de020ea3252ebe12a25bcf60",
+    "ai/retrieval.py": "b55f09d9fd8365eb440b664dbe9af63eff45386fe4915e7f81ae089f56f30d28",
+    "ai/vision.py": "e69027ca04a0b5b13bbf3ee2537724b0fe121007bbcc58bf40a07bf8b8446526",
+    "ai/web_search.py": "4b52d06f968150f5cc17c6f8140e48cf207bc0a1006864a8861dbddd3d29b7b5"
+  }
+}

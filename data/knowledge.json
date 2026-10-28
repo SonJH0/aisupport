@@ -1,0 +1,35 @@
+[
+  {
+    "id": "backend",
+    "title": "백엔드 API 개발 학습 자료",
+    "url": "https://fastapi.tiangolo.com/tutorial/",
+    "note": "FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님.",
+    "skills": ["Python", "FastAPI", "API", "테스트"],
+    "sections": [
+      "백엔드 개발 학습에서 FastAPI 튜토리얼은 경로 매개변수, 쿼리 매개변수, 요청 본문과 입력 검증을 다룬다. Python으로 API를 만들 때 요청 데이터를 정의하고 잘못된 입력을 처리하는 연습에 활용할 수 있다.",
+      "백엔드 API의 응답 모델, 상태 코드, 오류 처리, 의존성, 보안, CORS, 관계형 데이터베이스와 테스트도 학습 항목에 포함된다. 팀 학습 제안: 입력 검증이 있는 API와 테스트를 만들고 실제 실행 방법을 문서로 남긴다."
+    ]
+  },
+  {
+    "id": "frontend",
+    "title": "프론트엔드 웹 개발 학습 자료",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core",
+    "note": "MDN 핵심 학습 모듈을 팀이 요약한 자료. 특정 기업의 채용 기준이나 합격 보장이 아님.",
+    "skills": ["HTML", "CSS", "JavaScript", "접근성"],
+    "sections": [
+      "프론트엔드 웹 개발에서 MDN 핵심 학습 모듈은 HTML 문서 구조, 링크, 목록, 이미지와 폼을 설명한다. 의미 있는 HTML 구조를 이해하면 사용 가능한 웹 화면을 만드는 데 도움이 된다.",
+      "프론트엔드 학습 항목에는 CSS 스타일과 레이아웃, JavaScript를 이용한 동작, 접근성이 포함된다. 팀 학습 제안: 여러 화면 크기에서 사용할 수 있는 입력 폼을 만들고 키보드 조작과 오류 안내를 확인한다."
+    ]
+  },
+  {
+    "id": "data",
+    "title": "데이터 분석 pandas 학습 자료",
+    "url": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html",
+    "note": "pandas 공식 입문 튜토리얼의 주제를 팀이 요약하고 데이터 분석 학습에 연결한 자료. 채용 필수 조건이 아님.",
+    "skills": ["Python", "pandas", "시각화", "통계"],
+    "sections": [
+      "데이터 분석 학습에 활용할 수 있는 pandas 입문 튜토리얼은 표 형식 데이터 읽기와 쓰기, DataFrame의 일부 선택, 그래프 생성과 새 열 계산을 다룬다.",
+      "데이터 분석용 pandas 튜토리얼에는 요약 통계 계산, 표 구조 변환, 여러 표 결합, 시계열과 텍스트 처리가 포함된다. 팀 학습 제안: 공개 데이터를 읽고 정리한 뒤 시각화하고 분석의 한계를 설명한다."
+    ]
+  }
+]

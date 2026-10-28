@@ -1,0 +1,16 @@
+# 로컬 환경 변수와 API 키
+.env
+.env.*
+!.env.example
+*.env
+*.env.*
+!*.env.example
+
+# Python 실행 환경과 캐시
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# 로컬 개발 파일
+.vscode/

@@ -1,3 +1,4 @@
+const consent = document.querySelector('#consent');
 const form = document.querySelector('#form');
 const input = document.querySelector('#message');
 const chatFields = document.querySelector('#chat-fields');
@@ -54,6 +55,7 @@ reset.addEventListener('click', () => {
 
 form.addEventListener('submit', async event => {
   event.preventDefault();
+  if (!consent.checked) { consent.reportValidity(); return; }
   const sendingMode = mode;
   const spec = experience.value.trim();
   const jobText = job.value.trim();
@@ -73,17 +75,22 @@ form.addEventListener('submit', async event => {
   reset.disabled = true;
   modes.forEach(button => button.disabled = true);
   send.textContent = '분석 중...';
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 210000);
   try {
     let imageData = null;
     if (image.files[0]) imageData = await new Promise((resolve, reject) => { const reader = new FileReader(); reader.onload = () => resolve(reader.result); reader.onerror = reject; reader.readAsDataURL(image.files[0]); });
     const res = await fetch('/api/chat', {
       method: 'POST',
+      signal: controller.signal,
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({message, history, image: imageData})
+      body: JSON.stringify({message, history, image: imageData, consent: consent.checked})
     });
     const result = await res.json();
     if (!res.ok) throw new Error(typeof result.detail === 'string' ? result.detail : '요청을 처리할 수 없습니다.');
+    if (typeof result.answer !== 'string' || !result.answer.trim()) throw new Error('AI 답변 형식이 올바르지 않습니다.');
     bubble(result.answer, 'assistant');
+    if (result.sources?.length) bubble('참고 자료\n' + result.sources.map(source => '[' + source.id + '] ' + source.title + (source.url ? '\n' + source.url : '') + (source.note ? '\n' + source.note : '')).join('\n\n'), 'tool');
     if (result.tools?.length) bubble('사용한 도구: ' + result.tools.join(', '), 'tool');
     history.push({role: 'user', content: message}, {role: 'assistant', content: result.answer.slice(0, 10000)});
     history = history.slice(-10);
@@ -92,8 +99,9 @@ form.addEventListener('submit', async event => {
     job.value = '';
     image.value = '';
   } catch (err) {
-    bubble(err.message, 'assistant');
+    bubble(err.name === 'AbortError' ? '응답 대기 시간이 초과되었습니다. 잠시 후 다시 시도해 주세요.' : err.message, 'assistant');
   } finally {
+    clearTimeout(timer);
     send.disabled = false;
     reset.disabled = false;
     modes.forEach(button => button.disabled = false);

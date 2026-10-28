@@ -1,0 +1,61 @@
+[
+  {
+    "id": "KAKAO-S-4752",
+    "company": "카카오모빌리티",
+    "title": "백엔드 개발자(내비 서비스)",
+    "requirements": "서버 개발 경력 3년 이상, Java 또는 Kotlin과 Spring, REST API, RDBMS 및 NoSQL 경험",
+    "location": "원문 확인 필요",
+    "source": "카카오 영입 사이트 (검색 결과 기반)",
+    "source_url": "https://careers.kakao.com/jobs/S-4752",
+    "checked_at": "2026-10-28",
+    "deadline": "",
+    "description": "내비게이션 백엔드 개발 및 운영",
+    "verification_note": "검색 결과 기준으로 정리했으며 원문 페이지와 현재 채용 여부를 직접 확인해야 합니다."
+  },
+  {
+    "id": "KAKAO-S-4750",
+    "company": "카카오페이",
+    "title": "서버 개발자 - 데이터 플랫폼",
+    "requirements": "서버 개발 경력 1년 이상, Kotlin, Spring Boot, 데이터 API, MySQL",
+    "location": "원문 확인 필요",
+    "source": "카카오 영입 사이트 (검색 결과 기반)",
+    "source_url": "https://careers.kakao.com/jobs/S-4750",
+    "checked_at": "2026-10-28",
+    "deadline": "",
+    "description": "데이터 플랫폼과 데이터 서비스 API 개발",
+    "verification_note": "검색 결과 기준으로 정리했으며 원문 페이지와 현재 채용 여부를 직접 확인해야 합니다."
+  },
+  {
+    "id": "SAMPLE-1",
+    "company": "가상기업 A",
+    "title": "백엔드 개발자",
+    "requirements": "Python REST API 데이터베이스",
+    "source": "가상 예시 공고",
+    "location": "미정 (가상)",
+    "deadline": "",
+    "checked_at": "",
+    "source_url": ""
+  },
+  {
+    "id": "SAMPLE-2",
+    "company": "가상기업 B",
+    "title": "데이터 분석가",
+    "requirements": "Python SQL 데이터 시각화",
+    "source": "가상 예시 공고",
+    "location": "미정 (가상)",
+    "deadline": "",
+    "checked_at": "",
+    "source_url": ""
+  },
+  {
+    "id": "SAMPLE-3",
+    "company": "가상기업 C",
+    "title": "프론트엔드 개발자",
+    "requirements": "JavaScript React 웹 접근성",
+    "source": "가상 예시 공고",
+    "location": "미정 (가상)",
+    "deadline": "",
+    "checked_at": "",
+    "source_url": ""
+  }
+]
