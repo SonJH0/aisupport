@@ -12,7 +12,8 @@
 - [기술 검증 기록](verification/README.md): JSON·XML 원본과 보고서. 실제 사용자 피드백과 구분합니다.
 - [이미지 검증](image-validation/image-validation.md): 입력 PNG·API 응답·화면 관찰.
 - [이전 자료](archive/README.md): 초안·당시 설명·이전 코드. 현재 명세와 구분합니다.
-- 발표 PDF는 아직 없습니다. 피드백 반영 후 PDF를 추가하고 여기에 링크하세요.
+- [발표 자료: PDF·PowerPoint·13장 이미지](presentation/README.md)
 
 이번 정리는 파일 위치와 안내만 바꿨습니다. 실패·부분 성공·검증 원문·현재 서비스 코드·데이터·테스트를 보존합니다.
+
 
