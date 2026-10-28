@@ -1,0 +1,155 @@
+{
+    "base_commit":  "aeb303c5d4a84bdc3b711e9461747f8828b9355a",
+    "operations":  [
+                       {
+                           "hash":  "EAE2854F888A6405C40CBA4E109CB5E4465023677C8A5BB6C5F470F49CCCDA0E",
+                           "target":  "docs/archive/AI-data-작업.md",
+                           "source":  "docs/AI-data-작업.md",
+                           "type":  "move"
+                       },
+                       {
+                           "hash":  "5456487D4FD99126243F698112E2D3945A7CAD231DFF8B9C970FBC65C4454CD3",
+                           "target":  "docs/archive/GitHub-보안-안내.md",
+                           "source":  "docs/GitHub-보안-안내.md",
+                           "type":  "move"
+                       },
+                       {
+                           "hash":  "92CAD562E5D347F516FC1390259F2AB0B365C80E6ED9FED579BB579D39CE9329",
+                           "target":  "docs/archive/RAG-Agent-보완.md",
+                           "source":  "docs/RAG-Agent-보완.md",
+                           "type":  "move"
+                       },
+                       {
+                           "hash":  "719A0F612BF9E1A9E82EEED16317E5929B008427B563E1DF8634B4CEA18D1C60",
+                           "target":  "docs/archive/기능-검증-기록.md",
+                           "source":  "docs/기능-검증-기록.md",
+                           "type":  "move"
+                       },
+                       {
+                           "hash":  "74120611E058F1A6934F2BCC33FA97FE9E8185FF1758E8717E771D805FFDF752",
+                           "target":  "docs/archive/기획-및-요구사항.md",
+                           "source":  "docs/기획-및-요구사항.md",
+                           "type":  "move"
+                       },
+                       {
+                           "hash":  "2BEF16FF24A7BD88A300EF4495F354454CE0DBA0B9FDC5104C8B3BB5F825CBCD",
+                           "target":  "docs/verification/actual-api-check.json",
+                           "source":  "docs/actual-api-check.json",
+                           "type":  "move"
+                       },
+                       {
+                           "hash":  "1BD5E3ACC84FF8C14452777A11F622BB6F7A0CCA1ABE9A5C538BF54E5DDB1F69",
+                           "target":  "docs/verification/automated-tests.xml",
+                           "source":  "docs/automated-tests.xml",
+                           "type":  "move"
+                       },
+                       {
+                           "hash":  "11E946FD37270EE48DF8B475C42A60F1D2398998428B5100D7D251578DFD5652",
+                           "target":  "docs/verification/deployment-validation.md",
+                           "source":  "docs/deployment-validation.md",
+                           "type":  "move"
+                       },
+                       {
+                           "hash":  "0784DED2013AFBDB26EB3AA89F23D263522369B9DEF5CD1937A35DAF442C8682",
+                           "target":  "docs/verification/incruit-filter-fix.md",
+                           "source":  "docs/incruit-filter-fix.md",
+                           "type":  "move"
+                       },
+                       {
+                           "hash":  "1BF8FFAF83DA8F3123F99404862F5730BAB508E8DEA0EA01B2B3480BB251B577",
+                           "target":  "docs/verification/incruit-filter-tests.xml",
+                           "source":  "docs/incruit-filter-tests.xml",
+                           "type":  "move"
+                       },
+                       {
+                           "hash":  "5CF3D662FA4DF74CB66D3F6461ED9D5688B6ED68FECA9F7CC3A8FB12E2DB5971",
+                           "target":  "docs/verification/responses.json",
+                           "source":  "docs/responses.json",
+                           "type":  "move"
+                       },
+                       {
+                           "hash":  "284294CA56736DC2F965EBB7A923928AD0E3A80100D1639DF448B72A1491A62E",
+                           "target":  "docs/verification/search-filter-api-check.json",
+                           "source":  "docs/search-filter-api-check.json",
+                           "type":  "move"
+                       },
+                       {
+                           "hash":  "7D69135A4D108C4D21080A2CDCE55D5EB3AB1D1D38ABD3E5804B754E274ACBF4",
+                           "target":  "docs/verification/search-filter-change.md",
+                           "source":  "docs/search-filter-change.md",
+                           "type":  "move"
+                       },
+                       {
+                           "hash":  "5FE86A51BDA0E9BADDEC03EA20F451DFDFD623C9109552437F8A49DD166DB0D8",
+                           "target":  "docs/verification/search-filter-tests.xml",
+                           "source":  "docs/search-filter-tests.xml",
+                           "type":  "move"
+                       },
+                       {
+                           "hash":  "C183E0024751BACE5CE1A937060D89E2E496CD2BCA5E7F5AAEE0E69AF4CDA64F",
+                           "target":  "docs/verification/tested-versions.json",
+                           "source":  "docs/tested-versions.json",
+                           "type":  "move"
+                       },
+                       {
+                           "hash":  "617A93978BDE53472598689CDB069F7D083D8B418008FB18A82B0B8F95EFB867",
+                           "target":  "docs/archive/legacy-frontend/app.js",
+                           "source":  "app.js",
+                           "type":  "move"
+                       },
+                       {
+                           "hash":  "FC95F5912FD58EF9FFDD1E33AFD04041B62BD151B79150A70E6A29A311F9D415",
+                           "target":  "docs/archive/legacy-frontend/index.html",
+                           "source":  "index.html",
+                           "type":  "move"
+                       },
+                       {
+                           "hash":  "371690E67E842480012DF9275BFA37834CC153B190D63BF62AF746B7396907B0",
+                           "target":  "docs/archive/legacy-frontend/style.css",
+                           "source":  "style.css",
+                           "type":  "move"
+                       },
+                       {
+                           "hash":  "B6B1EF710982FB4CAC920E96A1FAAF468FA154361187F790A97DD26622215143",
+                           "target":  "docs/archive/적용방법.md",
+                           "source":  "적용방법.md",
+                           "type":  "move"
+                       },
+                       {
+                           "hash":  "A6D872A149B6C58015825B0CC42B1763C5F2E6EA2123A6BE9B749449490BA493",
+                           "backup":  "docs/archive/pre-cleanup/README.md",
+                           "target":  "README.md",
+                           "type":  "write"
+                       },
+                       {
+                           "hash":  "35DFDF2F3C6C41D8DE0B65B19C0DB3431D3257C2EFA3CDBB27696280E6F45B6B",
+                           "backup":  null,
+                           "target":  "docs/README.md",
+                           "type":  "write"
+                       },
+                       {
+                           "hash":  "5F189617481E200536D1071BB114AAE19DB80A0A7693DBE552BCEB0646DF6B97",
+                           "backup":  null,
+                           "target":  "docs/verification/README.md",
+                           "type":  "write"
+                       },
+                       {
+                           "hash":  "7A78A71451D142F6F5C410C61C219C8D9991F0F0CD117F329F80B2D5C34EC5AD",
+                           "backup":  null,
+                           "target":  "docs/archive/README.md",
+                           "type":  "write"
+                       },
+                       {
+                           "hash":  "7620F5ABDF3011777FC19246EF69C43F9215FAF5161336714A9A288CC9F3A236",
+                           "backup":  "docs/archive/pre-cleanup/요구사항-정의서.md",
+                           "target":  "docs/요구사항-정의서.md",
+                           "type":  "write"
+                       },
+                       {
+                           "hash":  "640BA1D0217E76B63F4009EAC2A18A3E336EE56C31AACEDBAB0CC23925E0C241",
+                           "backup":  "docs/archive/pre-cleanup/진행-및-제출현황.md",
+                           "target":  "docs/진행-및-제출현황.md",
+                           "type":  "write"
+                       }
+                   ]
+}

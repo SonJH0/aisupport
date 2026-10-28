@@ -1,0 +1,113 @@
+{
+  "base_commit": "aeb303c5d4a84bdc3b711e9461747f8828b9355a",
+  "moves": [
+    {
+      "source": "docs/AI-data-\uc791\uc5c5.md",
+      "target": "docs/archive/AI-data-\uc791\uc5c5.md"
+    },
+    {
+      "source": "docs/GitHub-\ubcf4\uc548-\uc548\ub0b4.md",
+      "target": "docs/archive/GitHub-\ubcf4\uc548-\uc548\ub0b4.md"
+    },
+    {
+      "source": "docs/RAG-Agent-\ubcf4\uc644.md",
+      "target": "docs/archive/RAG-Agent-\ubcf4\uc644.md"
+    },
+    {
+      "source": "docs/\uae30\ub2a5-\uac80\uc99d-\uae30\ub85d.md",
+      "target": "docs/archive/\uae30\ub2a5-\uac80\uc99d-\uae30\ub85d.md"
+    },
+    {
+      "source": "docs/\uae30\ud68d-\ubc0f-\uc694\uad6c\uc0ac\ud56d.md",
+      "target": "docs/archive/\uae30\ud68d-\ubc0f-\uc694\uad6c\uc0ac\ud56d.md"
+    },
+    {
+      "source": "docs/actual-api-check.json",
+      "target": "docs/verification/actual-api-check.json"
+    },
+    {
+      "source": "docs/automated-tests.xml",
+      "target": "docs/verification/automated-tests.xml"
+    },
+    {
+      "source": "docs/deployment-validation.md",
+      "target": "docs/verification/deployment-validation.md"
+    },
+    {
+      "source": "docs/incruit-filter-fix.md",
+      "target": "docs/verification/incruit-filter-fix.md"
+    },
+    {
+      "source": "docs/incruit-filter-tests.xml",
+      "target": "docs/verification/incruit-filter-tests.xml"
+    },
+    {
+      "source": "docs/responses.json",
+      "target": "docs/verification/responses.json"
+    },
+    {
+      "source": "docs/search-filter-api-check.json",
+      "target": "docs/verification/search-filter-api-check.json"
+    },
+    {
+      "source": "docs/search-filter-change.md",
+      "target": "docs/verification/search-filter-change.md"
+    },
+    {
+      "source": "docs/search-filter-tests.xml",
+      "target": "docs/verification/search-filter-tests.xml"
+    },
+    {
+      "source": "docs/tested-versions.json",
+      "target": "docs/verification/tested-versions.json"
+    },
+    {
+      "source": "app.js",
+      "target": "docs/archive/legacy-frontend/app.js"
+    },
+    {
+      "source": "index.html",
+      "target": "docs/archive/legacy-frontend/index.html"
+    },
+    {
+      "source": "style.css",
+      "target": "docs/archive/legacy-frontend/style.css"
+    },
+    {
+      "source": "\uc801\uc6a9\ubc29\ubc95.md",
+      "target": "docs/archive/\uc801\uc6a9\ubc29\ubc95.md"
+    }
+  ],
+  "writes": [
+    {
+      "asset": "README.md",
+      "target": "README.md",
+      "backup": "docs/archive/pre-cleanup/README.md"
+    },
+    {
+      "asset": "docs-index.md",
+      "target": "docs/README.md",
+      "backup": null
+    },
+    {
+      "asset": "verification-index.md",
+      "target": "docs/verification/README.md",
+      "backup": null
+    },
+    {
+      "asset": "archive-index.md",
+      "target": "docs/archive/README.md",
+      "backup": null
+    },
+    {
+      "asset": "\uc694\uad6c\uc0ac\ud56d-\uc815\uc758\uc11c.md",
+      "target": "docs/\uc694\uad6c\uc0ac\ud56d-\uc815\uc758\uc11c.md",
+      "backup": "docs/archive/pre-cleanup/\uc694\uad6c\uc0ac\ud56d-\uc815\uc758\uc11c.md"
+    },
+    {
+      "asset": "\uc9c4\ud589-\ubc0f-\uc81c\ucd9c\ud604\ud669.md",
+      "target": "docs/\uc9c4\ud589-\ubc0f-\uc81c\ucd9c\ud604\ud669.md",
+      "backup": "docs/archive/pre-cleanup/\uc9c4\ud589-\ubc0f-\uc81c\ucd9c\ud604\ud669.md"
+    }
+  ]
+}

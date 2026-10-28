@@ -1,0 +1,10 @@
+{
+  "moved_files_unchanged": 19,
+  "active_files_unchanged": 18,
+  "broken_links": [],
+  "root_legacy_files_removed": true,
+  "windows_powershell_execution_tested": false,
+  "python_manifest_rollback_simulation": "passed",
+  "regression_tests_passed": 74,
+  "regression_warnings": 1
+}
