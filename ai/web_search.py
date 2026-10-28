@@ -45,6 +45,12 @@ def _canonical_url(url):
 def _page_type(title, url):
     host = urlparse(url).hostname or ""
     path = urlparse(url).path.lower()
+    # 인크루트의 검색·목록 경로는 /search/ 형태가 아닌 ASP 주소를 사용한다.
+    # 도메인 전체를 차단하면 개별 공고(jobdb_info/jobpost.asp)까지 사라진다.
+    if (host == "incruit.com" or host.endswith(".incruit.com")) and (
+        path == "/jobdb_list" or path.startswith("/jobdb_list/")
+    ):
+        return "검색·목록 페이지"
     if re.search(r"fastcampus|inflearn|udemy|coursera|wanted\.co\.kr/events", host + path):
         return "강의·교육 페이지"
     if re.search(r"강의|부트캠프|취업\s*집중반|교육생\s*모집|수강|튜토리얼|온라인\s*교육", title):

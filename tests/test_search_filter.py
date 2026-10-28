@@ -10,6 +10,29 @@ def hit(title, description="", url="https://www.wanted.co.kr/wd/123"):
     return {"title": title, "description": description, "url": url}
 
 
+@pytest.mark.parametrize("url", [
+    "https://job.incruit.com/jobdb_list/searchjob.asp?col=job_all&il=y&kw=Spring+boot",
+    "https://job.incruit.com/JOBDB_LIST/SEARCHJOB.ASP?kw=Java",
+    "https://job.incruit.com/jobdb_list/joblist.asp?cd=1",
+])
+def test_incruit_list_leak_from_deployment_is_excluded(url):
+    results, excluded = web.filter_job_results([
+        hit("Spring boot - 인크루트 채용정보", "Java Spring Boot 신입 백엔드", url)
+    ], "Java Spring Boot 신입 백엔드")
+    assert results == []
+    assert excluded[0]["reason"] == "검색·목록 페이지"
+
+
+def test_incruit_individual_post_is_preserved():
+    url = "https://job.incruit.com/jobdb_info/jobpost.asp?job=202610280001"
+    results, excluded = web.filter_job_results([
+        hit("Java Spring Boot 신입 백엔드 개발자 채용", "신입 지원 가능", url)
+    ], "Java Spring Boot 신입 백엔드")
+    assert not excluded
+    assert results[0]["url"] == url
+    assert results[0]["match_status"] == "요약 기준 조건 일치"
+
+
 @pytest.mark.parametrize("item", [
     hit("Java Spring Boot 신입 취업 집중반", url="https://fastcampus.co.kr/dev_online_javaspring"),
     hit("React 채용공고 100+건", url="https://kr.indeed.com/q-react-jobs.html"),
