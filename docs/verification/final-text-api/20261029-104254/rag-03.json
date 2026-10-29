@@ -1,0 +1,63 @@
+{
+  "id": "rag-03",
+  "started_at": "2026-10-29T10:43:29.254811+09:00",
+  "endpoint": "https://ai-job-assistant-xewt.onrender.com/api/chat",
+  "synthetic_technical_test": true,
+  "real_user_feedback": false,
+  "request": {
+    "message": "Python pandas로 표 데이터를 읽고, 두 표를 결합하고, 요약 통계를 구하는 방법을 배우려면 어떤 자료를 참고해야 하나요? 관련 자료의 출처와 함께 학습 방향을 알려주세요.",
+    "consent": true,
+    "history": []
+  },
+  "expected_for_human_review": "pandas 문단·공식 링크·학습 조언",
+  "deployment_sha": "not_observed_by_this_script",
+  "human_verdict": "미판정",
+  "http_status": 200,
+  "response": {
+    "answer": "좋은 질문입니다. 우선 참고할 핵심 자료와 학습 방향(단계별)부터 정리해 드립니다.\n\n핵심 자료(권장)\n- pandas 공식 입문 튜토리얼 (공식 문서): 표 형식 데이터 읽기/쓰기, DataFrame 선택·변형, 그래프 생성, 새 열 계산 등 기본 내용을 다룹니다. 또한 요약 통계 계산·표 구조 변환·여러 표 결합·시계열·텍스트 처리 주제도 포함되어 있어 초심자에게 적합합니다. [data-1][data-2]  \n  URL: https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html [data-1]\n\n보조 자료(권장)\n- Kaggle Learn의 \"Pandas\" 실습 코스(인터랙티브)  \n- 책: Wes McKinney, \"Python for Data Analysis\" (pandas 창시자 저서)  \n- 실습 플랫폼: Kaggle Notebook, Colab (공개 데이터 실습에 편리)\n\n학습 방향(권장 순서, 실습 중심)\n1) 기본 입출력과 탐색: pd.read_csv / read_excel, df.head(), df.info(), df.describe()로 구조·기초통계 파악 [data-1].  \n2) 데이터 정리: 결측치 처리(df.dropna, df.fillna), 자료형 변환, 인덱스·열 선택 및 새 열 계산 [data-1].  \n3) 표 결합: pd.concat(위아래 결합), pd.merge(키 기반 병합)으로 두 표 합치기 연습(조인 방식 확인: inner/left/right/outer).  \n4) 요약 통계: df.describe(), groupby + agg(평균·합계·개수·분산 등), pivot_table 사용법 습득.  \n5) 검증·시각화: seaborn/matplotlib으로 그룹별 요약 시각화하고 이상치·편향 점검.  \n6) 프로젝트 적용: 공개 데이터(예: 타이타닉/공공데이터)로 “데이터 읽기 → 결합 → 요약 통계 → 시각화 → 분석 한계 서술”을 수행해 보세요(팀 학습 제안과 일치). [data-2]\n\n실습 예제(짧게)\n- 두 CSV를 키(id, date 등)로 merge 후 groupby로 월별/카테고리별 합계·평균 계산  \n- 결측치가 많은 열 제거 전후의 요약 통계 비교 및 시각화\n\n원하시면 바로 시작할 수 있게:\n- 기본 코드 예제(읽기/병합/groupby) 샘플을 드리거나, 1주 학습 계획표(일별 실습 과제)를 만들어 드리겠습니다. 어떤 형태로 도와드릴까요?",
+    "tools": [
+      "search_documents"
+    ],
+    "sources": [
+      {
+        "id": "data-2",
+        "title": "데이터 분석 pandas 학습 자료",
+        "url": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html",
+        "note": "pandas 공식 입문 튜토리얼의 주제를 팀이 요약하고 데이터 분석 학습에 연결한 자료. 채용 필수 조건이 아님."
+      },
+      {
+        "id": "data-1",
+        "title": "데이터 분석 pandas 학습 자료",
+        "url": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html",
+        "note": "pandas 공식 입문 튜토리얼의 주제를 팀이 요약하고 데이터 분석 학습에 연결한 자료. 채용 필수 조건이 아님."
+      }
+    ],
+    "trace": [
+      {
+        "action": "initial_retrieval",
+        "status": "ok",
+        "document_ids": [
+          "data-2",
+          "backend-1",
+          "data-1"
+        ]
+      },
+      {
+        "action": "tool_protocol",
+        "status": "native_no_tool_json_plan",
+        "document_ids": []
+      },
+      {
+        "action": "search_documents",
+        "status": "ok",
+        "document_ids": [
+          "data-1",
+          "data-2",
+          "backend-1"
+        ]
+      }
+    ],
+    "ai_generated": true
+  },
+  "finished_at": "2026-10-29T10:44:08.531973+09:00"
+}

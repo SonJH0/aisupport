@@ -45,6 +45,10 @@ def _canonical_url(url):
 def _page_type(title, url):
     host = urlparse(url).hostname or ""
     path = urlparse(url).path.lower()
+    # 채용 플랫폼의 루트 주소는 제목에 채용 단어가 있어도 개별 공고가 아니다.
+    # 쿼리가 있는 루트 URL도 상세 공고인지 확인할 수 없으므로 후보에서 제외한다.
+    if path in ("", "/"):
+        return "홈페이지·개별 공고 근거 부족"
     # 채용 정보 모음·테마·저장소는 개별 회사 공고와 구분한다.
     if host in ("github.com", "www.github.com") and not re.search(r"/issues/\d+$", path):
         return "채용 정보 모음·저장소"
@@ -186,4 +190,5 @@ def search_live_jobs(query, *, requested_query=None):
             "note": "검색 요약 기준의 후보입니다. 조건 일치와 추가 확인 필요를 구분하고 원문·모집 상태 미확인을 알리세요.",
             "excluded_count": len(excluded), "excluded": excluded,
             "results": results[:10]}
+
 

@@ -1,0 +1,41 @@
+{
+  "id": "compare-02",
+  "started_at": "2026-10-29T10:45:03.265724+09:00",
+  "endpoint": "https://ai-job-assistant-xewt.onrender.com/api/chat",
+  "synthetic_technical_test": true,
+  "real_user_feedback": false,
+  "request": {
+    "message": "아래 채용공고와 지원자 경험을 비교해 일치·차이·정보 부족, 확인 질문과 보완 행동을 알려주세요.\n[지원자의 경험]\nPython으로 REST API를 개발한 경험이 있습니다. Java는 사용할 줄 모릅니다.\n[채용공고]\nPython 개발 경험\nJava 개발 경험\nKotlin 개발 경험",
+    "consent": true,
+    "history": []
+  },
+  "expected_for_human_review": "Python 일치·Java 차이·Kotlin 정보 부족, 근거·확인 질문·보완 행동",
+  "deployment_sha": "not_observed_by_this_script",
+  "human_verdict": "미판정",
+  "http_status": 200,
+  "response": {
+    "answer": "요약: compare_requirements를 실행해 요건별로 근거·확인 질문·보완 행동을 정리했습니다. 어휘 일치는 실제 숙련도의 증거가 될 수 없으니(비교 도구 한계), 기간·숙련도·프로덕션 경험 등 추가 확인이 필요합니다.\n\n1) Python 개발 경험 — 일치(근거 있음; 의미 확인 필요)\n- 근거(지원자): \"Python으로 REST API를 개발한 경험이 있습니다.\"\n- 확인 질문:\n  - 해당 경험 기간(총 몇 년/개월)과 프로젝트 수는 얼마인가요?\n  - 사용한 프레임워크(Flask/Django/FastAPI 등), DB, 테스트·배포 방식은 무엇인가요?\n  - 프로덕션 운영 경험(트래픽·모니터링·장애 대응) 여부?\n- 보완 행동:\n  - GitHub 코드·API 문서나 간단한 데모 준비(링크 제공).\n  - 사용 프레임워크·테스트·배포 관련 구체 사례(성능 개선, 버그 수정 등) 정리.\n\n2) Java 개발 경험 — 차이(명백한 불일치)\n- 근거(지원자): \"Java는 사용할 줄 모릅니다.\" → 채용공고의 \"Java 개발 경험\"과 불일치\n- 확인 질문:\n  - Java를 배우실 의향이 있으신가요? JVM 환경(예: Kotlin, Scala) 경험이 있나요?\n  - OOP·타입 시스템 등 Java와 관련된 이론적 이해가 있으신지?\n- 보완 행동:\n  - 빠르게 반영 가능한 액션: 기본 문법·컬렉션·예외처리 학습 + 간단한 Spring Boot 예제 구현(1~4주 목표).\n  - 기존 Python 프로젝트의 일부를 Java/Spring으로 포팅해 비교샘플 제출.\n  - 학습 계획(예: 4주 코스, 산출물: REST API + README + 테스트)을 준비해 면접에서 의지 표명.\n\n3) Kotlin 개발 경험 — 정보 부족(언급 없음)\n- 근거: 지원자 경험에 Kotlin 관련 언급 없음; 채용공고엔 \"Kotlin 개발 경험\" 명시\n- 확인 질문:\n  - Kotlin 사용 경험(프로젝트·학습)이 있으신가요? 없다면 배우실 의향은?\n  - Android 또는 JVM 관련 개발 경험이 있나요?\n- 보완 행동:\n  - Kotlin 문법·코루틴·Null 안전성 학습 후, 간단한 Spring/Ktor 기반 API 구현(샘플 코드 제공).\n  - Python→Kotlin으로 동일 기능 포팅한 비교 리포지토리 작성.\n\n마지막으로: 현재 비교는 제공된 문장(어휘 근거) 기반입니다. 기간·숙련도·프로덕션 여부가 확인되어야 최종 적합도를 정확히 판단할 수 있습니다. 원하시면 확인 질문에 대한 답변을 주시면, 이력서 문구 수정안·학습 로드맵·면접 대비 문장(예: 전환 의지 표명)까지 구체적으로 만들어 드리겠습니다.",
+    "tools": [
+      "compare_requirements"
+    ],
+    "sources": [],
+    "trace": [
+      {
+        "action": "initial_retrieval",
+        "status": "ok",
+        "document_ids": [
+          "job-KAKAO-S-4752",
+          "backend-1",
+          "job-KAKAO-S-4750"
+        ]
+      },
+      {
+        "action": "compare_requirements",
+        "status": "ok",
+        "document_ids": []
+      }
+    ],
+    "ai_generated": true
+  },
+  "finished_at": "2026-10-29T10:45:24.509929+09:00"
+}

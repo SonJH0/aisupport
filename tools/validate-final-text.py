@@ -1,4 +1,5 @@
 """Save synthetic public-API responses for human review; never auto-claim G4 success."""
+import argparse
 import json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -20,12 +21,17 @@ CASES = [
 ]
 
 
-def main():
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--cases', nargs='+', choices=[c[0] for c in CASES],
+                        help='Run only these cases; omitted means all eight.')
+    args = parser.parse_args(argv)
+    selected = [case for case in CASES if not args.cases or case[0] in args.cases]
     run_id = datetime.now(KST).strftime("%Y%m%d-%H%M%S")
     output = ROOT / "docs" / "verification" / "final-text-api" / run_id
     output.mkdir(parents=True, exist_ok=False)
     rows = []
-    for label, message, expected in CASES:
+    for label, message, expected in selected:
         body = {"message": message, "consent": True, "history": []}
         record = {"id": label, "started_at": datetime.now(KST).isoformat(),
                   "endpoint": ENDPOINT, "synthetic_technical_test": True,
@@ -41,7 +47,10 @@ def main():
                 record["response"] = json.loads(response.read().decode("utf-8"))
         except HTTPError as error:
             record["http_status"] = error.code
-            record["error_body"] = error.read(100000).decode("utf-8", errors="replace")
+            # 오류 HTML의 내장 글꼴이 앞부분을 채워도 본문을 보존하도록 한도를 늘린다.
+            raw_error = error.read(1000001)
+            record["error_body"] = raw_error[:1000000].decode("utf-8", errors="replace")
+            record["error_body_truncated"] = len(raw_error) > 1000000
         except (URLError, TimeoutError, OSError, ValueError) as error:
             record["http_status"] = None
             record["error"] = str(error)
@@ -62,3 +71,4 @@ def main():
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
