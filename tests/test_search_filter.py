@@ -110,7 +110,7 @@ def test_only_filtered_hits_enter_model_results_and_sources(monkeypatch):
     monkeypatch.setenv("BRAVE_SEARCH_API_KEY", "test-only")
     items = [hit("Python 신입 채용", "FastAPI"), hit("Python 강의", url="https://fastcampus.co.kr/lesson")]
     monkeypatch.setattr(web.httpx, "get", lambda *a, **k: SimpleNamespace(raise_for_status=lambda: None, json=lambda: {"web": {"results": items}}))
-    output = agent.run_tool("search_live_jobs", {"query": "Python"}, message="Python FastAPI 신입")
+    output = agent.run_tool("search_live_jobs", {"query": "Python"}, message="Python FastAPI 신입 공고를 검색해 주세요.")
     assert len(output["results"]) == 1 and output["excluded_count"] == 1
     assert output["results"][0]["match_status"] == "요약 기준 조건 일치"
 
@@ -151,3 +151,4 @@ def test_both_agent_protocols_apply_filtered_output(monkeypatch, mode):
     assert "요약 기준 조건 일치" in result["answer"]
     assert result["tools"] == ["search_live_jobs"]
     assert all(s["id"].startswith("web-") for s in result["sources"])
+
