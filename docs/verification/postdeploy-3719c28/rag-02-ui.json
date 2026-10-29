@@ -1,0 +1,46 @@
+{
+  "observed_at": "2026-10-29T03:58:42.763Z",
+  "question": "프론트엔드에서 HTML 폼과 웹 접근성을 배우려면 어떤 자료를 참고해야 하나요? 관련 자료의 출처와 함께 학습 방향을 알려주세요.",
+  "ai_notice": "AI가 생성한 참고 정보입니다. 사실관계와 공고의 최신 여부는 직접 확인해 주세요. 검색 제공: Brave Search",
+  "consent": true,
+  "links": [
+    {
+      "label": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core"
+    },
+    {
+      "label": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core"
+    },
+    {
+      "label": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core"
+    },
+    {
+      "label": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+      "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+    },
+    {
+      "label": "https://www.w3.org/TR/wai-aria-practices-1.1/",
+      "url": "https://www.w3.org/TR/wai-aria-practices-1.1/"
+    },
+    {
+      "label": "https://webaim.org/techniques/forms/",
+      "url": "https://webaim.org/techniques/forms/"
+    },
+    {
+      "label": "https://www.a11yproject.com/",
+      "url": "https://www.a11yproject.com/"
+    },
+    {
+      "label": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core"
+    },
+    {
+      "label": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core"
+    }
+  ],
+  "messages": "프론트엔드에서 HTML 폼과 웹 접근성을 배우려면 어떤 자료를 참고해야 하나요? 관련 자료의 출처와 함께 학습 방향을 알려주세요.\n좋습니다 — 핵심 개념과 실무 연습 위주로 짧고 실현 가능한 학습 경로와 신뢰할 수 있는 자료를 정리합니다.\n\n학습 방향(단계별)\n1) HTML 폼 기본 — 시맨틱한 요소(form, label, input, button, fieldset/legend, aria-* 최소화)와 다양한 input 타입 이해\n   - 근거: MDN 핵심 학습 모듈은 HTML 문서 구조와 폼을 설명합니다 [frontend-1]. https://developer.mozilla.org/en-US/docs/Learn_web_development/Core\n\n2) 웹 접근성 원칙(Perceivable, Operable, Understandable, Robust)과 폼 접근성의 핵심(라벨·포커스·오류 안내·읽기순서)\n   - 근거: 팀 요약에 접근성·폼 테스트 항목이 포함됩니다 [frontend-2]. https://developer.mozilla.org/en-US/docs/Learn_web_development/Core\n\n3) ARIA와 보조기술 연동 — 언제 aria를 써야/쓰면 안 되는지(시맨틱 요소 우선), role/aria-describedby/aria-invalid 사용법\n\n4) 테스트·검증 실습 — 키보드만으로 조작, 스크린리더(VoiceOver, NVDA) 검증, 자동화 검사(axe, Lighthouse), 모바일 접근성 확인\n\n5) 실전 과제 — 유효성 검사(실시간 피드백), 오류 포커스 이동·요약, 접근성 알림(aria-live), 반응형 폼 구현 및 사용자 테스트\n\n권장 자료(빠른 링크)\n- MDN Learn (HTML 폼·접근성 개요) — https://developer.mozilla.org/en-US/docs/Learn_web_development/Core [frontend-1][frontend-2]\n- W3C WCAG 2.1 (접근성 표준) — https://www.w3.org/WAI/standards-guidelines/wcag/\n- WAI-ARIA Authoring Practices — https://www.w3.org/TR/wai-aria-practices-1.1/\n- WebAIM 폼 접근성 가이드 — https://webaim.org/techniques/forms/\n- The A11Y Project(실용 체크리스트) — https://www.a11yproject.com/\n- 도구: axe DevTools, Chrome Lighthouse, NVDA/VoiceOver\n\n짧은 학습 계획(4주 예시)\n- 1주: 시맨틱 HTML 폼 + MDN 읽기, 간단 폼 3개 제작\n- 2주: WCAG 핵심 학습 + ARIA 기본 실습\n- 3주: 스크린리더·키보드 테스트, 자동화 도구로 개선\n- 4주: 접근성 중심 포트폴리오 폼 완성(설명 문서 포함)\n\n원하시면 지금 수준(경험, 목표) 알려주시면 위 계획을 당신 맞춤으로 세부화해 드립니다.\n참고 자료\n[frontend-1] 프론트엔드 웹 개발 학습 자료\nhttps://developer.mozilla.org/en-US/docs/Learn_web_development/Core\nMDN 핵심 학습 모듈을 팀이 요약한 자료. 특정 기업의 채용 기준이나 합격 보장이 아님.\n\n[frontend-2] 프론트엔드 웹 개발 학습 자료\nhttps://developer.mozilla.org/en-US/docs/Learn_web_development/Core\nMDN 핵심 학습 모듈을 팀이 요약한 자료. 특정 기업의 채용 기준이나 합격 보장이 아님.\n사용한 도구: search_documents",
+  "url": "https://ai-job-assistant-xewt.onrender.com/"
+}

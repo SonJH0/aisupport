@@ -1,0 +1,22 @@
+{
+  "observed_at": "2026-10-29T03:59:52.063Z",
+  "question": "Python pandas로 표 데이터를 읽고, 두 표를 결합하고, 요약 통계를 구하는 방법을 배우려면 어떤 자료를 참고해야 하나요? 관련 자료의 출처와 함께 학습 방향을 알려주세요.",
+  "ai_notice": "AI가 생성한 참고 정보입니다. 사실관계와 공고의 최신 여부는 직접 확인해 주세요. 검색 제공: Brave Search",
+  "consent": true,
+  "links": [
+    {
+      "label": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html",
+      "url": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html"
+    },
+    {
+      "label": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html",
+      "url": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html"
+    },
+    {
+      "label": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html",
+      "url": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html"
+    }
+  ],
+  "messages": "Python pandas로 표 데이터를 읽고, 두 표를 결합하고, 요약 통계를 구하는 방법을 배우려면 어떤 자료를 참고해야 하나요? 관련 자료의 출처와 함께 학습 방향을 알려주세요.\n요약: pandas 공식 튜토리얼을 중심으로 기초 → 결합(join/concat) → 요약통계(groupby/agg/pivot) 순으로 배우고, 공개 데이터로 실습해 결과를 시각화·해석하길 권합니다.\n\n권장 자료\n- pandas 공식 입문 튜토리얼(표 읽기/쓰기, 선택, 결합, 요약 통계 등) — https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html [data-1][data-2]\n\n학습 방향(단계별)\n1) 기초 사용법(1~2일)\n- 파일 읽기/쓰기: pd.read_csv / pd.read_excel\n- DataFrame 기본 조작: df.head(), df.loc/iloc, 컬럼 추가/삭제\n2) 표 결합(1~2일)\n- 행 합치기: pd.concat([...])\n- 키로 결합: pd.merge(left, right, how='inner'/'left'/'right'/'outer')\n- 구조 변환: melt / pivot_table\n3) 요약 통계(1~2일)\n- 기초: df.describe(), df.mean(), df.median(), value_counts()\n- 그룹별 집계: df.groupby(...).agg({...}), pivot_table\n4) 실습 프로젝트(2~4일)\n- 공개 데이터 두 파일을 불러와 키로 병합 → 결측 처리 → 그룹별 요약 통계 산출 → 시각화(예: matplotlib/seaborn) 및 한계 서술(데이터 품질·편향 등) — 튜토리얼의 팀 학습 제안과 유사한 접근입니다 [data-2].\n\n간단한 예시(참고)\n- df1 = pd.read_csv('a.csv')\n- df2 = pd.read_csv('b.csv')\n- merged = pd.merge(df1, df2, on='id', how='left')\n- summary = merged.groupby('category').agg({'value':['mean','sum','count']})\n\n원하시면 실습용 공개 데이터 추천이나 위 단계별로 자세한 코드 예제, 실습 과제(예: 3일 플랜)를 만들어 드리겠습니다.\n참고 자료\n[data-2] 데이터 분석 pandas 학습 자료\nhttps://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html\npandas 공식 입문 튜토리얼의 주제를 팀이 요약하고 데이터 분석 학습에 연결한 자료. 채용 필수 조건이 아님.\n\n[data-1] 데이터 분석 pandas 학습 자료\nhttps://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html\npandas 공식 입문 튜토리얼의 주제를 팀이 요약하고 데이터 분석 학습에 연결한 자료. 채용 필수 조건이 아님.\n사용한 도구: search_documents",
+  "url": "https://ai-job-assistant-xewt.onrender.com/"
+}

@@ -1,0 +1,11 @@
+{
+  "synthetic_technical_test": true,
+  "started_at": "2026-10-29T12:57:40.202867+09:00",
+  "request": {
+    "message": "Synthetic consent validation test",
+    "consent": false,
+    "history": []
+  },
+  "http_status": 403,
+  "response": "{\"detail\":\"AI 처리를 위한 외부 전송 동의가 필요합니다.\"}"
+}

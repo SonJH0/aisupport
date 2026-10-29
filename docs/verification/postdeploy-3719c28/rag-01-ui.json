@@ -1,0 +1,22 @@
+{
+  "observed_at": "2026-10-29T03:58:13.067Z",
+  "question": "백엔드 API의 요청 본문과 입력 검증을 배우려면 어떤 자료를 참고해야 하나요? 관련 자료의 출처와 함께 학습 방향을 알려주세요.",
+  "ai_notice": "AI가 생성한 참고 정보입니다. 사실관계와 공고의 최신 여부는 직접 확인해 주세요. 검색 제공: Brave Search",
+  "consent": true,
+  "links": [
+    {
+      "label": "https://fastapi.tiangolo.com/tutorial/)",
+      "url": "https://fastapi.tiangolo.com/tutorial/)"
+    },
+    {
+      "label": "https://fastapi.tiangolo.com/tutorial/",
+      "url": "https://fastapi.tiangolo.com/tutorial/"
+    },
+    {
+      "label": "https://fastapi.tiangolo.com/tutorial/",
+      "url": "https://fastapi.tiangolo.com/tutorial/"
+    }
+  ],
+  "messages": "백엔드 API의 요청 본문과 입력 검증을 배우려면 어떤 자료를 참고해야 하나요? 관련 자료의 출처와 함께 학습 방향을 알려주세요.\n좋습니다. 우선 추천 자료와 구체적 학습 방향을 짧게 정리합니다.\n\n주요 자료\n- FastAPI 공식 튜토리얼 — 요청 본문(request body)과 입력 검증을 직접 다룹니다. 경로/쿼리 매개변수와 본문 검증 학습에 적합합니다 [backend-1]. (https://fastapi.tiangolo.com/tutorial/)  \n- FastAPI 튜토리얼의 추가 항목: 응답 모델, 상태 코드·오류 처리, 의존성, 보안, CORS, DB 연동, 테스트 등도 학습 권장 항목입니다. 팀 제안으로는 입력 검증이 있는 API와 테스트를 만들어 실행 방법을 문서화하라고 권합니다 [backend-2]. (같은 튜토리얼)\n\n권장 학습 순서 (초급 → 중급 → 실전)\n1. HTTP/JSON 기초: 메서드(GET/POST/PUT/PATCH/DELETE), 상태 코드, Content-Type, JSON 구조 이해.  \n2. FastAPI로 기본 API 만들기: 경로·쿼리·요청 본문 실습 — FastAPI 튜토리얼을 따라 구현 [backend-1].  \n3. Pydantic 모델로 입력 검증: 타입 선언, 필수/옵션 필드, 기본값, 제약(길이·범위·정규식), 커스텀 밸리데이터.  \n4. 오류 처리와 응답 모델: 상태 코드, 예외 처리, 일관된 에러 응답 포맷 설계 — 튜토리얼의 관련 장 참고 [backend-2].  \n5. 의존성·보안·CORS: 인증·권한 처리 패턴과 외부 요청 제어 [backend-2].  \n6. 테스트와 문서화: pytest로 유효/비정상 입력 케이스 검사, 테스트 자동화, 실행·배포 절차 문서화 — 실습으로 남기기 권장 [backend-2].  \n7. 확장: DB 연동, 마이그레이션, 배포 환경의 입력 검증(로깅·모니터링)도 차차 추가 [backend-2].\n\n실습 과제 예시\n- 간단한 CRUD 엔드포인트 작성 → Pydantic으로 입력 제약 추가 → 잘못된 입력에 대한 테스트 10개 작성 → README에 실행·테스트 방법 정리.\n\n추가 자료(권장)\n- Pydantic 공식문서 (밸리데이터 심화)  \n- HTTP 상태 코드/REST 설계 관련 글(MDN 등)  \n(위 추가 자료는 튜토리얼 외 권장 자료입니다.)\n\n원하시면 학습 기간(주 단위)과 현재 경험을 알려주시면 맞춤 커리큘럼을 제안하겠습니다.\n참고 자료\n[backend-1] 백엔드 API 개발 학습 자료\nhttps://fastapi.tiangolo.com/tutorial/\nFastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님.\n\n[backend-2] 백엔드 API 개발 학습 자료\nhttps://fastapi.tiangolo.com/tutorial/\nFastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님.\n사용한 도구: search_documents",
+  "url": "https://ai-job-assistant-xewt.onrender.com/"
+}

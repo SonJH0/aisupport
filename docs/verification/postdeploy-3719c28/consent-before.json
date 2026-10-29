@@ -1,0 +1,23 @@
+{
+  "observed_at": "2026-10-29T03:57:19.877Z",
+  "checks": [
+    {
+      "aiNotice": "AI가 생성한 참고 정보입니다. 사실관계와 공고의 최신 여부는 직접 확인해 주세요. 검색 제공: Brave Search",
+      "checked": false,
+      "messages": "",
+      "missing": true
+    },
+    {
+      "aiNotice": "AI가 생성한 참고 정보입니다. 사실관계와 공고의 최신 여부는 직접 확인해 주세요. 검색 제공: Brave Search",
+      "checked": false,
+      "messages": "",
+      "missing": true
+    },
+    {
+      "aiNotice": "AI가 생성한 참고 정보입니다. 사실관계와 공고의 최신 여부는 직접 확인해 주세요. 검색 제공: Brave Search",
+      "checked": false,
+      "messages": "",
+      "missing": true
+    }
+  ]
+}
