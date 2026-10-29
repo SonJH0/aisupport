@@ -1,0 +1,37 @@
+{
+  "id": "compare-01",
+  "started_at": "2026-10-29T12:26:07.039629+09:00",
+  "endpoint": "https://ai-job-assistant-xewt.onrender.com/api/chat",
+  "synthetic_technical_test": true,
+  "real_user_feedback": false,
+  "request": {
+    "message": "아래 채용공고와 지원자 경험을 비교해 일치·차이·정보 부족, 확인 질문과 보완 행동을 알려주세요.\n[지원자의 경험]\nPython으로 REST API를 만들었습니다. Java로 게시판 프로젝트를 만들었습니다. Kotlin은 사용해 본 적이 없습니다.\n[채용공고]\nPython API 개발 경험\nJava 개발 경험\nKotlin 개발 경험",
+    "consent": true,
+    "history": []
+  },
+  "expected_for_human_review": "Python·Java 일치, Kotlin 차이, 근거·확인 질문·보완 행동; 숙련도는 미확인",
+  "deployment_sha": "not_observed_by_this_script",
+  "human_verdict": "미판정",
+  "http_status": 200,
+  "response": {
+    "answer": "요약(비교 결과)\n- Python API 개발 경험: 일치 — 근거: \"Python으로 REST API를 만들었습니다.\" (일치)  \n  다만 숙련도·기간·운영(프로덕션) 여부 등은 미확인입니다.\n- Java 개발 경험: 일치 — 근거: \"Java로 게시판 프로젝트를 만들었습니다.\" (일치)  \n  역시 기간·규모·사용 프레임워크·운영 여부는 미확인입니다.\n- Kotlin 개발 경험: 차이 — 근거: \"Kotlin은 사용해 본 적이 없습니다.\" (차이)\n\n정보 부족 항목(공고 요구와 비교해 추가 확인이 필요한 내용)\n- Python API: 사용한 프레임워크(Flask/FastAPI/Django REST 등), DB·인증·테스트·배포 여부, 프로덕션 운영 여부, 작업 기간·빈도, 팀 내 역할\n- Java: 사용 프레임워크(예: Spring/Spring Boot), 웹·백엔드 범위, DB/ORM 사용 여부, 배포·운영·테스트, 팀 규모와 기여도\n- Kotlin: 현재 미보유(차이). 대체 가능한 경험(예: Java → Kotlin 전환 능력)은 언급 없음\n\n면접/지원서용 확인 질문(간단히 답변 가능하면 좋습니다)\n1. Python REST API를 만든 기간(예: 몇 개월/프로젝트)과 작업 기간을 알려주세요.  \n2. 사용한 Python 프레임워크와 주요 라이브러리는 무엇인가요? (예: Flask/FastAPI/Django, SQLAlchemy 등)  \n3. 그 API가 프로덕션으로 운영되었나요? 배포 방식(서버, 컨테이너, 클라우드 등)은?  \n4. Java 게시판 프로젝트의 프레임워크(Spring 등), DB/ORM, 테스트·배포 여부와 본인의 역할은?  \n5. 팀 규모·협업 도구(Git 등) 사용 경험은 있나요?  \n6. Kotlin 불가 사실은 유지하시는지, 빠르게 학습해 적용 가능하신지요?\n\n보완 행동(지원서·면접 대비 우선순위)\n1. 이력서/자기소개: 각 경험에 대해 기간·프레임워크·책임·성과(예: 응답시간 개선, 트래픽 수용 등)를 한 줄씩 추가. 코드·문서 링크가 있으면 제출.  \n2. 기술 증명: 작은 데모 리포지토리(예: Python REST API 샘플, Java 프로젝트 주요 모듈) 업로드·링크 제공.  \n3. Kotlin 대응: 채용에 Kotlin 필수면, 빠르게 학습 → 1) Kotlin 기초(1주) 2) Java 게시판을 Kotlin으로 변환하거나 간단한 Kotlin API(1~2주) 작성 → GitHub PR 링크 제출.  \n4. 면접 대비: 각 프로젝트에서 맡은 부분, 문제 해결 사례(버그·성능·설계)와 수치적 결과를 준비.\n\n원하시면(1) 확인 질문에 맞춘 문장 예시로 간단 답변 템플릿, (2) Kotlin 단기 학습 계획과 예제 리포지토리 템플릿을 만들어 드리겠습니다. 어느 쪽부터 도와드릴까요?",
+    "tools": [
+      "compare_requirements"
+    ],
+    "sources": [],
+    "trace": [
+      {
+        "action": "initial_retrieval",
+        "status": "skipped_user_comparison",
+        "document_ids": []
+      },
+      {
+        "action": "compare_requirements",
+        "status": "ok",
+        "document_ids": []
+      }
+    ],
+    "ai_generated": true
+  },
+  "finished_at": "2026-10-29T12:26:22.146885+09:00"
+}

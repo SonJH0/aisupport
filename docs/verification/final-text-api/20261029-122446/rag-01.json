@@ -1,0 +1,63 @@
+{
+  "id": "rag-01",
+  "started_at": "2026-10-29T12:24:46.243086+09:00",
+  "endpoint": "https://ai-job-assistant-xewt.onrender.com/api/chat",
+  "synthetic_technical_test": true,
+  "real_user_feedback": false,
+  "request": {
+    "message": "백엔드 API의 요청 본문과 입력 검증을 배우려면 어떤 자료를 참고해야 하나요? 관련 자료의 출처와 함께 학습 방향을 알려주세요.",
+    "consent": true,
+    "history": []
+  },
+  "expected_for_human_review": "FastAPI 문단·공식 링크·학습 조언",
+  "deployment_sha": "not_observed_by_this_script",
+  "human_verdict": "미판정",
+  "http_status": 200,
+  "response": {
+    "answer": "좋습니다. 요청하신 주제(백엔드 API 요청 본문·입력 검증)에 대해 짧은 학습 로드맵(핵심 학습 항목 + 실습 과제)과 참조 자료를 정리합니다.\n\n핵심 학습 항목\n- 요청 본문(Body) 정의와 타입/스키마 설계: FastAPI 튜토리얼에서 경로·쿼리·요청 본문과 입력 검증을 다룹니다. [backend-1]\n- 검증 도구와 모델링: Pydantic(모델, 검증 규칙), JSON Schema/데이터 타입 이해\n- 오류 처리·응답 모델·상태 코드: API 응답 모델·오류 처리 방법을 설계하는 법을 학습하세요. [backend-2]\n- 보안·CORS·의존성 주입·DB 연동·테스트(단위·통합): 입력 검증을 포함한 전체 파이프라인 테스트 방법을 익히세요. [backend-2]\n\n실습 플랜 (단계별)\n1) FastAPI로 간단 CRUD API 만들기 — Pydantic 모델로 요청 본문 정의하고 잘못된 입력 시 반환되는 에러 확인 [backend-1].\n2) 제약 추가: 필수/옵션 필드, 정규표현식, 최소·최대 길이/숫자 범위, 커스텀 밸리데이터 구현.\n3) 오류 표준화: 일관된 에러 응답 포맷과 상태 코드 적용(400/422 등).\n4) 테스트 작성: pytest로 유효/무효 케이스, 경계값, 보안 관련 입력 테스트 수행.\n5) 문서화/배포: OpenAPI 문서 확인, 스키마 기반 클라이언트와 연동해 보기.\n\n참고 자료\n- FastAPI 튜토리얼(요청 본문·검증) https://fastapi.tiangolo.com/tutorial/ [backend-1]\n- FastAPI 튜토리얼(응답 모델·오류 처리·보안·테스트 등) https://fastapi.tiangolo.com/tutorial/ [backend-2]\n\n더 필요하면:\n- Pydantic 공식문서, OpenAPI/JSON Schema 개념 자료, pytest 예제 링크를 추가로 드리겠습니다. 어떤 언어(예: Python)·프레임워크(예: FastAPI, Spring 등)를 주로 배우고 싶으신가요?",
+    "tools": [
+      "search_documents"
+    ],
+    "sources": [
+      {
+        "id": "backend-1",
+        "title": "백엔드 API 개발 학습 자료",
+        "url": "https://fastapi.tiangolo.com/tutorial/",
+        "note": "FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님."
+      },
+      {
+        "id": "backend-2",
+        "title": "백엔드 API 개발 학습 자료",
+        "url": "https://fastapi.tiangolo.com/tutorial/",
+        "note": "FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님."
+      }
+    ],
+    "trace": [
+      {
+        "action": "initial_retrieval",
+        "status": "ok",
+        "document_ids": [
+          "backend-1",
+          "backend-2"
+        ]
+      },
+      {
+        "action": "tool_protocol",
+        "status": "native_no_tool_json_plan",
+        "document_ids": []
+      },
+      {
+        "action": "search_documents",
+        "status": "ok",
+        "document_ids": [
+          "backend-1",
+          "backend-2",
+          "job-KAKAO-S-4752",
+          "data-1"
+        ]
+      }
+    ],
+    "ai_generated": true
+  },
+  "finished_at": "2026-10-29T12:25:29.192058+09:00"
+}

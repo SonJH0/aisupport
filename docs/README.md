@@ -23,3 +23,6 @@
 
 
 - [초기 명세 대조·증거 재사용·최신 시험 수집](verification/final-evidence-scope.md)
+
+
+- [최신 텍스트 선택 재검증 6건·실패 보존·판정 범위](verification/latest-text-revalidation.md)

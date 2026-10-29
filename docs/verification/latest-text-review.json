@@ -1,0 +1,55 @@
+{
+  "review_method": "AI 보조 응답 원문 대조",
+  "repository_revision": "4d0295b3478433838b53cabf389b424b00262f56",
+  "runtime_revision_independently_observed": false,
+  "cases": [
+    {
+      "id": "rag-01",
+      "started_at": "2026-10-29T12:24:46.243086+09:00",
+      "finished_at": "2026-10-29T12:25:29.192058+09:00",
+      "http_status": 200,
+      "review_result": "핵심 기대 결과 충족",
+      "sha256": "a81101f4e887a7b4e8fdbc06bf4b9084ca3ab2cfd3566370db0b44b4f2e52c23"
+    },
+    {
+      "id": "search-02",
+      "started_at": "2026-10-29T12:25:29.192626+09:00",
+      "finished_at": "2026-10-29T12:25:50.135327+09:00",
+      "http_status": 200,
+      "review_result": "핵심 기대 결과 충족",
+      "sha256": "fb5f1ed8c9f53af8ec91a0061002e03f165119930d17ada3549a562b41c9f6dc"
+    },
+    {
+      "id": "search-03",
+      "started_at": "2026-10-29T12:25:50.135934+09:00",
+      "finished_at": "2026-10-29T12:26:07.038982+09:00",
+      "http_status": 200,
+      "review_result": "핵심 기대 결과 충족",
+      "sha256": "c31e6872051f0fe572a624e7200629b087a6d25d17e3fdd891ffe72117cf264f"
+    },
+    {
+      "id": "compare-01",
+      "started_at": "2026-10-29T12:26:07.039629+09:00",
+      "finished_at": "2026-10-29T12:26:22.146885+09:00",
+      "http_status": 200,
+      "review_result": "핵심 기대 결과 충족",
+      "sha256": "219837b81abf68f5322e7630f94109689ac56fdafccc598befa22e292b54f6b1"
+    },
+    {
+      "id": "compare-02",
+      "started_at": "2026-10-29T12:26:22.147593+09:00",
+      "finished_at": "2026-10-29T12:26:36.621928+09:00",
+      "http_status": 200,
+      "review_result": "핵심 기대 결과 충족",
+      "sha256": "857deb7662f05d889d9c5716714d60cdba78a665778e4e03412252df15d51f1a"
+    },
+    {
+      "id": "compare-03",
+      "started_at": "2026-10-29T12:26:36.622554+09:00",
+      "finished_at": "2026-10-29T12:26:58.818572+09:00",
+      "http_status": 200,
+      "review_result": "핵심 기대 결과 충족",
+      "sha256": "eaf8652c42e0173b065f22edcc598fc6ab59cc77253acc56cafeda668275e833"
+    }
+  ]
+}

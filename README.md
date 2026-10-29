@@ -18,7 +18,7 @@
 | 적합도 비교 | 입력 근거로 일치·차이·정보 부족 및 보완 안내. [배포 검증](docs/verification/deployment-validation.md) |
 | 이미지 분석 | 이미지 판독·미제공·비공고 구분. [API 3회와 화면 3회 별도 기록](docs/image-validation/image-validation.md) |
 
-기존 자동 검사 74개 및 bb1885e 보완 97개 기록이 있습니다. [팀원 외 취업 준비생 5명의 피드백](docs/사용자-피드백-기록.md)을 수집·전사했습니다. 의견 원문 이미지와 기능 유지 판단을 기록했습니다. [발표 PDF·PowerPoint·13장 이미지](docs/presentation/README.md)를 제출 자료로 제공합니다. 실제 수집 안내 문구와 개발 직무 타깃 근거를 기록했고, 공개 의견 이미지의 식별정보 없음은 담당자가 확인했습니다. 수정 전 실패·부분 성공은 보존합니다. 기술 테스트를 실제 사용자 피드백으로 세지 않습니다.
+최신 코드 보완의 자동 검사 113개가 통과했습니다. [12:24~12:26 실제 API 재검증 6건](docs/verification/latest-text-revalidation.md)에서 핵심 기대 결과를 확인했습니다. 이전 74개·97개 검사와 실패 기록도 보존합니다. [팀원 외 개발 직무 취업 준비생 5명의 피드백](docs/사용자-피드백-기록.md)을 수집·전사했습니다. 의견 원문 이미지와 기능 유지 판단을 기록했습니다. [발표 PDF·PowerPoint·13장 이미지](docs/presentation/README.md)를 제출 자료로 제공합니다. 실제 수집 안내 문구와 개발 직무 타깃 근거를 기록했고, 공개 의견 이미지의 식별정보 없음은 담당자가 확인했습니다. 수정 전 실패·부분 성공은 보존합니다. 기술 테스트를 실제 사용자 피드백으로 세지 않습니다.
 
 ## 팀원과 역할
 
@@ -75,6 +75,7 @@ Render: 빌드 `pip install -r requirements.txt`, 시작 `python -m uvicorn back
 공고 원문·모집 상태는 직접 확인해야 합니다. 필터의 조건·사이트 인식, 이미지 출처 관련성, Markdown 원문 표시에는 한계가 있습니다. 과거 노출 키의 폐기 상태와 공개 피드백 이미지 5개의 식별정보 없음은 2026-10-29 담당자가 확인했습니다. [보안 확인 범위](docs/verification/security-confirmation.md)를 참고하세요. 보관한 초기 명세의 Must는 공고 추천입니다. [명세 범위·기존 증거 재사용 근거·남은 시험](docs/verification/final-evidence-scope.md)을 정리했습니다. 저장소 전체 이력 점검은 별도입니다.
 
 검증 원본은 `docs/verification/`, 이미지 자료는 `docs/image-validation/`, 이전 초안·사용하지 않는 코드는 `docs/archive/`에 보존합니다. [문서 안내](docs/README.md)에서 필요한 자료를 찾을 수 있습니다.
+
 
 
 

@@ -1,0 +1,66 @@
+{
+  "id": "search-02",
+  "started_at": "2026-10-29T12:25:29.192626+09:00",
+  "endpoint": "https://ai-job-assistant-xewt.onrender.com/api/chat",
+  "synthetic_technical_test": true,
+  "real_user_feedback": false,
+  "request": {
+    "message": "Java와 Spring Boot를 사용하는 신입 백엔드 개발자 채용공고를 검색해 주세요.",
+    "consent": true,
+    "history": []
+  },
+  "expected_for_human_review": "개별 공고 또는 없음 안내·조건 구분·모집 미확인·링크·목록 제외",
+  "deployment_sha": "not_observed_by_this_script",
+  "human_verdict": "미판정",
+  "http_status": 200,
+  "response": {
+    "answer": "공고 검색 결과입니다. 검색 요약 기준이며 원문과 현재 모집 여부는 확인하지 않았습니다.\n\n검색 시각: 2026-10-29T12:25:33+09:00\n\n[요약 기준 조건 일치]\n- 점핏 | [신입 및 경력] 백엔드 개발자 (Java, SpringBoot) 채용\nhttps://jumpit.saramin.co.kr/position/41116895\n  백엔드: 요약에 명시 — 백엔드\n  Java: 요약에 명시 — Java\n  Spring Boot: 요약에 명시 — SpringBoot\n  신입: 요약에 명시 — 신입\n- [스풀] JAVA / Spring Boot 백엔드 신입 개발자 채용 공고 | 원티드\nhttps://www.wanted.co.kr/wd/215128\n  백엔드: 요약에 명시 — 백엔드\n  Java: 요약에 명시 — JAVA\n  Spring Boot: 요약에 명시 — Spring Boot\n  신입: 요약에 명시 — 신입\n- [파콤(주)] Java Spring Boot 백엔드(Backend) 개발자 채용 (신입~3년) - 사람인\nhttps://m.saramin.co.kr/job-search/view?rec_idx=47394465\n  백엔드: 요약에 명시 — 백엔드\n  Java: 요약에 명시 — Java\n  Spring Boot: 요약에 명시 — Spring Boot\n  신입: 요약에 명시 — 신입\n- [리드넘버] 백엔드 개발자 (Java, SpringBoot) 채용 공고 | 원티드\nhttps://www.wanted.co.kr/wd/78392\n  백엔드: 요약에 명시 — 백엔드\n  Java: 요약에 명시 — Java\n  Spring Boot: 요약에 명시 — SpringBoot\n  신입: 요약에 명시 — 신입\n\n강의·목록·마감·조건 충돌 등의 결과 6건 제외.\n\n각 원문에서 기술 요건, 신입 지원 가능 여부, 지역, 기타 지원 조건, 모집 상태와 마감일을 확인하세요. 기술명 언급은 필수 요건 충족을 보장하지 않습니다.",
+    "tools": [
+      "search_live_jobs"
+    ],
+    "sources": [
+      {
+        "id": "web-1-1",
+        "title": "점핏 | [신입 및 경력] 백엔드 개발자 (Java, SpringBoot) 채용",
+        "url": "https://jumpit.saramin.co.kr/position/41116895",
+        "note": "요약 기준 조건 일치; 원문·현재 모집 상태 미확인"
+      },
+      {
+        "id": "web-1-2",
+        "title": "[스풀] JAVA / Spring Boot 백엔드 신입 개발자 채용 공고 | 원티드",
+        "url": "https://www.wanted.co.kr/wd/215128",
+        "note": "요약 기준 조건 일치; 원문·현재 모집 상태 미확인"
+      },
+      {
+        "id": "web-1-3",
+        "title": "[파콤(주)] Java Spring Boot 백엔드(Backend) 개발자 채용 (신입~3년) - 사람인",
+        "url": "https://m.saramin.co.kr/job-search/view?rec_idx=47394465",
+        "note": "요약 기준 조건 일치; 원문·현재 모집 상태 미확인"
+      },
+      {
+        "id": "web-1-4",
+        "title": "[리드넘버] 백엔드 개발자 (Java, SpringBoot) 채용 공고 | 원티드",
+        "url": "https://www.wanted.co.kr/wd/78392",
+        "note": "요약 기준 조건 일치; 원문·현재 모집 상태 미확인"
+      }
+    ],
+    "trace": [
+      {
+        "action": "initial_retrieval",
+        "status": "ok",
+        "document_ids": [
+          "job-KAKAO-S-4752",
+          "job-KAKAO-S-4750",
+          "frontend-2"
+        ]
+      },
+      {
+        "action": "search_live_jobs",
+        "status": "ok",
+        "document_ids": []
+      }
+    ],
+    "ai_generated": true
+  },
+  "finished_at": "2026-10-29T12:25:50.135327+09:00"
+}
