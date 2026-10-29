@@ -1,0 +1,62 @@
+{
+  "compared_from": "e1014858f488384c7336a65061f22012ae5b8311",
+  "compared_to": "df4388150ff5d7e9b20730552a21613e7f163086",
+  "comparison": "GitHub tree blob SHA equality. Runtime model/config equality is not established.",
+  "files": [
+    {
+      "path": "ai/vision.py",
+      "old": "e5f2b1fe0ac2c91cd5b9a5fd36eb7c2628a046fa",
+      "current": "e5f2b1fe0ac2c91cd5b9a5fd36eb7c2628a046fa"
+    },
+    {
+      "path": "ai/retrieval.py",
+      "old": "4f04aee33156602a9c66573441bce2d51ec719d1",
+      "current": "4f04aee33156602a9c66573441bce2d51ec719d1"
+    },
+    {
+      "path": "backend/main.py",
+      "old": "e5c475e7a34ee26398b5b14ba0e8cb62a3b91a88",
+      "current": "e5c475e7a34ee26398b5b14ba0e8cb62a3b91a88"
+    },
+    {
+      "path": "frontend/app.js",
+      "old": "ceb381309927a68d0ceab6df5adcce83ad7140d7",
+      "current": "ceb381309927a68d0ceab6df5adcce83ad7140d7"
+    },
+    {
+      "path": "frontend/index.html",
+      "old": "8e6cb3aae3b7f68f5a8ab10c361475d79292e447",
+      "current": "8e6cb3aae3b7f68f5a8ab10c361475d79292e447"
+    },
+    {
+      "path": "ai/agent.py",
+      "old": "686a94c232e602d7b861e32d3aea62d8d65c7344",
+      "current": "1cfd036584f4d0e7b969066e3c662b4e4f9a4bda"
+    },
+    {
+      "path": "ai/comparison.py",
+      "old": "4fc53ed70741324b23b317c3b89a722a3c41f6cd",
+      "current": "4fc53ed70741324b23b317c3b89a722a3c41f6cd"
+    },
+    {
+      "path": "ai/web_search.py",
+      "old": "111aa5b270ba18099784f2e4f2052bc024658673",
+      "current": "99c16ad8afb54e4ba77c33bd90c7b1d96c172444"
+    },
+    {
+      "path": "data/knowledge.json",
+      "old": "434ff721bc9115ebe0b9d899643f83bdc399b187",
+      "current": "434ff721bc9115ebe0b9d899643f83bdc399b187"
+    },
+    {
+      "path": "data/jobs.json",
+      "old": "c31db25e5df269b8cd7591c1b924f41ebc9ebd84",
+      "current": "c31db25e5df269b8cd7591c1b924f41ebc9ebd84"
+    },
+    {
+      "path": "requirements.txt",
+      "old": "5bb76714f768c51c598caccc12c3d18bd73069c8",
+      "current": "5bb76714f768c51c598caccc12c3d18bd73069c8"
+    }
+  ]
+}
