@@ -1,0 +1,194 @@
+[
+  {
+    "evidence": "search-01",
+    "file": "search-01-01.png",
+    "source_filename": "image(20261029-003131).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "search-01",
+    "file": "search-01-02.png",
+    "source_filename": "image(20261029-003141).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "search-01",
+    "file": "search-01-03.png",
+    "source_filename": "image(20261029-003145).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "search-02",
+    "file": "search-02-01.png",
+    "source_filename": "image(20261029-003252).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "search-02",
+    "file": "search-02-02.png",
+    "source_filename": "image(20261029-003257).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "search-03",
+    "file": "search-03-01.png",
+    "source_filename": "image(20261029-003453).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "search-03",
+    "file": "search-03-02.png",
+    "source_filename": "image(20261029-003458).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "counseling-01",
+    "file": "counseling-01-01.png",
+    "source_filename": "image(20261029-003621).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "counseling-01",
+    "file": "counseling-01-02.png",
+    "source_filename": "image(20261029-003628).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "counseling-02",
+    "file": "counseling-02-01.png",
+    "source_filename": "image(20261029-003801).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "counseling-02",
+    "file": "counseling-02-02.png",
+    "source_filename": "image(20261029-003806).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "counseling-03",
+    "file": "counseling-03-01.png",
+    "source_filename": "image(20261029-003945).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "counseling-03",
+    "file": "counseling-03-02.png",
+    "source_filename": "image(20261029-003951).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "compare-01",
+    "file": "compare-01-01.png",
+    "source_filename": "image(20261029-004053).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "compare-01",
+    "file": "compare-01-02.png",
+    "source_filename": "image(20261029-004058).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "compare-02",
+    "file": "compare-02-01.png",
+    "source_filename": "image(20261029-004318).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "compare-02",
+    "file": "compare-02-02.png",
+    "source_filename": "image(20261029-004323).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "compare-03",
+    "file": "compare-03-01.png",
+    "source_filename": "image(20261029-004420).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "compare-03",
+    "file": "compare-03-02.png",
+    "source_filename": "image(20261029-004426).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "consent-ui-01",
+    "file": "consent-ui-01-01.png",
+    "source_filename": "image(20261029-004548).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "consent-ui-02",
+    "file": "consent-ui-02-01.png",
+    "source_filename": "image(20261029-004826).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "general-before",
+    "file": "general-before-01.png",
+    "source_filename": "image(20261029-004705).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "general-before",
+    "file": "general-before-02.png",
+    "source_filename": "image(20261029-004711).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "plan-before",
+    "file": "plan-before-01.png",
+    "source_filename": "image(20261029-005107).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "deployment",
+    "file": "deployment-01.png",
+    "source_filename": "image(20261029-010154).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "optout-after",
+    "file": "optout-after-01.png",
+    "source_filename": "image(20261029-010242).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "optout-after",
+    "file": "optout-after-02.png",
+    "source_filename": "image(20261029-010249).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "general-after",
+    "file": "general-after-01.png",
+    "source_filename": "image(20261029-010447).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "search-after",
+    "file": "search-after-01.png",
+    "source_filename": "image(20261029-010611).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "search-after",
+    "file": "search-after-02.png",
+    "source_filename": "image(20261029-010618).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "search-after",
+    "file": "search-after-03.png",
+    "source_filename": "image(20261029-010624).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  },
+  {
+    "evidence": "consent-server",
+    "file": "consent-server-01.png",
+    "source_filename": "image(20261029-010735).png",
+    "note": "사용자 제공 캡처 원본. 파일명은 실행 시각이나 원시 API 응답의 증명이 아님."
+  }
+]
