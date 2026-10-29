@@ -15,3 +15,6 @@
 
 
 - [최신 텍스트 선택 재검증 6건·실패 보존·판정 범위](latest-text-revalidation.md)
+
+
+- [최종 추가 화면 시험·동의 403 본문·학습 계획 복구 보완](final-closure-check.md)

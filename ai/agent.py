@@ -116,15 +116,24 @@ def _json_agent(client, message, history, evidence, trace, sources):
     try:
         raw = planned.choices[0].message.content
         raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw.strip())
+        learning = (bool(re.search(r"학습|배우|자료|출처|튜토리얼", message))
+                    and not _search_requested(message)
+                    and not ("[지원자의 경험]" in message and "[채용공고]" in message)
+                    and not re.search(r"SAMPLE-\d+|KAKAO-S-\d+", message))
         try:
             calls = json.loads(raw)["calls"]
-        except json.JSONDecodeError:
-            # 일반 상담은 계획 JSON이 깨져도 임의 도구를 실행할 필요가 없다.
-            # 검색·비교 등 도구가 필요한 요청은 성공처럼 우회하지 않는다.
-            if _requires_tool(message):
+        except (json.JSONDecodeError, KeyError, TypeError):
+            if learning:
+                calls = [{"name": "search_documents", "arguments": {"query": message[:500]}}]
+                trace.append({"action": "tool_protocol", "status": "invalid_plan_document_fallback", "document_ids": []})
+            elif not _requires_tool(message):
+                calls = []
+                trace.append({"action": "tool_protocol", "status": "invalid_plan_counseling_fallback", "document_ids": []})
+            else:
                 raise
-            calls = []
-            trace.append({"action": "tool_protocol", "status": "invalid_plan_counseling_fallback", "document_ids": []})
+        if calls == [] and learning:
+            calls = [{"name": "search_documents", "arguments": {"query": message[:500]}}]
+            trace.append({"action": "tool_protocol", "status": "empty_plan_document_fallback", "document_ids": []})
         if not isinstance(calls,list) or not 0 <= len(calls) <= 3:
             raise ValueError
         if not calls and _requires_tool(message):
