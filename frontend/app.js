@@ -87,7 +87,7 @@ form.addEventListener('submit', async event => {
       body: JSON.stringify({message, history, image: imageData, consent: consent.checked})
     });
     const result = await res.json();
-    if (!res.ok) throw new Error(typeof result.detail === 'string' ? result.detail : '요청을 처리할 수 없습니다.');
+    if (!res.ok) throw new Error((typeof result.detail === 'string' ? result.detail : '요청을 처리할 수 없습니다.') + '\n문의용 요청 ID: ' + (res.headers.get('X-Request-ID') || '없음'));
     if (typeof result.answer !== 'string' || !result.answer.trim()) throw new Error('AI 답변 형식이 올바르지 않습니다.');
     bubble(result.answer, 'assistant');
     if (result.sources?.length) bubble('참고 자료\n' + result.sources.map(source => '[' + source.id + '] ' + source.title + (source.url ? '\n' + source.url : '') + (source.note ? '\n' + source.note : '')).join('\n\n'), 'tool');

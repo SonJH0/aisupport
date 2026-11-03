@@ -148,7 +148,7 @@ def client():return TestClient(api.app)
 
 
 def test_app_boots_and_serves_frontend(client):
-    assert client.get('/health').json()['version']=='0.3.0'
+    assert client.get('/health').json()['version']=='0.3.1'
     assert client.get('/').status_code==200
     assert client.get('/static/app.js').status_code==200
 

@@ -50,3 +50,29 @@ def compare_requirements(message):
     return {"status": "ok", "requirements": rows,
             "limitation": "어휘 근거 비교다. 부정문, 숙련도와 경력 기간을 확인해야 한다. 언급 없음은 미보유가 아니다."}
 
+
+
+def render_comparison(result):
+    """분류와 후속 행동을 같은 도구 근거에서 생성해 미기재 역량을 창작하지 않는다."""
+    if result.get("status") != "ok":
+        return result.get("message", "경험과 공고 내용을 각각 제공해 주세요.")
+    parts = ["입력한 경험과 공고의 어휘 근거 비교입니다. 실제 역량·합격 가능성 평가가 아닙니다."]
+    for row in result["requirements"]:
+        status = row["status"]
+        parts += ["", f"요건: {row['requirement']}", f"판정: {status}"]
+        evidence = row.get("user_evidence", [])
+        parts.append("입력 근거: " + (" / ".join(evidence) if evidence else "관련 경험이 입력되지 않았습니다. 미보유를 뜻하지 않습니다."))
+        if status == "일치":
+            parts += ["확인 질문: 본인의 역할·구현 내용·결과를 설명할 수 있나요?",
+                      "보완 행동: 실제 프로젝트 사례와 본인 기여를 정리하세요. 숙련도와 규모는 별도 확인이 필요합니다."]
+        elif status == "차이":
+            parts += ["확인 질문: 명시한 경험 부족이 현재도 해당하나요? 공고의 필수·우대 구분은 무엇인가요?",
+                      "보완 행동: 명시적으로 부족하다고 적은 경험에 한해 학습·실습 계획을 세우고 실제 경험과 계획을 구분하세요."]
+        elif status == "정보 부족":
+            parts += ["확인 질문: 이 요건에 해당하는 경험이 있나요? 있다면 구체적인 사례를 추가해 주세요.",
+                      "보완 행동: 경험 유무를 먼저 확인하세요. 확인 전에는 미보유로 쓰거나 학습이 반드시 필요하다고 판단하지 않습니다."]
+        else:
+            parts += ["확인 질문: 인용 문장이 이 요건을 충족하는지, 부정 표현·기간·숙련도 조건을 확인해 주세요.",
+                      "보완 행동: 요건별 실제 사례와 기간을 추가하세요. 어휘가 겹친다는 이유만으로 충족을 확정하지 않습니다."]
+    parts += ["", "공고 원문과 필수·우대 조건을 직접 확인하세요. 입력하지 않은 역량이나 채용 결과를 추정하지 않습니다."]
+    return "\n".join(parts)

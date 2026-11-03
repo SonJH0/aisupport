@@ -5,7 +5,7 @@ import re
 from openai import OpenAI, APIError, APITimeoutError, APIConnectionError, RateLimitError, AuthenticationError, BadRequestError
 from .retrieval import get_job, search_documents
 from .web_search import search_live_jobs, render_job_results
-from .comparison import compare_requirements
+from .comparison import compare_requirements, render_comparison
 from .errors import ServiceError
 
 
@@ -85,7 +85,14 @@ def run_tool(name, args, *, message=""):
 
 
 
-def _finish(answer, used, sources, trace, searches):
+def _finish(answer, used, sources, trace, searches, comparison=None):
+    if comparison is not None:
+        answer = render_comparison(comparison)
+        if searches:
+            answer += "\n\n" + render_job_results(searches)
+        visible = [s for key, s in sources.items() if key.startswith("web-")]
+        return {"answer": answer, "tools": list(dict.fromkeys(used)), "sources": visible,
+                "trace": trace, "ai_generated": True}
     if searches and not any(name in used for name in ("compare_requirements", "get_job")):
         # 단독 공고 검색 응답은 검증한 결과 필드로만 표시한다.
         answer = render_job_results(searches)
@@ -150,9 +157,12 @@ def _json_agent(client, message, history, evidence, trace, sources):
     used=[]
     outputs=[]
     searches=[]
+    comparison=None
     for number, call in enumerate(calls,1):
         name=call["name"]
         output=run_tool(name,call["arguments"],message=message)
+        if name == "compare_requirements" and "error" not in output:
+            comparison = output
         if name == "search_live_jobs" and output.get("error_code") != "search_not_requested":
             searches.append(output)
         if "error" not in output:
@@ -179,7 +189,7 @@ def _json_agent(client, message, history, evidence, trace, sources):
             raise ValueError
     except (ValueError, AttributeError, IndexError, TypeError):
         raise ServiceError("AI의 최종 답변이 비어 있습니다.") from None
-    return _finish(answer, used, sources, trace, searches)
+    return _finish(answer, used, sources, trace, searches, comparison)
 
 
 def create_client():
@@ -212,6 +222,7 @@ def respond(message, image=None, client=None, history=None):
     sources = {doc["id"]: {"id": doc["id"], "title": doc["title"], "url": doc["url"], "note": doc["note"]} for doc in evidence}
     used = []
     searches = []
+    comparison = None
     attempts = 0
     owned_client = client is None
     client = client or create_client()
@@ -245,7 +256,7 @@ def respond(message, image=None, client=None, history=None):
                     # 자동 도구 호출을 생략한 응답을 실행 성공으로 간주하지 않는다.
                     trace.append({"action":"tool_protocol","status":"native_no_tool_json_plan","document_ids":[]})
                     return _json_agent(client,message,history,evidence,trace,sources)
-                return _finish(result.content, used, sources, trace, searches)
+                return _finish(result.content, used, sources, trace, searches, comparison)
             if len(calls) > 4 or attempts + len(calls) > 8:
                 raise ServiceError("도구 실행 횟수가 많습니다. 요청을 나누어 주세요.")
             # 응답의 부가 필드를 그대로 재전송하지 않고 필수 계약만 구성한다.
@@ -268,6 +279,8 @@ def respond(message, image=None, client=None, history=None):
                     output = run_tool(name, args, message=message)
                 if name == "search_live_jobs" and output.get("error_code") != "search_not_requested":
                     searches.append(output)
+                if name == "compare_requirements" and "error" not in output:
+                    comparison = output
                 attempts += 1
                 if "error" not in output:
                     used.append(name)
@@ -287,13 +300,13 @@ def respond(message, image=None, client=None, history=None):
                 items.append({"role": "tool", "tool_call_id": call.id, "content": json.dumps(output, ensure_ascii=False)})
         raise ServiceError("도구 실행 횟수를 초과했습니다. 요청을 간단히 바꾸어 주세요.")
     except AuthenticationError:
-        raise ServiceError("AI 인증에 실패했습니다. 서버의 API 키를 확인해 주세요.") from None
+        raise ServiceError("AI 인증에 실패했습니다. 서버의 API 키를 확인해 주세요.", code="ai_authentication") from None
     except RateLimitError:
-        raise ServiceError("AI 요청 또는 사용량 제한입니다. 잠시 후 다시 시도해 주세요.", 429) from None
+        raise ServiceError("AI 요청 또는 사용량 제한입니다. 잠시 후 다시 시도해 주세요.", 429, code="ai_rate_limit") from None
     except (APITimeoutError, APIConnectionError):
-        raise ServiceError("AI 서비스에 연결하지 못했거나 응답 시간이 초과되었습니다.", 504) from None
+        raise ServiceError("AI 서비스에 연결하지 못했거나 응답 시간이 초과되었습니다.", 504, code="ai_connection_timeout") from None
     except APIError:
-        raise ServiceError("AI 서비스가 요청을 처리하지 못했습니다. 모델 설정을 확인해 주세요.") from None
+        raise ServiceError("AI 서비스가 요청을 처리하지 못했습니다. 모델 설정을 확인해 주세요.", code="ai_provider_error") from None
     finally:
         if owned_client:
             client.close()
