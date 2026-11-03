@@ -1,0 +1,16 @@
+{
+  "case": "chat",
+  "attempt": 2,
+  "expected": "실제 검색 본문과 연결된 출처·학습 조언",
+  "review": "미판정",
+  "message": "FastAPI 요청 본문 검증을 배우려면 어떤 자료를 참고하나요? 출처와 학습 순서를 알려주세요.",
+  "time_utc": "2026-11-03T05:52:45.106785+00:00",
+  "health_before": {
+    "status": "ok",
+    "version": "0.3.1",
+    "revision": "6f0a7d1d2791510aef0bbd77db98848726f4d573"
+  },
+  "status": 200,
+  "request_id": "005f80f048e3492daa1ea218081e761b",
+  "response": "{\"answer\":\"요청 본문(요청 바디) 검증을 배우려면 기본적으로 FastAPI 공식 튜토리얼을 먼저 보시길 권합니다. 해당 튜토리얼은 경로·쿼리·요청 본문과 입력 검증 주제를 다루고 있어 실습 출발점으로 적합합니다 [backend-1].\\n- FastAPI 공식 튜토리얼: https://fastapi.tiangolo.com/tutorial/ [backend-1]\\n\\n권장 학습 순서 (단계별)\\n1) 기초 점검: Python 기본 문법과 타입 힌트 숙지.\\n2) FastAPI 튜토리얼: 요청 바디(Request Body)와 입력 검증 섹션 집중 학습(모델 정의, 자동 검증) [backend-1].\\n3) Pydantic 심화: BaseModel, Field, Optional/Default, 중첩 모델, 리스트/Enum, 커스텀 검증기(validators).\\n4) 에러 처리: ValidationError와 HTTPException, 예외 처리기 등록 방법.\\n5) 의존성(Dependency)과 보안: 인증·권한을 의존성으로 분리해 입력 검증과 연계.\\n6) 테스트: TestClient(pytest)로 잘못된 페이로드에 대한 단위 테스트 작성.\\n7) 실무 연습: DB 연동(ORM), 마이그레이션, 스웨거 문서 확인 및 배포 고려사항.\\n\\n실습 제안 (짧은 과제)\\n- 간단한 CRUD FastAPI 앱 만들기: POST에 Pydantic 모델 적용, 필드 제약(길이·패턴) 추가해 오류 확인.\\n- 커스텀 validator로 복합 규칙(예: 날짜범위, 상호 배타 필드) 구현 후 테스트 작성.\\n- 잘못된 입력에 대한 API 응답(HTTP 상태·본문) 표준화 테스트 작성.\\n\\n참고: 제공된 자료에서는 FastAPI 튜토리얼이 해당 주제를 다룬다고 요약되어 있습니다 [backend-1]. Pydantic 문서나 pytest 예제 등 추가 자료가 필요하면 알려주시면 관련 권장 자료와 단계별 예제를 더 드리겠습니다.\",\"tools\":[\"search_documents\"],\"sources\":[{\"id\":\"backend-1\",\"title\":\"백엔드 API 개발 학습 자료\",\"url\":\"https://fastapi.tiangolo.com/tutorial/\",\"note\":\"FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님.\"}],\"trace\":[{\"action\":\"initial_retrieval\",\"status\":\"ok\",\"document_ids\":[\"backend-1\"]},{\"action\":\"tool_protocol\",\"status\":\"native_no_tool_json_plan\",\"document_ids\":[]},{\"action\":\"search_documents\",\"status\":\"ok\",\"document_ids\":[\"backend-1\",\"data-1\"]}],\"ai_generated\":true}"
+}
