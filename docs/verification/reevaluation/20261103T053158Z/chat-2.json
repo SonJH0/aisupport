@@ -1,0 +1,11 @@
+{
+  "case": "chat",
+  "attempt": 2,
+  "expected": "실제 검색 본문과 연결된 출처·학습 조언",
+  "review": "미판정",
+  "message": "FastAPI 요청 본문 검증을 배우려면 어떤 자료를 참고하나요? 출처와 학습 순서를 알려주세요.",
+  "time_utc": "2026-11-03T05:33:48.518080+00:00",
+  "status": 200,
+  "request_id": "ea9ea491f9f44909a74453c10eac935b",
+  "response": "{\"answer\":\"좋습니다. FastAPI의 요청 본문 검증을 배우기 위한 권장 자료와 학습 순서를 간단히 정리합니다.\\n\\n권장 자료\\n- FastAPI 공식 튜토리얼(요청 본문·입력 검증 섹션) — https://fastapi.tiangolo.com/tutorial/ [backend-1]. 이 요약 자료는 경로·쿼리·요청 본문과 입력 검증을 다룬다고 정리되어 있습니다[backend-1].\\n\\n학습 순서(권장)\\n1. 사전: Python 기초(타입 힌트 사용법 포함).  \\n2. FastAPI 튜토리얼의 기본 흐름 따라가기 — 특히 Request Body와 입력 검증 예제 학습[backend-1].  \\n3. 실습: 간단한 Pydantic 모델을 만들어 POST 엔드포인트에 바인딩하고 잘못된 입력에 대한 에러 응답 확인.  \\n4. 확장 실습: 필드 제약(길이, 정규식, 선택지), 중첩 모델, Optional/Default 값 처리.  \\n5. 테스트 및 예외 처리: 유효성 실패 케이스 자동화 테스트 작성.  \\n6. 배포 전 검토: 입력 검증 로직이 보안·성능에 미치는 영향 점검.\\n\\n제한사항\\n- 현재 제공된 자료는 FastAPI 튜토리얼 요약 자료뿐이며, Pydantic 공식 문서 등 다른 참조 자료는 검색 결과에 포함되어 있지 않습니다[backend-1]. 필요하면 Pydantic 공식 문서나 심화 튜토리얼을 추가로 찾아 드리겠습니다. 어떤 수준(초급/중급)에서 학습하길 원하십니까?\",\"tools\":[\"search_documents\"],\"sources\":[{\"id\":\"backend-1\",\"title\":\"백엔드 API 개발 학습 자료\",\"url\":\"https://fastapi.tiangolo.com/tutorial/\",\"note\":\"FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님.\"}],\"trace\":[{\"action\":\"initial_retrieval\",\"status\":\"ok\",\"document_ids\":[\"backend-1\"]},{\"action\":\"search_documents\",\"status\":\"ok\",\"document_ids\":[\"backend-1\",\"data-1\"]},{\"action\":\"search_documents\",\"status\":\"ok\",\"document_ids\":[\"backend-1\",\"job-KAKAO-S-4752\",\"data-1\"]},{\"action\":\"search_documents\",\"status\":\"ok\",\"document_ids\":[\"data-1\"]},{\"action\":\"search_documents\",\"status\":\"ok\",\"document_ids\":[\"backend-1\",\"job-KAKAO-S-4752\"]},{\"action\":\"tool_protocol\",\"status\":\"budget_finalization\",\"document_ids\":[]}],\"ai_generated\":true}"
+}

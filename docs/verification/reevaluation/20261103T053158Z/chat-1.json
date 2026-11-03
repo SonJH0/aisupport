@@ -1,0 +1,11 @@
+{
+  "case": "chat",
+  "attempt": 1,
+  "expected": "실제 검색 본문과 연결된 출처·학습 조언",
+  "review": "미판정",
+  "message": "FastAPI 요청 본문 검증을 배우려면 어떤 자료를 참고하나요? 출처와 학습 순서를 알려주세요.",
+  "time_utc": "2026-11-03T05:33:20.161155+00:00",
+  "status": 200,
+  "request_id": "2cedc432f1064bad8444e27e6e534405",
+  "response": "{\"answer\":\"요청 본문 검증(입력 검증)을 빠르게 배우는 권장 순서와 참고자료입니다.\\n\\n요약 출처\\n- FastAPI 공식 튜토리얼(팀 요약) — 기본 튜토리얼이 경로·쿼리·요청 본문과 입력 검증을 다룹니다. [backend-1] https://fastapi.tiangolo.com/tutorial/  \\n- 같은 튜토리얼의 고급 항목: 응답 모델, 오류 처리, 의존성, 보안, 테스트 등 학습 항목 제안 포함. [backend-2] https://fastapi.tiangolo.com/tutorial/\\n\\n권장 학습 순서 (단계별)\\n1) 기본 개념 읽기 — FastAPI 튜토리얼의 기본 섹션(경로/쿼리/요청 본문, 입력 정의)으로 전체 흐름을 파악하세요. [backend-1]  \\n2) Pydantic 모델 사용법 — 요청 본문은 Pydantic 모델로 정의하는 법과 타입 힌트로 자동 검증되는 원리를 익히세요. (공식 튜토리얼 관련 섹션 참조)  \\n3) 필드 제약/커스텀 검증 — 필수/선택 필드, 최소/최대 길이, 정규식, validator 데코레이터 등으로 상세 검증을 구현하세요.  \\n4) 오류 처리와 상태 코드 — 검증 실패 시 적절한 HTTPException 반환과 사용자 메시지 설계 연습. [backend-2]  \\n5) 의존성·보안 연계 — 인증·권한 검사 같은 공통 로직을 의존성으로 분리해 요청 검증과 연결하세요. [backend-2]  \\n6) 테스트·배포 — TestClient로 검증 로직 단위 테스트 작성, 실제 서버(uvicorn)로 배포·검증하세요. 튜토리얼에 테스트·운영 관련 권장사항이 있습니다. [backend-2]\\n\\n실습 과제(권장)\\n- 간단한 POST 엔드포인트: Pydantic 모델로 입력 받고 유효성 검사(문자열 길이, 숫자 범위, 이메일 포맷) 구현→테스트 작성\\n- 인증이 필요한 엔드포인트에 의존성으로 권한 검사 추가→검증 실패 시 적절한 에러 반환\\n\\n마지막으로: 위 권장 항목은 팀이 요약한 FastAPI 튜토리얼을 바탕으로 제안한 학습 경로입니다. [backend-1][backend-2] 필요하면 각 단계별로 읽을 튜토리얼 섹션 링크·예제 코드를 더 자세히 제공해 드립니다. 어떤 수준(초심자/중급)인지 알려주시면 맞춤 순서를 드릴게요.\",\"tools\":[\"search_documents\"],\"sources\":[{\"id\":\"backend-1\",\"title\":\"백엔드 API 개발 학습 자료\",\"url\":\"https://fastapi.tiangolo.com/tutorial/\",\"note\":\"FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님.\"},{\"id\":\"backend-2\",\"title\":\"백엔드 API 개발 학습 자료\",\"url\":\"https://fastapi.tiangolo.com/tutorial/\",\"note\":\"FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님.\"}],\"trace\":[{\"action\":\"initial_retrieval\",\"status\":\"ok\",\"document_ids\":[\"backend-1\"]},{\"action\":\"tool_protocol\",\"status\":\"native_no_tool_json_plan\",\"document_ids\":[]},{\"action\":\"search_documents\",\"status\":\"ok\",\"document_ids\":[\"backend-1\",\"data-1\",\"backend-2\",\"data-2\"]}],\"ai_generated\":true}"
+}

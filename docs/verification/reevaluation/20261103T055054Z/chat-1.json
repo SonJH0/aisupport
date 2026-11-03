@@ -1,0 +1,16 @@
+{
+  "case": "chat",
+  "attempt": 1,
+  "expected": "실제 검색 본문과 연결된 출처·학습 조언",
+  "review": "미판정",
+  "message": "FastAPI 요청 본문 검증을 배우려면 어떤 자료를 참고하나요? 출처와 학습 순서를 알려주세요.",
+  "time_utc": "2026-11-03T05:52:17.945996+00:00",
+  "health_before": {
+    "status": "ok",
+    "version": "0.3.1",
+    "revision": "6f0a7d1d2791510aef0bbd77db98848726f4d573"
+  },
+  "status": 200,
+  "request_id": "2453da84ef13440497ec7c055aaf0770",
+  "response": "{\"answer\":\"요청 본문(입력) 검증 학습을 위한 출처와 권장 학습 순서입니다.\\n\\n검색 자료에서 확인한 내용\\n- FastAPI 공식 튜토리얼은 경로·쿼리 매개변수와 함께 요청 본문 작성과 입력 검증을 다룬다. 요청 데이터를 정의하고 잘못된 입력을 처리하는 예제가 포함되어 있다 [backend-1] (튜토리얼: https://fastapi.tiangolo.com/tutorial/).  \\n- 튜토리얼은 응답 모델·상태 코드·오류 처리, 의존성 주입, 보안(CORS 포함), 관계형 DB 연동, 테스트 작성 등도 학습 항목으로 제안한다[backend-2] (같은 튜토리얼 요약).[backend-2]  \\n(위 자료는 팀의 요약이며 채용 필수 요건은 아님.)\\n\\n권장 학습 순서 및 핵심 포인트\\n1) 기본 이해: FastAPI 튜토리얼의 “요청 본문” 섹션으로 시작해 요청 데이터 정의와 검증 흐름을 파악 [backend-1].  \\n2) 입력 검증 실습: 모델(요청 스키마) 만들고 필드 타입/필수값/기본값 등 케이스 실습 [backend-1].  \\n3) 오류 처리·응답 모델: 잘못된 입력에 대한 HTTP 상태 코드와 예외 처리 패턴 학습 [backend-2].  \\n4) 의존성·보안: 입력 검증과 결합되는 의존성 주입, 인증/권한 흐름 학습 [backend-2].  \\n5) DB·테스트 연계: 검증된 입력을 DB에 저장/검증 로직 단위 테스트 작성까지 확장 [backend-2].\\n\\n추가 실습 제안\\n- 간단한 CRUD 엔드포인트 만들어 다양한 잘못된 입력(타입 오류, 누락, 범위 벗어남)에 대한 응답 확인.  \\n- 자동 생성되는 문서(Swagger)로 요청/응답 스키마 검토.  \\n- 예외 핸들러와 유효성 검사 실패 케이스의 통합 테스트 작성.  \\n\\n참고: 첫 단계로 튜토리얼(https://fastapi.tiangolo.com/tutorial/)을 따라가시면 요구한 주제들을 연습하기에 적절합니다 [backend-1][backend-2]. 추가로 구체적 예제나 연습 과제가 필요하시면 원하는 난이도(초급/중급/실전)에 맞춰 예제 코드를 제안해 드리겠습니다.\",\"tools\":[\"search_documents\"],\"sources\":[{\"id\":\"backend-1\",\"title\":\"백엔드 API 개발 학습 자료\",\"url\":\"https://fastapi.tiangolo.com/tutorial/\",\"note\":\"FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님.\"},{\"id\":\"backend-2\",\"title\":\"백엔드 API 개발 학습 자료\",\"url\":\"https://fastapi.tiangolo.com/tutorial/\",\"note\":\"FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님.\"}],\"trace\":[{\"action\":\"initial_retrieval\",\"status\":\"ok\",\"document_ids\":[\"backend-1\"]},{\"action\":\"tool_protocol\",\"status\":\"native_no_tool_json_plan\",\"document_ids\":[]},{\"action\":\"search_documents\",\"status\":\"ok\",\"document_ids\":[\"backend-1\",\"backend-2\",\"data-1\",\"data-2\"]}],\"ai_generated\":true}"
+}

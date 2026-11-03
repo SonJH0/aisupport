@@ -1,0 +1,11 @@
+{
+  "case": "chat",
+  "attempt": 2,
+  "expected": "실제 검색 본문과 연결된 출처·학습 조언",
+  "review": "미판정",
+  "message": "FastAPI 요청 본문 검증을 배우려면 어떤 자료를 참고하나요? 출처와 학습 순서를 알려주세요.",
+  "time_utc": "2026-11-03T05:24:40.077297+00:00",
+  "status": 200,
+  "request_id": "e82dfade63b946ca836209c7b14f85f7",
+  "response": "{\"answer\":\"좋습니다. FastAPI 요청 본문 검증을 배우기 위한 권장 자료와 학습 순서를 간단히 정리합니다.\\n\\n추천 자료(우선순위)\\n1) FastAPI 공식 튜토리얼 — 요청 본문 및 입력 검증 설명(권장 시작점): https://fastapi.tiangolo.com/tutorial/  (팀 요약 자료 참조)[backend-1]  \\n2) Pydantic 공식 문서(모델 정의, 필드 타입·검증 상세): https://docs.pydantic.dev/  \\n3) FastAPI 공식 레퍼런스 — Request Body / Validation 관련 페이지: https://fastapi.tiangolo.com/tutorial/body/  \\n4) 예제 프로젝트(간단한 CRUD API + 테스트 포함) — GitHub에서 “fastapi pydantic example” 검색\\n\\n권장 학습 순서 (초급 → 고급)\\n1. 사전지식(1~2일): Python 기본 문법(타입힌트 포함), HTTP/REST 개념  \\n2. FastAPI 빠른 시작(반나절~1일): 공식 튜토리얼 따라하기, 간단한 엔드포인트 만들기 [backend-1]  \\n3. Pydantic 기초(1~2일): BaseModel 정의, 필드 타입, 기본값, Optional 등  \\n4. 요청 본문 검증(1~2일): 요청 Body로 Pydantic 모델 사용, 필수·선택 필드, 자동 에러 응답 확인  \\n5. 고급 검증(1~3일): Field(...) 설정, regex, min/max 제약, 커스텀 validator, 중첩 모델 처리  \\n6. 응답 모델·오류 처리(1~2일): response_model, status_code, 예외 처리 및 에러 메시지 표준화  \\n7. 테스트·실전 연습(계속): pytest로 유효/무효 입력 케이스 테스트, 작은 프로젝트로 배포 전 검증\\n\\n학습 팁\\n- 작은 예제부터 시작해 실제로 잘못된 입력을 넣어보고 FastAPI가 반환하는 에러를 확인하세요.  \\n- Pydantic validator는 복잡한 규칙을 구현할 때 유용합니다.  \\n- 공식 튜토리얼은 요청 본문과 입력 검증 항목을 포함하니 먼저 훑어보길 권합니다[backend-1].\\n\\n원하시면 위 단계별로 구체적 실습 예제(코드 샘플)나 1주 학습 계획표를 만들어 드릴게요. 어느 수준부터 시작하시나요?\",\"tools\":[\"search_documents\"],\"sources\":[{\"id\":\"backend-1\",\"title\":\"백엔드 API 개발 학습 자료\",\"url\":\"https://fastapi.tiangolo.com/tutorial/\",\"note\":\"FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님.\"}],\"trace\":[{\"action\":\"initial_retrieval\",\"status\":\"ok\",\"document_ids\":[\"backend-1\"]},{\"action\":\"search_documents\",\"status\":\"ok\",\"document_ids\":[\"backend-1\",\"data-1\",\"job-KAKAO-S-4752\"]}],\"ai_generated\":true}"
+}

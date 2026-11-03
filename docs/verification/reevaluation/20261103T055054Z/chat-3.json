@@ -1,0 +1,16 @@
+{
+  "case": "chat",
+  "attempt": 3,
+  "expected": "실제 검색 본문과 연결된 출처·학습 조언",
+  "review": "미판정",
+  "message": "FastAPI 요청 본문 검증을 배우려면 어떤 자료를 참고하나요? 출처와 학습 순서를 알려주세요.",
+  "time_utc": "2026-11-03T05:53:16.335614+00:00",
+  "health_before": {
+    "status": "ok",
+    "version": "0.3.1",
+    "revision": "6f0a7d1d2791510aef0bbd77db98848726f4d573"
+  },
+  "status": 200,
+  "request_id": "ac5785488e524fd59f98060f41032268",
+  "response": "{\"answer\":\"좋습니다. FastAPI 요청 본문 검증을 배우려면 공식 튜토리얼을 중심으로 실습 위주로 진행하는 것을 권합니다.\\n\\n검색 자료에서 확인한 내용\\n- FastAPI 공식 튜토리얼이 경로/쿼리/요청 본문과 입력 검증을 다루며, Python으로 API를 만들고 잘못된 입력을 처리하는 연습에 유용합니다. 자세한 내용은 튜토리얼을 참고하세요. https://fastapi.tiangolo.com/tutorial/ [backend-1]\\n\\n권장 학습 순서 (단계별)\\n1. FastAPI 튜토리얼의 기본(애플리케이션과 경로)부터 읽기 — 전체 흐름을 파악합니다. [backend-1]\\n2. 요청 본문(request body)과 Pydantic 모델로 입력 데이터 정의하기(필드 타입, Optional 포함).\\n3. 필드 제약조건 추가(Field), 기본값·유효값 검사 적용하기.\\n4. 커스텀 검증기(validator)로 복잡한 규칙 처리하기.\\n5. 오류 응답(HTTPException)과 응답 모델(response_model)으로 클라이언트에 의미있는 에러 전달하기.\\n6. 로컬에서 curl/HTTPie/Postman으로 입력 예외 케이스(잘못된 타입/누락/범위 초과 등) 테스트하기.\\n\\n추가 실습 제안\\n- 간단한 엔드포인트 세 가지 만들기: (1) 생성 요청(필수/선택 필드), (2) 수정 요청(부분 업데이트), (3) 필터링 파라미터. 각 케이스에 대해 잘못된 입력을 의도적으로 보내 검증 동작을 확인하세요.\\n- Pydantic의 Field 제약(max_length, gt/lt 등)과 custom validator를 적용해보기.\\n- 유효성 실패 시 반환되는 JSON 구조 확인하고, 테스트 코드(pytest)로 케이스 자동화하기.\\n- 원하면 예제 코드(요청 본문 모델, Field 사용 예, validator 예시)나 단계별 체크리스트를 제공해 드립니다. 어떤 형태로 받을지 알려주세요.\",\"tools\":[\"search_documents\"],\"sources\":[{\"id\":\"backend-1\",\"title\":\"백엔드 API 개발 학습 자료\",\"url\":\"https://fastapi.tiangolo.com/tutorial/\",\"note\":\"FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님.\"}],\"trace\":[{\"action\":\"initial_retrieval\",\"status\":\"ok\",\"document_ids\":[\"backend-1\"]},{\"action\":\"search_documents\",\"status\":\"ok\",\"document_ids\":[\"job-KAKAO-S-4752\",\"data-1\",\"backend-1\"]}],\"ai_generated\":true}"
+}

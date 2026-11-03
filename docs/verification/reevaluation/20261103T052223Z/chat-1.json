@@ -1,0 +1,11 @@
+{
+  "case": "chat",
+  "attempt": 1,
+  "expected": "실제 검색 본문과 연결된 출처·학습 조언",
+  "review": "미판정",
+  "message": "FastAPI 요청 본문 검증을 배우려면 어떤 자료를 참고하나요? 출처와 학습 순서를 알려주세요.",
+  "time_utc": "2026-11-03T05:24:05.933106+00:00",
+  "status": 200,
+  "request_id": "60c5908b7d204063a3bf3173c882af6b",
+  "response": "{\"answer\":\"요약: 요청 본문(Body) 검증은 FastAPI 공식 튜토리얼의 학습 항목에 잘 정리되어 있습니다. FastAPI 튜토리얼을 중심으로 Pydantic 모델·에러 처리·테스트로 확장해 실습하는 것을 권합니다. (공식 튜토리얼) https://fastapi.tiangolo.com/tutorial/ [backend-1]\\n\\n권장 학습 순서(실습 중심)\\n1) 기본 개념 이해 — FastAPI 튜토리얼로 경로/쿼리/요청 본문 개념을 먼저 읽고 간단한 엔드포인트를 만드세요. 요청 데이터 정의와 잘못된 입력 처리 연습에 유용합니다 [backend-1].  \\n2) Pydantic 모델 사용 — 요청 본문을 Pydantic 모델로 정의하고 타입, 필수/선택 필드, 기본값을 실습하세요.  \\n3) 상세 검증(validator)과 제약 — 필드별 제약(예: 길이, 범위, 정규표현식)과 커스텀 검증기를 구현해보세요.  \\n4) 오류 처리/응답 모델 — 유효성 실패 시 에러 응답 구조 확인 및 커스텀 예외 처리, 응답 모델과 상태 코드 처리까지 확장합니다 [backend-2].  \\n5) 의존성·보안과의 결합 — 인증이나 의존성 주입이 있는 상황에서 입력 검증이 어떻게 동작하는지 확인하세요 [backend-2].  \\n6) 테스트와 문서화 — 유효/유효하지 않은 입력 케이스로 단위·통합 테스트를 작성하고 자동 생성되는 OpenAPI 문서를 확인하세요 [backend-2].  \\n7) 배포 상황 검증 — 실제 서버 환경(예: Uvicorn/리버스 프록시)에서 에러 핸들링과 입력 크기, 타임아웃 등 운영적 검증을 해보세요.\\n\\n실습 예제 제안\\n- 간단한 CRUD API 만들기: POST로 Pydantic 요청 검증, PUT에서 부분 업데이트 검증, 잘못된 입력에 대한 테스트 작성.  \\n- 커스텀 밸리데이터 추가: 이메일 형식/날짜 범위/비즈니스 규칙 검사 구현 및 에러 메시지 표준화.\\n\\n참고 문서(권장)\\n- FastAPI 공식 튜토리얼 (핵심) https://fastapi.tiangolo.com/tutorial/ [backend-1][backend-2]  \\n- Pydantic 공식 문서(모델·밸리데이터) — 권장 추가 읽기  \\n- 테스트 관련 문서(Starlette/pytest) — 검증 자동화용\\n\\n원하시면 위 순서에 맞춘 학습 플랜(주별) 또는 연습 문제 목록을 만들어 드릴까요?\",\"tools\":[\"search_documents\"],\"sources\":[{\"id\":\"backend-1\",\"title\":\"백엔드 API 개발 학습 자료\",\"url\":\"https://fastapi.tiangolo.com/tutorial/\",\"note\":\"FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님.\"},{\"id\":\"backend-2\",\"title\":\"백엔드 API 개발 학습 자료\",\"url\":\"https://fastapi.tiangolo.com/tutorial/\",\"note\":\"FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님.\"}],\"trace\":[{\"action\":\"initial_retrieval\",\"status\":\"ok\",\"document_ids\":[\"backend-1\"]},{\"action\":\"tool_protocol\",\"status\":\"native_no_tool_json_plan\",\"document_ids\":[]},{\"action\":\"search_documents\",\"status\":\"ok\",\"document_ids\":[\"backend-1\",\"data-1\",\"backend-2\"]}],\"ai_generated\":true}"
+}

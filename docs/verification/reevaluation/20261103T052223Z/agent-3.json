@@ -1,0 +1,11 @@
+{
+  "case": "agent",
+  "attempt": 3,
+  "expected": "compare_requirements 실행, Python 일치·Java 차이·Kotlin 정보 부족 및 조언 일관성",
+  "review": "미판정",
+  "message": "[지원자의 경험]\nPython으로 REST API를 개발한 경험이 있습니다. Java는 사용할 줄 모릅니다.\n[채용공고]\nPython 개발 경험\nJava 개발 경험\nKotlin 개발 경험\n",
+  "time_utc": "2026-11-03T05:25:33.827917+00:00",
+  "status": 200,
+  "request_id": "f9b7b1fbafb045a68f03c93588386513",
+  "response": "{\"answer\":\"입력한 경험과 공고의 어휘 근거 비교입니다. 실제 역량·합격 가능성 평가가 아닙니다.\\n\\n요건: Python 개발 경험\\n판정: 일치\\n입력 근거: Python으로 REST API를 개발한 경험이 있습니다.\\n확인 질문: 본인의 역할·구현 내용·결과를 설명할 수 있나요?\\n보완 행동: 실제 프로젝트 사례와 본인 기여를 정리하세요. 숙련도와 규모는 별도 확인이 필요합니다.\\n\\n요건: Java 개발 경험\\n판정: 차이\\n입력 근거: Python으로 REST API를 개발한 경험이 있습니다. / Java는 사용할 줄 모릅니다.\\n확인 질문: 명시한 경험 부족이 현재도 해당하나요? 공고의 필수·우대 구분은 무엇인가요?\\n보완 행동: 명시적으로 부족하다고 적은 경험에 한해 학습·실습 계획을 세우고 실제 경험과 계획을 구분하세요.\\n\\n요건: Kotlin 개발 경험\\n판정: 정보 부족\\n입력 근거: Python으로 REST API를 개발한 경험이 있습니다.\\n확인 질문: 이 요건에 해당하는 경험이 있나요? 있다면 구체적인 사례를 추가해 주세요.\\n보완 행동: 경험 유무를 먼저 확인하세요. 확인 전에는 미보유로 쓰거나 학습이 반드시 필요하다고 판단하지 않습니다.\\n\\n공고 원문과 필수·우대 조건을 직접 확인하세요. 입력하지 않은 역량이나 채용 결과를 추정하지 않습니다.\",\"tools\":[\"compare_requirements\"],\"sources\":[],\"trace\":[{\"action\":\"initial_retrieval\",\"status\":\"skipped_user_comparison\",\"document_ids\":[]},{\"action\":\"compare_requirements\",\"status\":\"ok\",\"document_ids\":[]}],\"ai_generated\":true}"
+}

@@ -1,0 +1,11 @@
+{
+  "case": "chat",
+  "attempt": 1,
+  "expected": "실제 검색 본문과 연결된 출처·학습 조언",
+  "review": "미판정",
+  "message": "FastAPI 요청 본문 검증을 배우려면 어떤 자료를 참고하나요? 출처와 학습 순서를 알려주세요.",
+  "time_utc": "2026-11-03T05:41:01.371484+00:00",
+  "status": 200,
+  "request_id": "74796051acc3417788f9eefa8746c6cc",
+  "response": "{\"answer\":\"아래 순서대로 학습하면 FastAPI의 요청 본문(request body) 검증을 효율적으로 익힐 수 있습니다.\\n\\n권장 학습 순서(단계별)\\n1) 사전 준비(1–2일)\\n- Python의 타입 힌트(typing), dataclasses 기초 숙지\\n2) FastAPI 공식 튜토리얼(요청 본문/입력 검증) 읽기(1–2일)\\n- FastAPI 튜토리얼은 경로·쿼리 매개변수뿐 아니라 요청 본문과 입력 검증을 다룬다. [backend-1]\\n- 문서: https://fastapi.tiangolo.com/tutorial/ [backend-1]\\n3) Pydantic 모델 심화(2–3일)\\n- BaseModel, Field(제약조건/설명), 타입 검증, Optional/List/Dict, 중첩 모델, 커스텀 validator\\n4) 실습: 간단한 API 구현(2–3일)\\n- 사용자 생성 POST, 요청 유효성 검사 실패 시 응답 확인\\n- 중첩 객체, 배열, 선택 필드, 기본값 케이스 구현\\n5) 예외처리·에러 메시지·테스트(1–2일)\\n- ValidationError 구조 파악, FastAPI의 HTTPException 처리\\n- TestClient + pytest로 입력 검증 테스트 작성\\n6) 고급 주제(선택)\\n- Body(..., embed=True), response_model/response_model_exclude, 커스텀 JSON 인코더, 스키마 문서화(OpenAPI)\\n\\n실습 과제 예시\\n- 회원가입 API: 이메일 패턴 검증, 비밀번호 길이 제약, 프로필(선택) 포함\\n- 배치 입력: 리스트 입력과 부분 성공/실패 처리\\n- 커스텀 validator로 복합 규칙(예: start_date < end_date) 구현 및 테스트\\n\\n참고·주의\\n- 위의 FastAPI 튜토리얼 요약 자료는 팀 요약이며 학습용 참고자료입니다. [backend-1]\\n원하시면 위 순서로 2주 학습 계획(일별 학습·실습 과제 포함)이나 예제 코드 템플릿을 만들어 드릴까요?\",\"tools\":[\"search_documents\"],\"sources\":[{\"id\":\"backend-1\",\"title\":\"백엔드 API 개발 학습 자료\",\"url\":\"https://fastapi.tiangolo.com/tutorial/\",\"note\":\"FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님.\"}],\"trace\":[{\"action\":\"initial_retrieval\",\"status\":\"ok\",\"document_ids\":[\"backend-1\"]},{\"action\":\"search_documents\",\"status\":\"ok\",\"document_ids\":[\"backend-1\",\"data-1\",\"job-KAKAO-S-4752\"]}],\"ai_generated\":true}"
+}

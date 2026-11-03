@@ -1,0 +1,11 @@
+{
+  "case": "chat",
+  "attempt": 3,
+  "expected": "실제 검색 본문과 연결된 출처·학습 조언",
+  "review": "미판정",
+  "message": "FastAPI 요청 본문 검증을 배우려면 어떤 자료를 참고하나요? 출처와 학습 순서를 알려주세요.",
+  "time_utc": "2026-11-03T05:34:15.422529+00:00",
+  "status": 200,
+  "request_id": "e8d05bf9d84146c398e2b8129c48b847",
+  "response": "{\"answer\":\"요청 본문(Body) 검증 학습을 위한 권장 순서와 자료입니다.\\n\\n1) 공식 튜토리얼 먼저 읽기 — FastAPI 튜토리얼의 요청 본문과 입력 검증 섹션을 먼저 보세요. 기본 개념(경로/쿼리/요청 본문, 검증 흐름)을 이해하는 게 출발점입니다. 참고: FastAPI 공식 튜토리얼(요청 본문/검증) [backend-1] https://fastapi.tiangolo.com/tutorial/ [backend-1]\\n\\n2) Pydantic 중심으로 모델 작성 배우기\\n- BaseModel, Field, 타입 힌트(Optional, List 등), 기본/커스텀 validator 학습(입력 스키마 정의와 검증 핵심).\\n\\n3) 간단한 실습으로 감을 익히기\\n- POST 엔드포인트 만들기(요청 모델 사용), 잘못된 입력 전송해 자동 검증/에러 응답 확인.\\n- TestClient(pytest) 혹은 curl/Postman으로 테스트.\\n\\n4) 응답 모델·오류 처리·상태 코드\\n- response_model, HTTPException으로 검증 실패 처리, 에러 포맷 설계.\\n\\n5) 고급 주제\\n- 커스텀 벨리데이터, root_validator, 파일 업로드/스트리밍, 의존성(Depends)과 함께하는 입력 검증, 성능·입력 크기 제한 처리.\\n\\n추천 자료(빠른 링크)\\n- FastAPI 튜토리얼(공식) — https://fastapi.tiangolo.com/tutorial/ [backend-1]\\n- Pydantic docs — https://docs.pydantic.dev/\\n- JSON Schema 개요 — https://json-schema.org/\\n- FastAPI 예제/깃허브 검색(실무 예시)\\n\\n원하시면 초급→중급용 연습문제(예: 사용자 등록 API 검증 과제) 또는 샘플 코드(요청 모델 + 테스트)를 만들어 드릴까요?\",\"tools\":[\"search_documents\"],\"sources\":[{\"id\":\"backend-1\",\"title\":\"백엔드 API 개발 학습 자료\",\"url\":\"https://fastapi.tiangolo.com/tutorial/\",\"note\":\"FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님.\"}],\"trace\":[{\"action\":\"initial_retrieval\",\"status\":\"ok\",\"document_ids\":[\"backend-1\"]},{\"action\":\"tool_protocol\",\"status\":\"native_no_tool_json_plan\",\"document_ids\":[]},{\"action\":\"tool_protocol\",\"status\":\"empty_plan_document_fallback\",\"document_ids\":[]},{\"action\":\"search_documents\",\"status\":\"ok\",\"document_ids\":[\"backend-1\"]}],\"ai_generated\":true}"
+}
