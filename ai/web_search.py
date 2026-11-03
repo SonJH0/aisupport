@@ -49,11 +49,9 @@ def _page_type(title, url):
     # 쿼리가 있는 루트 URL도 상세 공고인지 확인할 수 없으므로 후보에서 제외한다.
     if path in ("", "/"):
         return "홈페이지·개별 공고 근거 부족"
-    # 실제 배포에서 개별 공고로 섞인 직무별 목록 주소다.
-    # 다른 상세 경로까지 도메인 전체로 차단하지 않는다.
-    if (host == "groupby.kr" or host.endswith(".groupby.kr")) and path.rstrip("/") in (
-        "/jobs/python", "/jobs/backend"
-    ):
+    # 그룹바이 /jobs 및 하위 경로는 직무·기술별 채용관이다.
+    # /positions/<id> 상세 공고와 도메인 전체를 함께 차단하지 않는다.
+    if (host == "groupby.kr" or host.endswith(".groupby.kr")) and re.match(r"^/jobs(?:/|$)", path):
         return "검색·목록 페이지"
     # 채용 정보 모음·테마·저장소는 개별 회사 공고와 구분한다.
     if host in ("github.com", "www.github.com") and not re.search(r"/issues/\d+$", path):

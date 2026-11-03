@@ -11,6 +11,10 @@ from ai.web_search import filter_job_results
 @pytest.mark.parametrize('url', [
     'https://groupby.kr/jobs/python',
     'https://www.groupby.kr/jobs/backend/?utm_source=test',
+    'https://groupby.kr/jobs/react',
+    'https://groupby.kr/jobs/frontend',
+    'https://groupby.kr/jobs/typescript',
+    'https://groupby.kr/jobs/unseen-category?sort=recent',
 ])
 def test_observed_groupby_categories_cannot_be_recommended(url):
     hits, excluded = filter_job_results([{'title': 'Python 백엔드 신입 개발자 채용 공고',
@@ -20,9 +24,9 @@ def test_observed_groupby_categories_cannot_be_recommended(url):
 
 
 def test_category_fix_does_not_block_all_groupby_paths():
-    # 상세 형태의 가상 URL로 도메인 전체 차단 회귀만 확인한다. 실재 공고 증거 아님.
+    # 공식 페이지에서 확인한 상세 URL 형태. 제목·요약은 회귀 검사 합성 입력이다.
     hits, _ = filter_job_results([{'title': '테스트 회사 Python 백엔드 신입 채용',
-        'url': 'https://groupby.kr/recruit/test-id', 'description': 'FastAPI'}], 'Python 백엔드 신입')
+        'url': 'https://groupby.kr/positions/10556', 'description': 'FastAPI'}], 'Python 백엔드 신입')
     assert hits
 
 

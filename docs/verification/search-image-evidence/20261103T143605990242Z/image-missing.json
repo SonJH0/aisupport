@@ -1,0 +1,42 @@
+{
+  "case": "image-missing",
+  "group": "image",
+  "question": "이미지의 회사명, 직무, 요구 기술을 읽어 주세요. 요구 경력 연수, 급여, 마감일도 알려 주되 이미지에 제공되지 않은 정보는 미확인으로 구분하세요. 추측하지 마세요.",
+  "expected": "이미지 직접 판독: DEMO STUDIO, Frontend Developer, React·TypeScript. 경력 연수·급여·마감일은 미제공. 가상 공고 구분.",
+  "review": "미판정",
+  "local_revision": "311b228e3806220ce2e5dffea3e40204b2fd2efd",
+  "image": {
+    "path": "docs/image-validation/image-02-missing.png",
+    "sha256": "8f06026f684a789987bf16ff9d1ecc36ea467df604ef33bd840402f281ca3364",
+    "bytes": 46250
+  },
+  "time_utc": "2026-11-03T14:37:19.995523+00:00",
+  "health_before": {
+    "status": "ok",
+    "version": "0.3.1",
+    "revision": "311b228e3806220ce2e5dffea3e40204b2fd2efd"
+  },
+  "status": 200,
+  "request_id": "dcb688115ded4352ba54fcbbde49ab57",
+  "raw_response": "{\"answer\":\"# 채용공고 정보 읽음\\n\\n**⚠️ 이 자료는 \\\"SAMPLE JOB POSTING - TEST ONLY\\\"이며, 가상·테스트 자료입니다.**\\n\\n---\\n\\n## 명확하게 읽을 수 있는 내용\\n\\n| 항목 | 내용 |\\n|------|------|\\n| **회사명** | DEMO STUDIO (가상 회사) |\\n| **직무** | Frontend Developer |\\n| **요구 기술** | React, TypeScript |\\n\\n---\\n\\n## 미제공 정보\\n\\n| 항목 | 상태 |\\n|------|------|\\n| **요구 경력 연수** | NOT PROVIDED (미제공) |\\n| **급여** | NOT PROVIDED (미제공) |\\n| **마감일** | NOT PROVIDED (미제공) |\\n\\n---\\n\\n**확인 사항:** 실제 지원 준비를 위해서는 공식 채용공고에서 경력 요구사항, 급여, 마감일을 직접 확인하셔야 합니다.\",\"tools\":[],\"image_analyzed\":true,\"ai_generated\":true,\"sources\":[],\"trace\":[{\"action\":\"initial_retrieval\",\"status\":\"skipped_image_only\",\"document_ids\":[]},{\"action\":\"image_analysis\",\"status\":\"ok\",\"document_ids\":[]}]}",
+  "response": {
+    "answer": "# 채용공고 정보 읽음\n\n**⚠️ 이 자료는 \"SAMPLE JOB POSTING - TEST ONLY\"이며, 가상·테스트 자료입니다.**\n\n---\n\n## 명확하게 읽을 수 있는 내용\n\n| 항목 | 내용 |\n|------|------|\n| **회사명** | DEMO STUDIO (가상 회사) |\n| **직무** | Frontend Developer |\n| **요구 기술** | React, TypeScript |\n\n---\n\n## 미제공 정보\n\n| 항목 | 상태 |\n|------|------|\n| **요구 경력 연수** | NOT PROVIDED (미제공) |\n| **급여** | NOT PROVIDED (미제공) |\n| **마감일** | NOT PROVIDED (미제공) |\n\n---\n\n**확인 사항:** 실제 지원 준비를 위해서는 공식 채용공고에서 경력 요구사항, 급여, 마감일을 직접 확인하셔야 합니다.",
+    "tools": [],
+    "image_analyzed": true,
+    "ai_generated": true,
+    "sources": [],
+    "trace": [
+      {
+        "action": "initial_retrieval",
+        "status": "skipped_image_only",
+        "document_ids": []
+      },
+      {
+        "action": "image_analysis",
+        "status": "ok",
+        "document_ids": []
+      }
+    ]
+  },
+  "elapsed_seconds": 4.84
+}

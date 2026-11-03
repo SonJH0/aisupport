@@ -1,0 +1,42 @@
+{
+  "case": "image-not-job",
+  "group": "image",
+  "question": "이 이미지에서 확인되는 자료의 종류와 주요 내용을 설명해 주세요. 채용공고인지 판단하고, 확인되지 않는 채용 직무·요건은 만들어내지 마세요.",
+  "expected": "이미지 직접 판독: DEMO CAFE 영수증. 아메리카노 2잔 8,000원·차 1잔 4,000원·합계 12,000원. 채용공고 아님, 채용 요건 창작 없음.",
+  "review": "미판정",
+  "local_revision": "311b228e3806220ce2e5dffea3e40204b2fd2efd",
+  "image": {
+    "path": "docs/image-validation/image-03-not-job.png",
+    "sha256": "67f05638c1eb93500ff4cf19dc98da9503198e1b05464b2c11d48d5686b3f3a3",
+    "bytes": 38896
+  },
+  "time_utc": "2026-11-03T14:37:24.836941+00:00",
+  "health_before": {
+    "status": "ok",
+    "version": "0.3.1",
+    "revision": "311b228e3806220ce2e5dffea3e40204b2fd2efd"
+  },
+  "status": 200,
+  "request_id": "ef795a0795e44d178ae4d7591d89544c",
+  "raw_response": "{\"answer\":\"# 이미지 내용 분석\\n\\n## 자료의 종류\\n이 이미지는 **가상·테스트 자료**입니다.\\n- 상단에 \\\"SAMPLE CAFE RECEIPT - TEST ONLY\\\" 표시\\n- \\\"Fictional shop: DEMO CAFE\\\" 명시\\n- 자료 자체에서 \\\"This is a cafe receipt, not a job posting\\\" 명확히 기재\\n\\n## 주요 내용\\n**가상의 카페 영수증:**\\n- 매장명: DEMO CAFE (가상점)\\n- 상품: 아메리카노 2잔(8,000원), 차 1잔(4,000원)\\n- 합계: 12,000원\\n\\n---\\n\\n## 채용공고 여부\\n**❌ 채용공고가 아닙니다.**\\n\\n이 자료는 채용 직무, 경력 요건, 자격, 근무 조건 등 어떤 채용 정보도 포함하지 않습니다. 따라서 경력 비교나 지원 준비 분석이 불가능합니다.\\n\\n채용공고 평가를 원하신다면 실제 채용공고를 제공해 주세요.\",\"tools\":[],\"image_analyzed\":true,\"ai_generated\":true,\"sources\":[],\"trace\":[{\"action\":\"initial_retrieval\",\"status\":\"skipped_image_only\",\"document_ids\":[]},{\"action\":\"image_analysis\",\"status\":\"ok\",\"document_ids\":[]}]}",
+  "response": {
+    "answer": "# 이미지 내용 분석\n\n## 자료의 종류\n이 이미지는 **가상·테스트 자료**입니다.\n- 상단에 \"SAMPLE CAFE RECEIPT - TEST ONLY\" 표시\n- \"Fictional shop: DEMO CAFE\" 명시\n- 자료 자체에서 \"This is a cafe receipt, not a job posting\" 명확히 기재\n\n## 주요 내용\n**가상의 카페 영수증:**\n- 매장명: DEMO CAFE (가상점)\n- 상품: 아메리카노 2잔(8,000원), 차 1잔(4,000원)\n- 합계: 12,000원\n\n---\n\n## 채용공고 여부\n**❌ 채용공고가 아닙니다.**\n\n이 자료는 채용 직무, 경력 요건, 자격, 근무 조건 등 어떤 채용 정보도 포함하지 않습니다. 따라서 경력 비교나 지원 준비 분석이 불가능합니다.\n\n채용공고 평가를 원하신다면 실제 채용공고를 제공해 주세요.",
+    "tools": [],
+    "image_analyzed": true,
+    "ai_generated": true,
+    "sources": [],
+    "trace": [
+      {
+        "action": "initial_retrieval",
+        "status": "skipped_image_only",
+        "document_ids": []
+      },
+      {
+        "action": "image_analysis",
+        "status": "ok",
+        "document_ids": []
+      }
+    ]
+  },
+  "elapsed_seconds": 5.26
+}
