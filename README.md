@@ -1,6 +1,6 @@
 # AI 취업 비서
 
-> **2026-11-03 보완 후 확인:** 스펙 분석·직무 후보·학습 상담 각 3회 응답 내용을 검토했습니다. [9건 원문·결과·한계](docs/verification/review-6f0a7d1/README.md). 배포 화면에서 AI 고지·브라우저 미동의 차단과 공고 검색 1회를 확인했습니다. [화면 증거 3장](docs/verification/ui-20261103/README.md). 전체 기능·G1~G7 통과를 뜻하지 않습니다.
+> **2026-11-03 현재 상태:** [Must별 구현·검증·남은 확인](docs/verification/current-status-20261103.md)을 공통 기준으로 확인하세요. 스펙·직무·학습 상담은 6f0a7d1 각 3회, 비교는 043830b 3회 핵심 내용을 검토했습니다. 공고 검색 최신 UI 1회와 과거 이미지 결과는 최신 전체 3회 시험으로 합산하지 않습니다. 후속 RAG 증거·부족한 Must·기여·운영 확인은 남아 있으며 공식 통과 판정이 아닙니다.
 
 [평가 지적별 수정과 원래 4개 기능 대응](docs/재평가-보완.md) · [답변 근거 보완](docs/verification/answer-grounding-20261103.md) · [실사용자 피드백](docs/사용자-피드백-기록.md) · [팀원 기여](docs/팀원별-기여.md) · [키 폐기 확인 범위](docs/verification/security-confirmation.md)
 
