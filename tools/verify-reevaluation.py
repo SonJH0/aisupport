@@ -1,4 +1,5 @@
 """실제 배포 기능 12회: HTTP 성공을 내용 통과로 자동 판정하지 않는다."""
+import argparse
 import datetime
 import json
 from pathlib import Path
@@ -12,12 +13,19 @@ CASES = {
     'chat': ('FastAPI 요청 본문 검증을 배우려면 어떤 자료를 참고하나요? 출처와 학습 순서를 알려주세요.', '실제 검색 본문과 연결된 출처·학습 조언'),
     'agent': ('[지원자의 경험]\nPython으로 REST API를 개발한 경험이 있습니다. Java는 사용할 줄 모릅니다.\n[채용공고]\nPython 개발 경험\nJava 개발 경험\nKotlin 개발 경험\n', 'compare_requirements 실행, Python 일치·Java 차이·Kotlin 정보 부족 및 조언 일관성'),
 }
+parser = argparse.ArgumentParser()
+parser.add_argument('--cases', nargs='+', choices=list(CASES), default=list(CASES))
+args = parser.parse_args()
 folder = Path('docs/verification/reevaluation') / datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
 folder.mkdir(parents=True, exist_ok=True)
 for name, (message, expected) in CASES.items():
+    if name not in args.cases:
+        continue
     for attempt in range(1, 4):
         record = {'case': name, 'attempt': attempt, 'expected': expected, 'review': '미판정', 'message': message, 'time_utc': datetime.datetime.now(datetime.timezone.utc).isoformat()}
         try:
+            with urllib.request.urlopen(BASE + '/health', timeout=30) as health:
+                record['health_before'] = json.loads(health.read())
             request = urllib.request.Request(BASE + '/api/chat', data=json.dumps({'message':message, 'consent':True, 'history':[]}).encode(), headers={'Content-Type':'application/json'})
             try:
                 response = urllib.request.urlopen(request, timeout=210)
