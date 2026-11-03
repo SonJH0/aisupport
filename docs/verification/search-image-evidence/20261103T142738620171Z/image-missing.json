@@ -1,0 +1,42 @@
+{
+  "case": "image-missing",
+  "group": "image",
+  "question": "이미지의 회사명, 직무, 요구 기술을 읽어 주세요. 요구 경력 연수, 급여, 마감일도 알려 주되 이미지에 제공되지 않은 정보는 미확인으로 구분하세요. 추측하지 마세요.",
+  "expected": "이미지 직접 판독: DEMO STUDIO, Frontend Developer, React·TypeScript. 경력 연수·급여·마감일은 미제공. 가상 공고 구분.",
+  "review": "미판정",
+  "local_revision": "5b8b78457c27f1ad5ad21f09044f66316385102b",
+  "image": {
+    "path": "docs/image-validation/image-02-missing.png",
+    "sha256": "8f06026f684a789987bf16ff9d1ecc36ea467df604ef33bd840402f281ca3364",
+    "bytes": 46250
+  },
+  "time_utc": "2026-11-03T14:28:52.838370+00:00",
+  "health_before": {
+    "status": "ok",
+    "version": "0.3.1",
+    "revision": "5b8b78457c27f1ad5ad21f09044f66316385102b"
+  },
+  "status": 200,
+  "request_id": "bbaa1eed7d034c4d857f4f81ad0044fe",
+  "raw_response": "{\"answer\":\"# 채용공고 정보 정리\\n\\n## 명확히 읽을 수 있는 내용\\n\\n| 항목 | 내용 |\\n|------|------|\\n| **회사명** | DEMO STUDIO |\\n| **직무** | Frontend Developer |\\n| **요구 기술** | React, TypeScript |\\n\\n## 미확인 정보 (공고에 미제공)\\n\\n| 항목 | 상태 |\\n|------|------|\\n| **요구 경력 연수** | NOT PROVIDED (명시되지 않음) |\\n| **급여** | NOT PROVIDED (명시되지 않음) |\\n| **마감일** | NOT PROVIDED (명시되지 않음) |\\n\\n---\\n\\n**참고**: 공고에서 경력 연수, 급여, 마감일이 제공되지 않았으므로, 이에 대한 정보 없이는 지원 준비를 진행할 수 없습니다. 채용담당자에게 문의하여 이 정보들을 확인하시기를 권장합니다.\",\"tools\":[],\"image_analyzed\":true,\"ai_generated\":true,\"sources\":[],\"trace\":[{\"action\":\"initial_retrieval\",\"status\":\"no_evidence\",\"document_ids\":[]},{\"action\":\"image_analysis\",\"status\":\"ok\",\"document_ids\":[]}]}",
+  "response": {
+    "answer": "# 채용공고 정보 정리\n\n## 명확히 읽을 수 있는 내용\n\n| 항목 | 내용 |\n|------|------|\n| **회사명** | DEMO STUDIO |\n| **직무** | Frontend Developer |\n| **요구 기술** | React, TypeScript |\n\n## 미확인 정보 (공고에 미제공)\n\n| 항목 | 상태 |\n|------|------|\n| **요구 경력 연수** | NOT PROVIDED (명시되지 않음) |\n| **급여** | NOT PROVIDED (명시되지 않음) |\n| **마감일** | NOT PROVIDED (명시되지 않음) |\n\n---\n\n**참고**: 공고에서 경력 연수, 급여, 마감일이 제공되지 않았으므로, 이에 대한 정보 없이는 지원 준비를 진행할 수 없습니다. 채용담당자에게 문의하여 이 정보들을 확인하시기를 권장합니다.",
+    "tools": [],
+    "image_analyzed": true,
+    "ai_generated": true,
+    "sources": [],
+    "trace": [
+      {
+        "action": "initial_retrieval",
+        "status": "no_evidence",
+        "document_ids": []
+      },
+      {
+        "action": "image_analysis",
+        "status": "ok",
+        "document_ids": []
+      }
+    ]
+  },
+  "elapsed_seconds": 4.3
+}

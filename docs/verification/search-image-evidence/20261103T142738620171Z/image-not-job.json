@@ -1,0 +1,51 @@
+{
+  "case": "image-not-job",
+  "group": "image",
+  "question": "이 이미지에서 확인되는 자료의 종류와 주요 내용을 설명해 주세요. 채용공고인지 판단하고, 확인되지 않는 채용 직무·요건은 만들어내지 마세요.",
+  "expected": "이미지 직접 판독: DEMO CAFE 영수증. 아메리카노 2잔 8,000원·차 1잔 4,000원·합계 12,000원. 채용공고 아님, 채용 요건 창작 없음.",
+  "review": "미판정",
+  "local_revision": "5b8b78457c27f1ad5ad21f09044f66316385102b",
+  "image": {
+    "path": "docs/image-validation/image-03-not-job.png",
+    "sha256": "67f05638c1eb93500ff4cf19dc98da9503198e1b05464b2c11d48d5686b3f3a3",
+    "bytes": 38896
+  },
+  "time_utc": "2026-11-03T14:28:57.143488+00:00",
+  "health_before": {
+    "status": "ok",
+    "version": "0.3.1",
+    "revision": "5b8b78457c27f1ad5ad21f09044f66316385102b"
+  },
+  "status": 200,
+  "request_id": "47c59dc2b6a04cef952a79a16a1ade5a",
+  "raw_response": "{\"answer\":\"# 이미지 내용 분석\\n\\n## 확인되는 자료의 종류\\n**카페 영수증 (테스트용 샘플)**\\n\\n## 주요 내용\\n- **상호명**: DEMO CAFE (가상의 카페)\\n- **상품 구성**:\\n  - 아메리카노 2잔: 8,000 KRW\\n  - 티 1잔: 4,000 KRW\\n  - **총액**: 12,000 KRW\\n- **명시된 주의사항**: \\\"이것은 카페 영수증이며, 채용공고가 아닙니다.\\\"\\n\\n---\\n\\n## 채용공고 여부\\n**채용공고가 아닙니다.**\\n\\n이미지는 단순한 결제 영수증 샘플로, 채용 직무, 필요 경험, 자격 요건 등 어떤 채용 정보도 포함하지 않습니다.\\n\\n---\\n\\n## 참고\\n취업 및 이직 상담이 필요하신 경우 실제 채용공고를 제공해 주시면 경험과의 일치도를 분석하고 구체적인 보완 방안을 제시해 드리겠습니다.\",\"tools\":[],\"image_analyzed\":true,\"ai_generated\":true,\"sources\":[{\"id\":\"frontend-1\",\"title\":\"프론트엔드 웹 개발 학습 자료\",\"url\":\"https://developer.mozilla.org/en-US/docs/Learn_web_development/Core\",\"note\":\"MDN 핵심 학습 모듈을 팀이 요약한 자료. 특정 기업의 채용 기준이나 합격 보장이 아님.\"}],\"trace\":[{\"action\":\"initial_retrieval\",\"status\":\"ok\",\"document_ids\":[\"frontend-1\"]},{\"action\":\"image_analysis\",\"status\":\"ok\",\"document_ids\":[]}]}",
+  "response": {
+    "answer": "# 이미지 내용 분석\n\n## 확인되는 자료의 종류\n**카페 영수증 (테스트용 샘플)**\n\n## 주요 내용\n- **상호명**: DEMO CAFE (가상의 카페)\n- **상품 구성**:\n  - 아메리카노 2잔: 8,000 KRW\n  - 티 1잔: 4,000 KRW\n  - **총액**: 12,000 KRW\n- **명시된 주의사항**: \"이것은 카페 영수증이며, 채용공고가 아닙니다.\"\n\n---\n\n## 채용공고 여부\n**채용공고가 아닙니다.**\n\n이미지는 단순한 결제 영수증 샘플로, 채용 직무, 필요 경험, 자격 요건 등 어떤 채용 정보도 포함하지 않습니다.\n\n---\n\n## 참고\n취업 및 이직 상담이 필요하신 경우 실제 채용공고를 제공해 주시면 경험과의 일치도를 분석하고 구체적인 보완 방안을 제시해 드리겠습니다.",
+    "tools": [],
+    "image_analyzed": true,
+    "ai_generated": true,
+    "sources": [
+      {
+        "id": "frontend-1",
+        "title": "프론트엔드 웹 개발 학습 자료",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core",
+        "note": "MDN 핵심 학습 모듈을 팀이 요약한 자료. 특정 기업의 채용 기준이나 합격 보장이 아님."
+      }
+    ],
+    "trace": [
+      {
+        "action": "initial_retrieval",
+        "status": "ok",
+        "document_ids": [
+          "frontend-1"
+        ]
+      },
+      {
+        "action": "image_analysis",
+        "status": "ok",
+        "document_ids": []
+      }
+    ]
+  },
+  "elapsed_seconds": 5.3
+}
