@@ -1,0 +1,27 @@
+[
+  {
+    "file": "01-ai-notice.png",
+    "original_filename": "image(20261103-151609).png",
+    "sha256": "fd79bd12aef2cfc0269424c54b586884069c2e719a80d72e6cf0c6369dc512d3"
+  },
+  {
+    "file": "02-consent-block.png",
+    "original_filename": "image(20261103-151643).png",
+    "sha256": "ee2ed9de9ee8f8783d4961f996fb6c95cd2cf6a7abe794874e6d62d309a97561"
+  },
+  {
+    "file": "03-chat-response.png",
+    "original_filename": "image(20261103-151718).png",
+    "sha256": "14bf1ef484550ab7f8ce41656cfc9d5a952c9ee4657aa6788888446747a6bfa3"
+  },
+  {
+    "file": "04-image-input.png",
+    "original_filename": "image(20261103-151805).png",
+    "sha256": "d4ad15919d40d6462f55f0992fd9ef3186fa60033f4ec7a2924396bf6f5a32ef"
+  },
+  {
+    "file": "05-image-response.png",
+    "original_filename": "image(20261103-151832).png",
+    "sha256": "a4a607a5a59045d0e5a694f181d8a2a96890a123df1103a0cf40228b53006948"
+  }
+]
