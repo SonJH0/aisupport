@@ -1,0 +1,19 @@
+{
+  "check": "no-consent",
+  "path": "/api/chat",
+  "local_revision": "3f2fae35bb60fff584aff54851e32784491a3f93",
+  "review": "미판정",
+  "time_utc": "2026-11-03T14:59:32.839846+00:00",
+  "status": 403,
+  "request_id": "3ea54a1ccd3d4d59acf5633e8f94ba8e",
+  "elapsed_seconds": 0.24,
+  "request": {
+    "message": "동의 차단 확인용 질문",
+    "consent": false,
+    "history": []
+  },
+  "raw_response": "{\"detail\":\"AI 처리를 위한 외부 전송 동의가 필요합니다.\"}",
+  "response": {
+    "detail": "AI 처리를 위한 외부 전송 동의가 필요합니다."
+  }
+}

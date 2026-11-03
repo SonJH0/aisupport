@@ -1,0 +1,15 @@
+{
+  "check": "page",
+  "path": "/",
+  "local_revision": "3f2fae35bb60fff584aff54851e32784491a3f93",
+  "review": "미판정",
+  "time_utc": "2026-11-03T14:59:31.629287+00:00",
+  "status": 200,
+  "request_id": "78dbc991d4f849f5845c6942a48f0172",
+  "elapsed_seconds": 0.25,
+  "observations": {
+    "ai_notice_text": true,
+    "consent_checkbox_required": true,
+    "limitation": "HTML 문자열 확인이며 브라우저 렌더링·실제 클릭 검사가 아님"
+  }
+}

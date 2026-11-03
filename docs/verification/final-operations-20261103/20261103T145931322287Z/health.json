@@ -1,0 +1,15 @@
+{
+  "check": "health",
+  "path": "/health",
+  "local_revision": "3f2fae35bb60fff584aff54851e32784491a3f93",
+  "review": "미판정",
+  "time_utc": "2026-11-03T14:59:31.322867+00:00",
+  "status": 200,
+  "request_id": "4fe811d53ca1421bac2dd91b9c4ff0af",
+  "elapsed_seconds": 0.31,
+  "response": {
+    "status": "ok",
+    "version": "0.3.1",
+    "revision": "3f2fae35bb60fff584aff54851e32784491a3f93"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "check": "env-root",
+  "path": "/.env",
+  "local_revision": "3f2fae35bb60fff584aff54851e32784491a3f93",
+  "review": "미판정",
+  "time_utc": "2026-11-03T14:59:32.299696+00:00",
+  "status": 404,
+  "request_id": "d4292db35931440a921fd4d736316940",
+  "elapsed_seconds": 0.26,
+  "observations": {
+    "not_public_by_status": true,
+    "response_body_saved": false
+  }
+}
