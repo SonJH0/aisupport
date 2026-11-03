@@ -38,7 +38,7 @@ def compare_requirements(message):
     rows = []
     for requirement in split(job)[:30]:
         terms = set(re.findall(r"[a-z][a-z0-9+#.]*|[가-힣]{2,}", requirement.casefold()))
-        terms -= {"경험", "우대", "필수", "이상", "가능", "대한", "활용", "또는"}
+        terms -= {"경험", "우대", "필수", "이상", "가능", "대한", "활용", "또는", "개발", "사용"}
         lines = [line for line in split(experience) if any(term in line.casefold() for term in terms)]
         row = {"requirement": requirement, "user_evidence": lines[:3],
                "status": "관련 표현 있음; 의미 확인 필요" if lines else "정보 부족"}

@@ -107,9 +107,11 @@ def test_multiple_calls_get_matching_results():
 
 
 def test_repeated_calls_stop_at_budget():
-    client=FakeClient([completion(calls=[call('get_job','{"job_id":"SAMPLE-1"}')]) for _ in range(4)])
-    with pytest.raises(ServiceError):agent.respond('SAMPLE-1',client=client)
-    assert len(client.requests)==4
+    client=FakeClient([completion(calls=[call('get_job','{"job_id":"SAMPLE-1"}')]) for _ in range(4)] + [completion('조회된 결과만 안내합니다.')])
+    result=agent.respond('SAMPLE-1',client=client)
+    assert result['answer']=='조회된 결과만 안내합니다.'
+    assert len(client.requests)==5
+    assert 'tools' not in client.requests[-1]
 
 
 def test_empty_answer_is_controlled_error():
@@ -206,6 +208,6 @@ def test_json_plan_cannot_inject_tool(monkeypatch):
 def test_auto_no_native_call_still_executes_model_selected_tool(monkeypatch):
     monkeypatch.setenv('AGENT_TOOL_MODE','auto')
     client=FakeClient([completion('도구 없이 답변'),completion('{"calls":[{"name":"search_documents","arguments":{"query":"백엔드 API"}}]}'),completion('검색 자료 기반 답변')])
-    result=agent.respond('백엔드 API',client=client)
+    result=agent.respond('백엔드 API 학습 자료',client=client)
     assert result['tools']==['search_documents']
     assert result['trace'][1]['status']=='native_no_tool_json_plan'

@@ -54,7 +54,7 @@ def _search_requested(message):
 def _requires_tool(message):
     return (_search_requested(message)
             or ("[지원자의 경험]" in message and "[채용공고]" in message)
-            or bool(re.search(r"(?:SAMPLE-\d+|KAKAO-S-\d+|학습|배우|자료|출처|튜토리얼|API|pandas|HTML)", message, re.I)))
+            or bool(re.search(r"(?:SAMPLE-\d+|KAKAO-S-\d+|학습|배우|자료|출처|튜토리얼)", message, re.I)))
 
 
 def run_tool(name, args, *, message=""):
@@ -298,7 +298,19 @@ def respond(message, image=None, client=None, history=None):
                 trace.append({"action": name, "status": "error" if "error" in output else output.get("status", "ok"),
                               "document_ids": [doc["id"] for doc in docs]})
                 items.append({"role": "tool", "tool_call_id": call.id, "content": json.dumps(output, ensure_ascii=False)})
-        raise ServiceError("도구 실행 횟수를 초과했습니다. 요청을 간단히 바꾸어 주세요.")
+        # 이미 실행한 도구 결과로 마무리한다. 동일 검색을 무한 반복하거나
+        # 성공한 검색 뒤 내부 횟수 제한만으로 전체 요청을 실패시키지 않는다.
+        trace.append({"action": "tool_protocol", "status": "budget_finalization", "document_ids": []})
+        final = client.chat.completions.create(
+            model=os.getenv("OPENAI_MODEL", "gpt-5-mini"),
+            messages=[*items, {"role": "system", "content":
+                "도구 실행을 종료한다. 지금까지 실제 반환된 결과만 활용해 최종 답변하라. "
+                "실패하거나 실행되지 않은 도구가 성공했다고 말하지 말고 정보 부족과 한계를 밝혀라. "
+                "추가 도구를 요청하지 않는다."}])
+        answer = final.choices[0].message.content if final.choices else None
+        if not isinstance(answer, str) or not answer.strip():
+            raise ServiceError("AI의 최종 답변이 비어 있습니다.")
+        return _finish(answer, used, sources, trace, searches, comparison)
     except AuthenticationError:
         raise ServiceError("AI 인증에 실패했습니다. 서버의 API 키를 확인해 주세요.", code="ai_authentication") from None
     except RateLimitError:
