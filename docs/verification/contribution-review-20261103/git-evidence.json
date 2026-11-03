@@ -1,0 +1,519 @@
+{
+  "scope": "cd547a6까지 대표 커밋",
+  "commits": [
+    {
+      "commit": "aec3c4a3fec59d4ad47f2b2754f5da74360367d0",
+      "author_name_from_git_metadata": "황준식",
+      "author_date": "2026-10-28T08:59:42+09:00",
+      "subject": "feat: AI 취업 코치 프론트엔드 구축",
+      "changed_files": [
+        {
+          "path": "app.js",
+          "added_lines": "102",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "index.html",
+          "added_lines": "1",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "style.css",
+          "added_lines": "1",
+          "deleted_lines": "0"
+        }
+      ]
+    },
+    {
+      "commit": "f228f334d9ffb4475d7310395b0df25ffc2e32e4",
+      "author_name_from_git_metadata": "손재윤",
+      "author_date": "2026-10-28T09:04:52+09:00",
+      "subject": "feat: AI 취업 코치 백엔드 구축",
+      "changed_files": [
+        {
+          "path": "backend/__init__.py",
+          "added_lines": "0",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "backend/main.py",
+          "added_lines": "39",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "frontend/app.js",
+          "added_lines": "102",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "frontend/index.html",
+          "added_lines": "1",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "frontend/style.css",
+          "added_lines": "1",
+          "deleted_lines": "0"
+        }
+      ]
+    },
+    {
+      "commit": "7408e14c25128822614acb317e10de1dda80e015",
+      "author_name_from_git_metadata": "손재형",
+      "author_date": "2026-10-28T10:09:10+09:00",
+      "subject": "feat: RAG 문서 검색과 Agent 도구 실행 보완",
+      "changed_files": [
+        {
+          "path": ".env.example",
+          "added_lines": "9",
+          "deleted_lines": "0"
+        },
+        {
+          "path": ".github/workflows/tests.yml",
+          "added_lines": "13",
+          "deleted_lines": "0"
+        },
+        {
+          "path": ".gitignore",
+          "added_lines": "16",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "README.md",
+          "added_lines": "61",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "ai/__init__.py",
+          "added_lines": "0",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "ai/agent.py",
+          "added_lines": "232",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "ai/comparison.py",
+          "added_lines": "19",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "ai/errors.py",
+          "added_lines": "5",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "ai/retrieval.py",
+          "added_lines": "109",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "ai/vision.py",
+          "added_lines": "57",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "ai/web_search.py",
+          "added_lines": "47",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "backend/main.py",
+          "added_lines": "31",
+          "deleted_lines": "6"
+        },
+        {
+          "path": "data/README.md",
+          "added_lines": "30",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "data/jobs.json",
+          "added_lines": "61",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "data/knowledge.json",
+          "added_lines": "35",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/AI-data-작업.md",
+          "added_lines": "18",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/GitHub-보안-안내.md",
+          "added_lines": "25",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/RAG-Agent-보완.md",
+          "added_lines": "42",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/actual-api-check.json",
+          "added_lines": "225",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/automated-tests.xml",
+          "added_lines": "1",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/tested-versions.json",
+          "added_lines": "12",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/기능-검증-기록.md",
+          "added_lines": "34",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/기획-및-요구사항.md",
+          "added_lines": "21",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "frontend/app.js",
+          "added_lines": "10",
+          "deleted_lines": "2"
+        },
+        {
+          "path": "frontend/index.html",
+          "added_lines": "1",
+          "deleted_lines": "1"
+        },
+        {
+          "path": "requirements-dev.txt",
+          "added_lines": "2",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "requirements.txt",
+          "added_lines": "5",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "start-backend.ps1",
+          "added_lines": "16",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "tests/test_agent_api.py",
+          "added_lines": "211",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "tests/test_retrieval.py",
+          "added_lines": "32",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "적용방법.md",
+          "added_lines": "12",
+          "deleted_lines": "0"
+        }
+      ]
+    },
+    {
+      "commit": "2789a884d59cd75bcd0afb8a42e377e2ed5bcb5f",
+      "author_name_from_git_metadata": "손재형",
+      "author_date": "2026-10-28T10:51:23+09:00",
+      "subject": "fix: 공고 검색 결과 필터와 조건 확인 표시 보완",
+      "changed_files": [
+        {
+          "path": "ai/agent.py",
+          "added_lines": "27",
+          "deleted_lines": "8"
+        },
+        {
+          "path": "ai/web_search.py",
+          "added_lines": "144",
+          "deleted_lines": "16"
+        },
+        {
+          "path": "docs/search-filter-api-check.json",
+          "added_lines": "719",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/search-filter-change.md",
+          "added_lines": "25",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/search-filter-tests.xml",
+          "added_lines": "1",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "tests/test_search_filter.py",
+          "added_lines": "130",
+          "deleted_lines": "0"
+        }
+      ]
+    },
+    {
+      "commit": "e1014858f488384c7336a65061f22012ae5b8311",
+      "author_name_from_git_metadata": "손재형",
+      "author_date": "2026-10-28T12:56:03+09:00",
+      "subject": "fix: 인크루트 검색 목록의 공고 노출 제외",
+      "changed_files": [
+        {
+          "path": "ai/web_search.py",
+          "added_lines": "6",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/incruit-filter-fix.md",
+          "added_lines": "11",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/incruit-filter-tests.xml",
+          "added_lines": "1",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "tests/test_search_filter.py",
+          "added_lines": "23",
+          "deleted_lines": "0"
+        }
+      ]
+    },
+    {
+      "commit": "311b228e3806220ce2e5dffea3e40204b2fd2efd",
+      "author_name_from_git_metadata": "손재형",
+      "author_date": "2026-11-03T23:34:13+09:00",
+      "subject": "fix: address observed search and image response issues",
+      "changed_files": [
+        {
+          "path": "ai/vision.py",
+          "added_lines": "8",
+          "deleted_lines": "11"
+        },
+        {
+          "path": "ai/web_search.py",
+          "added_lines": "6",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/verification/current-status-20261103.md",
+          "added_lines": "7",
+          "deleted_lines": "1"
+        },
+        {
+          "path": "docs/verification/search-image-evidence/20261103T142738620171Z/README.md",
+          "added_lines": "28",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/verification/search-image-evidence/20261103T142738620171Z/image-clear.json",
+          "added_lines": "51",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/verification/search-image-evidence/20261103T142738620171Z/image-missing.json",
+          "added_lines": "42",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/verification/search-image-evidence/20261103T142738620171Z/image-not-job.json",
+          "added_lines": "51",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/verification/search-image-evidence/20261103T142738620171Z/search-java.json",
+          "added_lines": "62",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/verification/search-image-evidence/20261103T142738620171Z/search-python.json",
+          "added_lines": "85",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/verification/search-image-evidence/20261103T142738620171Z/search-react.json",
+          "added_lines": "62",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/verification/search-image-evidence/README.md",
+          "added_lines": "4",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/요구사항-정의서.md",
+          "added_lines": "2",
+          "deleted_lines": "2"
+        },
+        {
+          "path": "docs/최종-점검표.md",
+          "added_lines": "1",
+          "deleted_lines": "1"
+        },
+        {
+          "path": "tests/test_search_image_findings.py",
+          "added_lines": "50",
+          "deleted_lines": "0"
+        }
+      ]
+    },
+    {
+      "commit": "30083f50f99fe19c910562085b1f6a5e6e4217f6",
+      "author_name_from_git_metadata": "손재형",
+      "author_date": "2026-11-03T23:41:20+09:00",
+      "subject": "fix: exclude Groupby category listing routes",
+      "changed_files": [
+        {
+          "path": "ai/web_search.py",
+          "added_lines": "3",
+          "deleted_lines": "5"
+        },
+        {
+          "path": "docs/verification/current-status-20261103.md",
+          "added_lines": "6",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/verification/search-image-evidence/20261103T143605990242Z/README.md",
+          "added_lines": "32",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/verification/search-image-evidence/20261103T143605990242Z/image-clear.json",
+          "added_lines": "42",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/verification/search-image-evidence/20261103T143605990242Z/image-missing.json",
+          "added_lines": "42",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/verification/search-image-evidence/20261103T143605990242Z/image-not-job.json",
+          "added_lines": "42",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/verification/search-image-evidence/20261103T143605990242Z/search-java.json",
+          "added_lines": "62",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/verification/search-image-evidence/20261103T143605990242Z/search-python.json",
+          "added_lines": "73",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/verification/search-image-evidence/20261103T143605990242Z/search-react.json",
+          "added_lines": "80",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/verification/search-image-evidence/README.md",
+          "added_lines": "4",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/최종-점검표.md",
+          "added_lines": "1",
+          "deleted_lines": "1"
+        },
+        {
+          "path": "tests/test_search_image_findings.py",
+          "added_lines": "6",
+          "deleted_lines": "2"
+        }
+      ]
+    },
+    {
+      "commit": "cd547a6981a35a54397b8f5dc0928768ce2064a9",
+      "author_name_from_git_metadata": "손재형",
+      "author_date": "2026-11-03T23:47:26+09:00",
+      "subject": "docs: record reviewed search and image results",
+      "changed_files": [
+        {
+          "path": "README.md",
+          "added_lines": "3",
+          "deleted_lines": "1"
+        },
+        {
+          "path": "docs/verification/current-status-20261103.md",
+          "added_lines": "6",
+          "deleted_lines": "2"
+        },
+        {
+          "path": "docs/verification/search-image-evidence/20261103T144245951242Z/README.md",
+          "added_lines": "30",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/verification/search-image-evidence/20261103T144245951242Z/search-java.json",
+          "added_lines": "68",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/verification/search-image-evidence/20261103T144245951242Z/search-python.json",
+          "added_lines": "79",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/verification/search-image-evidence/20261103T144245951242Z/search-react.json",
+          "added_lines": "62",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/verification/search-image-evidence/README.md",
+          "added_lines": "4",
+          "deleted_lines": "0"
+        },
+        {
+          "path": "docs/진행-및-제출현황.md",
+          "added_lines": "1",
+          "deleted_lines": "1"
+        },
+        {
+          "path": "docs/최종-점검표.md",
+          "added_lines": "3",
+          "deleted_lines": "3"
+        }
+      ]
+    }
+  ],
+  "frontend_blob_comparison": [
+    {
+      "first_commit": "aec3c4a",
+      "first_path": "app.js",
+      "second_commit": "f228f33",
+      "second_path": "frontend/app.js",
+      "first_blob": "e37614e7e6d5c22192c437e906183d479da49933",
+      "second_blob": "e37614e7e6d5c22192c437e906183d479da49933",
+      "identical": true
+    },
+    {
+      "first_commit": "aec3c4a",
+      "first_path": "index.html",
+      "second_commit": "f228f33",
+      "second_path": "frontend/index.html",
+      "first_blob": "d50b8ccedd57f15e6dd93523711ffa109178eca1",
+      "second_blob": "d50b8ccedd57f15e6dd93523711ffa109178eca1",
+      "identical": true
+    },
+    {
+      "first_commit": "aec3c4a",
+      "first_path": "style.css",
+      "second_commit": "f228f33",
+      "second_path": "frontend/style.css",
+      "first_blob": "d8b9452c34d5fda5b460c10c0d73409379c6f2f1",
+      "second_blob": "d8b9452c34d5fda5b460c10c0d73409379c6f2f1",
+      "identical": true
+    }
+  ],
+  "limitations": "Git 작성자 메타데이터와 파일 차이이며 실제 작업자 신원·독립 저작·작업 시간의 독립 증명 아님. 이메일·키·원문 비밀값은 수집하지 않음."
+}

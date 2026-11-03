@@ -32,7 +32,7 @@
 | 손재윤 / sonjeyun | 백엔드 | [f228f33](https://github.com/SonJH0/aisupport/commit/f228f33) |
 | 황준식 / kwork0828 | 프론트엔드 | [aec3c4a](https://github.com/SonJH0/aisupport/commit/aec3c4a) |
 
-세 명의 [본인 기여 요약과 대표 커밋](docs/팀원별-기여.md)을 작성했습니다. 역할과 구현·검증 내용을 확인할 수 있습니다.
+세 명의 [기존 본인 기여 요약과 대표 커밋](docs/팀원별-기여.md)을 보존했습니다. [실제 변경·경로 중복·원문 설명의 확인 범위](docs/verification/contribution-review-20261103/README.md)를 대조했습니다. 일부 설명의 본인 정정 또는 추가 근거 확인은 남아 있습니다.
 
 RAG의 [검색 본문·모델 전달 경로·로컬 검사 및 배포 재현 절차](docs/verification/rag-evidence/README.md)를 별도로 정리했습니다. [ff55982 배포 답변 3건의 인용·출처를 검토](docs/verification/rag-evidence/20261103T141726405327Z/README.md)했으며, 반복·무관 검색과 상세 실습 설명의 한계도 기록했습니다.
 
