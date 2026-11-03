@@ -1,0 +1,34 @@
+{
+  "case": "pandas",
+  "question": "pandas에서 여러 표 결합과 요약 통계를 배우려면 어떤 자료를 참고하나요? 검색 자료의 내용과 추가 실습 제안을 구분하고 문단 ID와 출처를 알려주세요.",
+  "local_revision": "4aece7d3afd904cb3aa4707a9d0f11e8a0cc0fca",
+  "local_file_sha256": {
+    "ai/retrieval.py": "b55f09d9fd8365eb440b664dbe9af63eff45386fe4915e7f81ae089f56f30d28",
+    "ai/agent.py": "cff8248f2bba265117e723fd3ab12c4dff6c774487cb12ed9829e956ee695d22",
+    "data/knowledge.json": "8b85387b6046738f0ecdbb38942780affcc1b6d841566f641d0cb1199c54acbf",
+    "data/jobs.json": "66b7f5fdf082e621348daebe0a442e0572d026a36d19a6a1f4d29fd391d107d8"
+  },
+  "local_retrieval": [
+    {
+      "id": "data-2",
+      "title": "데이터 분석 pandas 학습 자료",
+      "text": "데이터 분석용 pandas 튜토리얼에는 요약 통계 계산, 표 구조 변환, 여러 표 결합, 시계열과 텍스트 처리가 포함된다. 팀 학습 제안: 공개 데이터를 읽고 정리한 뒤 시각화하고 분석의 한계를 설명한다.",
+      "url": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html",
+      "note": "pandas 공식 입문 튜토리얼의 주제를 팀이 요약하고 데이터 분석 학습에 연결한 자료. 채용 필수 조건이 아님.",
+      "kind": "learning_note",
+      "score": 0.4694
+    },
+    {
+      "id": "data-1",
+      "title": "데이터 분석 pandas 학습 자료",
+      "text": "데이터 분석 학습에 활용할 수 있는 pandas 입문 튜토리얼은 표 형식 데이터 읽기와 쓰기, DataFrame의 일부 선택, 그래프 생성과 새 열 계산을 다룬다.",
+      "url": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html",
+      "note": "pandas 공식 입문 튜토리얼의 주제를 팀이 요약하고 데이터 분석 학습에 연결한 자료. 채용 필수 조건이 아님.",
+      "kind": "learning_note",
+      "score": 0.2357
+    }
+  ],
+  "review": "미판정",
+  "time_utc": "2026-11-03T14:14:08.813131+00:00",
+  "scope": "local_only"
+}

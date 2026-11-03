@@ -1,0 +1,25 @@
+{
+  "case": "html",
+  "question": "HTML 폼 구조와 접근성을 배우려면 어떤 자료를 참고하나요? 검색 자료의 내용과 추가 실습 제안을 구분하고 문단 ID와 출처를 알려주세요.",
+  "local_revision": "4aece7d3afd904cb3aa4707a9d0f11e8a0cc0fca",
+  "local_file_sha256": {
+    "ai/retrieval.py": "b55f09d9fd8365eb440b664dbe9af63eff45386fe4915e7f81ae089f56f30d28",
+    "ai/agent.py": "cff8248f2bba265117e723fd3ab12c4dff6c774487cb12ed9829e956ee695d22",
+    "data/knowledge.json": "8b85387b6046738f0ecdbb38942780affcc1b6d841566f641d0cb1199c54acbf",
+    "data/jobs.json": "66b7f5fdf082e621348daebe0a442e0572d026a36d19a6a1f4d29fd391d107d8"
+  },
+  "local_retrieval": [
+    {
+      "id": "frontend-1",
+      "title": "프론트엔드 웹 개발 학습 자료",
+      "text": "프론트엔드 웹 개발에서 MDN 핵심 학습 모듈은 HTML 문서 구조, 링크, 목록, 이미지와 폼을 설명한다. 의미 있는 HTML 구조를 이해하면 사용 가능한 웹 화면을 만드는 데 도움이 된다.",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core",
+      "note": "MDN 핵심 학습 모듈을 팀이 요약한 자료. 특정 기업의 채용 기준이나 합격 보장이 아님.",
+      "kind": "learning_note",
+      "score": 0.3229
+    }
+  ],
+  "review": "미판정",
+  "time_utc": "2026-11-03T14:14:08.812382+00:00",
+  "scope": "local_only"
+}

@@ -34,6 +34,8 @@
 
 세 명의 [본인 기여 요약과 대표 커밋](docs/팀원별-기여.md)을 작성했습니다. 역할과 구현·검증 내용을 확인할 수 있습니다.
 
+RAG의 [검색 본문·모델 전달 경로·로컬 검사 및 배포 재현 절차](docs/verification/rag-evidence/README.md)를 별도로 정리했습니다. 배포 답변 검토는 수집 후 갱신합니다.
+
 ## 기술 선택·구현
 
 Python 3.12·FastAPI·Pydantic으로 AI 코드·API·입력 검증을 통합했습니다. HTML/CSS/JavaScript 화면은 Render의 같은 서버에서 제공합니다. 코디세이 OpenAI 호환 API가 도구를 선택하고, Claude 호환 API가 이미지를 직접 읽습니다. Brave Search로 공고 후보를 찾으며, 소규모 문서는 로컬 JSON·TF-IDF로 검색합니다. GitHub·Actions로 버전과 검사를 관리합니다.
