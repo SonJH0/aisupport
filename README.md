@@ -1,6 +1,6 @@
 # AI 취업 비서
 
-> **2026-11-03 현재 상태:** [Must별 구현·검증·남은 확인](docs/verification/current-status-20261103.md)을 공통 기준으로 확인하세요. 스펙·직무·학습 상담은 6f0a7d1 각 3회, 비교는 043830b 3회 핵심 내용을 검토했습니다. 공고 검색 최신 UI 1회와 과거 이미지 결과는 최신 전체 3회 시험으로 합산하지 않습니다. 후속 RAG 증거·부족한 Must·기여·운영 확인은 남아 있으며 공식 통과 판정이 아닙니다.
+> **2026-11-03 현재 상태:** [Must별 구현·검증·남은 확인](docs/verification/current-status-20261103.md)을 공통 기준으로 확인하세요. 스펙·직무·학습 상담은 6f0a7d1 각 3회, 비교는 043830b 3회 핵심 내용을 검토했습니다. 후속 RAG 3개 질문·공고 검색 30083f5 3건·이미지 311b228 3건도 검토했습니다. 서로 다른 실행 버전을 합쳐 단일 버전 전체 시험으로 표시하지 않습니다. 기여·운영 최종 확인은 남아 있으며 공식 통과 판정이 아닙니다.
 
 [평가 지적별 수정과 원래 4개 기능 대응](docs/재평가-보완.md) · [답변 근거 보완](docs/verification/answer-grounding-20261103.md) · [실사용자 피드백](docs/사용자-피드백-기록.md) · [팀원 기여](docs/팀원별-기여.md) · [키 폐기 확인 범위](docs/verification/security-confirmation.md)
 
@@ -87,3 +87,5 @@ Render: 빌드 `pip install -r requirements.txt`, 시작 `python -m uvicorn back
 
 
 
+
+검색·이미지의 후속 확인은 [검색 30083f5 3건·이미지 311b228 3건의 버전별 검토](docs/verification/search-image-evidence/20261103T144245951242Z/README.md)를 참고하세요. 이전 실패·부분 충족 원본도 보존합니다. 팀원 기여 대조와 운영·보안 최종 확인은 후속 단계입니다.
