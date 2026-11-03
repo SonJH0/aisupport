@@ -34,7 +34,7 @@
 
 세 명의 [본인 기여 요약과 대표 커밋](docs/팀원별-기여.md)을 작성했습니다. 역할과 구현·검증 내용을 확인할 수 있습니다.
 
-RAG의 [검색 본문·모델 전달 경로·로컬 검사 및 배포 재현 절차](docs/verification/rag-evidence/README.md)를 별도로 정리했습니다. 배포 답변 검토는 수집 후 갱신합니다.
+RAG의 [검색 본문·모델 전달 경로·로컬 검사 및 배포 재현 절차](docs/verification/rag-evidence/README.md)를 별도로 정리했습니다. [ff55982 배포 답변 3건의 인용·출처를 검토](docs/verification/rag-evidence/20261103T141726405327Z/README.md)했으며, 반복·무관 검색과 상세 실습 설명의 한계도 기록했습니다.
 
 ## 기술 선택·구현
 

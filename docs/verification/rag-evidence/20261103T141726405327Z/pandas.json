@@ -1,0 +1,87 @@
+{
+  "case": "pandas",
+  "question": "pandas에서 여러 표 결합과 요약 통계를 배우려면 어떤 자료를 참고하나요? 검색 자료의 내용과 추가 실습 제안을 구분하고 문단 ID와 출처를 알려주세요.",
+  "local_revision": "ff5598233dff4934c413a3823b67951871081008",
+  "local_file_sha256": {
+    "ai/retrieval.py": "b55f09d9fd8365eb440b664dbe9af63eff45386fe4915e7f81ae089f56f30d28",
+    "ai/agent.py": "cff8248f2bba265117e723fd3ab12c4dff6c774487cb12ed9829e956ee695d22",
+    "data/knowledge.json": "8b85387b6046738f0ecdbb38942780affcc1b6d841566f641d0cb1199c54acbf",
+    "data/jobs.json": "d3cf8e89d301594d66cb7a4157b5dfec8755c0d66e9e43d556146b6bfeaa3a19"
+  },
+  "local_retrieval": [
+    {
+      "id": "data-2",
+      "title": "데이터 분석 pandas 학습 자료",
+      "text": "데이터 분석용 pandas 튜토리얼에는 요약 통계 계산, 표 구조 변환, 여러 표 결합, 시계열과 텍스트 처리가 포함된다. 팀 학습 제안: 공개 데이터를 읽고 정리한 뒤 시각화하고 분석의 한계를 설명한다.",
+      "url": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html",
+      "note": "pandas 공식 입문 튜토리얼의 주제를 팀이 요약하고 데이터 분석 학습에 연결한 자료. 채용 필수 조건이 아님.",
+      "kind": "learning_note",
+      "score": 0.4694
+    },
+    {
+      "id": "data-1",
+      "title": "데이터 분석 pandas 학습 자료",
+      "text": "데이터 분석 학습에 활용할 수 있는 pandas 입문 튜토리얼은 표 형식 데이터 읽기와 쓰기, DataFrame의 일부 선택, 그래프 생성과 새 열 계산을 다룬다.",
+      "url": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html",
+      "note": "pandas 공식 입문 튜토리얼의 주제를 팀이 요약하고 데이터 분석 학습에 연결한 자료. 채용 필수 조건이 아님.",
+      "kind": "learning_note",
+      "score": 0.2357
+    }
+  ],
+  "review": "미판정",
+  "time_utc": "2026-11-03T14:18:44.811044+00:00",
+  "scope": "local_retrieval_and_live_response",
+  "health_before": {
+    "status": "ok",
+    "version": "0.3.1",
+    "revision": "ff5598233dff4934c413a3823b67951871081008"
+  },
+  "status": 200,
+  "request_id": "2d943dea6fcc448583fe0bea7098ef7f",
+  "raw_response": "{\"answer\":\"요청하신 대로(1) 검색 자료에서 확인한 내용과 (2) 추가 실습 제안을 분리해 정리하고, 각 문단의 ID·출처를 함께 적습니다.\\n\\n검색 자료에서 확인한 내용\\n- pandas 입문 튜토리얼 요약에 “요약 통계 계산, 표 구조 변환, 여러 표 결합, 시계열·텍스트 처리” 등이 포함되어 있다. [data-2]  \\n- 입문 단계에서 표 형식 데이터의 읽기/쓰기, DataFrame 일부 선택, 그래프 생성, 새 열 계산 등을 다룬다. [data-1]  \\n- 팀 학습 제안으로는 공개 데이터를 읽어 정리·시각화하고 분석의 한계를 설명하는 연습을 권한다. [data-2]\\n\\n추가 실습 제안 (문서 요약과 별도)\\n- 실습 데이터: 공공데이터/CSV 2~3개(예: 지역별 매출, 고객 정보, 제품 정보)를 내려받아 사용.  \\n- 여러 표 결합 연습: pandas.concat, merge(left/right/inner/outer), join, keys·indicator 옵션 사용해 결과 차이 확인.  \\n- 요약 통계 연습: groupby + agg(평균/합계/중앙값/표준편차), pivot_table, describe() 비교.  \\n- 데이터검증: 결측치/중복 처리, 조인 전후 행수·중복 확인(merge indicator), 샘플 케이스 직접 검증.  \\n- 시각화로 확인: matplotlib/seaborn으로 그룹별 요약 시각화(바·박스플롯 등).  \\n- 보고서: 처리 단계·가정·한계(데이터 품질·대표성)를 짧게 문서화.  \\n\\n출처\\n- data-2: 데이터 분석 pandas 학습 자료 — https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html [팀 요약 자료]  \\n- data-1: 데이터 분석 pandas 학습 자료 — https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html [팀 요약 자료]\\n\\n원하시면 위 실습별로 구체적 코드 스니펫(merge 예시, groupby 예시 등)이나 연습용 공공데이터 추천을 드리겠습니다.\",\"tools\":[\"search_documents\"],\"sources\":[{\"id\":\"data-2\",\"title\":\"데이터 분석 pandas 학습 자료\",\"url\":\"https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html\",\"note\":\"pandas 공식 입문 튜토리얼의 주제를 팀이 요약하고 데이터 분석 학습에 연결한 자료. 채용 필수 조건이 아님.\"},{\"id\":\"data-1\",\"title\":\"데이터 분석 pandas 학습 자료\",\"url\":\"https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html\",\"note\":\"pandas 공식 입문 튜토리얼의 주제를 팀이 요약하고 데이터 분석 학습에 연결한 자료. 채용 필수 조건이 아님.\"}],\"trace\":[{\"action\":\"initial_retrieval\",\"status\":\"ok\",\"document_ids\":[\"data-2\",\"data-1\"]},{\"action\":\"tool_protocol\",\"status\":\"native_no_tool_json_plan\",\"document_ids\":[]},{\"action\":\"search_documents\",\"status\":\"ok\",\"document_ids\":[\"data-2\",\"data-1\",\"backend-1\"]}],\"ai_generated\":true}",
+  "response": {
+    "answer": "요청하신 대로(1) 검색 자료에서 확인한 내용과 (2) 추가 실습 제안을 분리해 정리하고, 각 문단의 ID·출처를 함께 적습니다.\n\n검색 자료에서 확인한 내용\n- pandas 입문 튜토리얼 요약에 “요약 통계 계산, 표 구조 변환, 여러 표 결합, 시계열·텍스트 처리” 등이 포함되어 있다. [data-2]  \n- 입문 단계에서 표 형식 데이터의 읽기/쓰기, DataFrame 일부 선택, 그래프 생성, 새 열 계산 등을 다룬다. [data-1]  \n- 팀 학습 제안으로는 공개 데이터를 읽어 정리·시각화하고 분석의 한계를 설명하는 연습을 권한다. [data-2]\n\n추가 실습 제안 (문서 요약과 별도)\n- 실습 데이터: 공공데이터/CSV 2~3개(예: 지역별 매출, 고객 정보, 제품 정보)를 내려받아 사용.  \n- 여러 표 결합 연습: pandas.concat, merge(left/right/inner/outer), join, keys·indicator 옵션 사용해 결과 차이 확인.  \n- 요약 통계 연습: groupby + agg(평균/합계/중앙값/표준편차), pivot_table, describe() 비교.  \n- 데이터검증: 결측치/중복 처리, 조인 전후 행수·중복 확인(merge indicator), 샘플 케이스 직접 검증.  \n- 시각화로 확인: matplotlib/seaborn으로 그룹별 요약 시각화(바·박스플롯 등).  \n- 보고서: 처리 단계·가정·한계(데이터 품질·대표성)를 짧게 문서화.  \n\n출처\n- data-2: 데이터 분석 pandas 학습 자료 — https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html [팀 요약 자료]  \n- data-1: 데이터 분석 pandas 학습 자료 — https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html [팀 요약 자료]\n\n원하시면 위 실습별로 구체적 코드 스니펫(merge 예시, groupby 예시 등)이나 연습용 공공데이터 추천을 드리겠습니다.",
+    "tools": [
+      "search_documents"
+    ],
+    "sources": [
+      {
+        "id": "data-2",
+        "title": "데이터 분석 pandas 학습 자료",
+        "url": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html",
+        "note": "pandas 공식 입문 튜토리얼의 주제를 팀이 요약하고 데이터 분석 학습에 연결한 자료. 채용 필수 조건이 아님."
+      },
+      {
+        "id": "data-1",
+        "title": "데이터 분석 pandas 학습 자료",
+        "url": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html",
+        "note": "pandas 공식 입문 튜토리얼의 주제를 팀이 요약하고 데이터 분석 학습에 연결한 자료. 채용 필수 조건이 아님."
+      }
+    ],
+    "trace": [
+      {
+        "action": "initial_retrieval",
+        "status": "ok",
+        "document_ids": [
+          "data-2",
+          "data-1"
+        ]
+      },
+      {
+        "action": "tool_protocol",
+        "status": "native_no_tool_json_plan",
+        "document_ids": []
+      },
+      {
+        "action": "search_documents",
+        "status": "ok",
+        "document_ids": [
+          "data-2",
+          "data-1",
+          "backend-1"
+        ]
+      }
+    ],
+    "ai_generated": true
+  }
+}
