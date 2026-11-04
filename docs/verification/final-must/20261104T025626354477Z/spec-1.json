@@ -1,0 +1,47 @@
+{
+  "case": "spec",
+  "attempt": 1,
+  "local_revision": "05373a22fc3319ecd042e1f264787fd352abd3b6",
+  "time_utc": "2026-11-04T02:58:37.682125+00:00",
+  "request": {
+    "message": "Python으로 REST API 프로젝트를 만들었습니다. SQL로 조회 기능을 구현했습니다. 제 스펙의 강점과 정보가 부족한 부분을 구분해 분석해 주세요. 공고 검색은 하지 마세요.",
+    "consent": true,
+    "history": []
+  },
+  "image": null,
+  "expected": "입력 경험에 근거한 강점·정보 부족, 경력 창작 없음",
+  "review": "미판정",
+  "health_before": {
+    "status": 200,
+    "request_id": "dc81bc94a5aa4d328d81ba77d78e9e37",
+    "raw_response": "{\"status\":\"ok\",\"version\":\"0.3.1\",\"revision\":\"05373a22fc3319ecd042e1f264787fd352abd3b6\"}",
+    "response": {
+      "status": "ok",
+      "version": "0.3.1",
+      "revision": "05373a22fc3319ecd042e1f264787fd352abd3b6"
+    }
+  },
+  "result": {
+    "status": 200,
+    "request_id": "14461f610f8d45b584a4e98629ed994a",
+    "raw_response": "{\"answer\":\"아래는 입력하신 정보(Python으로 REST API 프로젝트, SQL로 조회 기능 구현)를 바탕으로 한 분리된 분석입니다.\\n\\n1) 입력에서 확인한 경험\\n- Python으로 REST API 프로젝트를 구현했다. (프레임워크·구조·배포 여부는 미기재)\\n- SQL로 조회 기능을 구현했다. (조회 쿼리 작성을 통한 데이터 취득 기능 구현 증거)\\n\\n강점으로 볼 수 있는 점: Python 기반 API와 DB 조회를 직접 구현한 경험이 있어 백엔드 기본 흐름(요청 → 처리 → DB 조회 → 응답)을 이해하고 있음을 알 수 있음.\\n\\n2) 경험과 연관된 직무 후보(잠정 제안) — 입력 경험과 연관되어 탐색할 수 있는 직무\\n- 주니어 백엔드 개발자 / API 개발자: Python 기반 REST API 경험이 직접 연관됩니다.\\n- 데이터 접근/애플리케이션 레이어 역할(데이터 조회 중심 서비스): SQL 조회 구현 경험이 유리합니다.\\n\\n(설명) 위 직무들은 입력한 두 경험이 핵심 업무와 연관되므로 탐색 후보로 적절합니다. 다만 '바로 투입 가능' 등 숙련도 평가는 추가 확인이 필요합니다.\\n\\n3) 추가로 확인할 역량(정보 부족 항목 — 확인 질문으로 대체)\\n- 사용 프레임워크(Flask/FastAPI/Django REST 등)와 버전 — 구조·유효성 검사 방법 확인용\\n- SQL 상세: 단순 SELECT인지, JOIN/집계/서브쿼리 여부\\n- 성능·운영 관련: 인덱스 설계, 쿼리 최적화, 대용량 처리 경험 유무\\n- 트랜잭션·동시성 관리 필요 여부\\n- ORM 사용 여부(pandas/SQLAlchemy/Django ORM)와 직접 SQL 작성 비중\\n- 테스트(단위/통합), API 문서화(예: OpenAPI), 인증·인가 구현 여부\\n- 배포·운영: Docker/CI-CD·클라우드·모니터링 경험 여부\\n- 프로젝트 규모(팀/단독), 코드 리뷰·버전관리 경험(Git) 여부\\n\\n다음 제안: 위 항목 중 핵심(프레임워크, SQL 복잡도, 배포/테스트 유무)을 알려주시면 강점 정리·이력서 문장 예시와 지원 시 강조 포인트를 구체적으로 만들어 드리겠습니다.\",\"tools\":[],\"sources\":[],\"trace\":[{\"action\":\"initial_retrieval\",\"status\":\"ok\",\"document_ids\":[\"backend-1\",\"job-KAKAO-S-4752\"]}],\"ai_generated\":true}",
+    "response": {
+      "answer": "아래는 입력하신 정보(Python으로 REST API 프로젝트, SQL로 조회 기능 구현)를 바탕으로 한 분리된 분석입니다.\n\n1) 입력에서 확인한 경험\n- Python으로 REST API 프로젝트를 구현했다. (프레임워크·구조·배포 여부는 미기재)\n- SQL로 조회 기능을 구현했다. (조회 쿼리 작성을 통한 데이터 취득 기능 구현 증거)\n\n강점으로 볼 수 있는 점: Python 기반 API와 DB 조회를 직접 구현한 경험이 있어 백엔드 기본 흐름(요청 → 처리 → DB 조회 → 응답)을 이해하고 있음을 알 수 있음.\n\n2) 경험과 연관된 직무 후보(잠정 제안) — 입력 경험과 연관되어 탐색할 수 있는 직무\n- 주니어 백엔드 개발자 / API 개발자: Python 기반 REST API 경험이 직접 연관됩니다.\n- 데이터 접근/애플리케이션 레이어 역할(데이터 조회 중심 서비스): SQL 조회 구현 경험이 유리합니다.\n\n(설명) 위 직무들은 입력한 두 경험이 핵심 업무와 연관되므로 탐색 후보로 적절합니다. 다만 '바로 투입 가능' 등 숙련도 평가는 추가 확인이 필요합니다.\n\n3) 추가로 확인할 역량(정보 부족 항목 — 확인 질문으로 대체)\n- 사용 프레임워크(Flask/FastAPI/Django REST 등)와 버전 — 구조·유효성 검사 방법 확인용\n- SQL 상세: 단순 SELECT인지, JOIN/집계/서브쿼리 여부\n- 성능·운영 관련: 인덱스 설계, 쿼리 최적화, 대용량 처리 경험 유무\n- 트랜잭션·동시성 관리 필요 여부\n- ORM 사용 여부(pandas/SQLAlchemy/Django ORM)와 직접 SQL 작성 비중\n- 테스트(단위/통합), API 문서화(예: OpenAPI), 인증·인가 구현 여부\n- 배포·운영: Docker/CI-CD·클라우드·모니터링 경험 여부\n- 프로젝트 규모(팀/단독), 코드 리뷰·버전관리 경험(Git) 여부\n\n다음 제안: 위 항목 중 핵심(프레임워크, SQL 복잡도, 배포/테스트 유무)을 알려주시면 강점 정리·이력서 문장 예시와 지원 시 강조 포인트를 구체적으로 만들어 드리겠습니다.",
+      "tools": [],
+      "sources": [],
+      "trace": [
+        {
+          "action": "initial_retrieval",
+          "status": "ok",
+          "document_ids": [
+            "backend-1",
+            "job-KAKAO-S-4752"
+          ]
+        }
+      ],
+      "ai_generated": true
+    }
+  },
+  "elapsed_seconds": 30.87,
+  "stopped": null
+}

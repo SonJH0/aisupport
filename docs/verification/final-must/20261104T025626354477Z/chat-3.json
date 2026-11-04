@@ -1,0 +1,72 @@
+{
+  "case": "chat",
+  "attempt": 3,
+  "local_revision": "05373a22fc3319ecd042e1f264787fd352abd3b6",
+  "time_utc": "2026-11-04T03:04:07.917214+00:00",
+  "request": {
+    "message": "FastAPI 요청 본문 검증을 배우려면 어떤 자료를 참고하나요? 출처와 학습 순서를 알려주세요.",
+    "consent": true,
+    "history": []
+  },
+  "image": null,
+  "expected": "실제 검색 본문과 연결된 출처·학습 조언",
+  "review": "미판정",
+  "health_before": {
+    "status": 200,
+    "request_id": "05c404978ef343999986639106c3234a",
+    "raw_response": "{\"status\":\"ok\",\"version\":\"0.3.1\",\"revision\":\"05373a22fc3319ecd042e1f264787fd352abd3b6\"}",
+    "response": {
+      "status": "ok",
+      "version": "0.3.1",
+      "revision": "05373a22fc3319ecd042e1f264787fd352abd3b6"
+    }
+  },
+  "result": {
+    "status": 200,
+    "request_id": "f0136697bf6c4fc5a4ac47c8c131f91f",
+    "raw_response": "{\"answer\":\"요청하신 주제에 대해 아래처럼 정리합니다.\\n\\n검색 자료에서 확인한 내용\\n- FastAPI 공식 튜토리얼(팀 요약)은 경로·쿼리 매개변수, 요청 본문과 입력 검증을 다루며, Python으로 API를 만들 때 요청 데이터를 정의하고 잘못된 입력을 처리하는 연습에 유용하다고 안내합니다 [backend-1]. 출처: https://fastapi.tiangolo.com/tutorial/ [backend-1] (팀 요약, 채용 필수 요건 아님).\\n\\n권장 학습 순서 (실습 중심)\\n1) 튜토리얼의 기본 챕터 따라하기: 경로/쿼리/요청 본문과 기본 검증 [backend-1].  \\n2) Pydantic 모델 심화: 타입 어노테이션, Optional/Union, 기본값, Field 제약.  \\n3) 요청 본문 검증 적용 실습: POST/PUT 엔드포인트에 Pydantic 모델 사용.  \\n4) 고급 검증: custom validator, root_validator, regex/범위 검증.  \\n5) 오류 처리와 응답 포맷: HTTP 예외와 에러 메시지 정리.  \\n6) 의존성(Dependencies)과 보안(인증·권한) 연동 시 입력 검증 고려.  \\n7) 테스트: pytest로 잘못된 입력/경계값 케이스 자동화.\\n\\n실습 과제 예시\\n- 간단한 User 모델(Pydantic) 만들고 이메일/비밀번호 규칙 검증 구현.  \\n- 커스텀 validator로 날짜 형식·비즈니스 규칙(예: 종료일 > 시작일) 검사.  \\n- 잘못된 입력에 대한 에러 응답 통합 테스트 작성.\\n\\n원하시면 위 학습 순서별로 구체 강의 페이지(튜토리얼 장별 링크)나 예제 코드를 만들어 드리겠습니다. 어떤 수준(초급/중급/입사 준비)인지 알려주세요.\",\"tools\":[\"search_documents\"],\"sources\":[{\"id\":\"backend-1\",\"title\":\"백엔드 API 개발 학습 자료\",\"url\":\"https://fastapi.tiangolo.com/tutorial/\",\"note\":\"FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님.\"}],\"trace\":[{\"action\":\"initial_retrieval\",\"status\":\"ok\",\"document_ids\":[\"backend-1\"]},{\"action\":\"tool_protocol\",\"status\":\"native_no_tool_json_plan\",\"document_ids\":[]},{\"action\":\"tool_protocol\",\"status\":\"empty_plan_document_fallback\",\"document_ids\":[]},{\"action\":\"search_documents\",\"status\":\"ok\",\"document_ids\":[\"backend-1\"]}],\"ai_generated\":true}",
+    "response": {
+      "answer": "요청하신 주제에 대해 아래처럼 정리합니다.\n\n검색 자료에서 확인한 내용\n- FastAPI 공식 튜토리얼(팀 요약)은 경로·쿼리 매개변수, 요청 본문과 입력 검증을 다루며, Python으로 API를 만들 때 요청 데이터를 정의하고 잘못된 입력을 처리하는 연습에 유용하다고 안내합니다 [backend-1]. 출처: https://fastapi.tiangolo.com/tutorial/ [backend-1] (팀 요약, 채용 필수 요건 아님).\n\n권장 학습 순서 (실습 중심)\n1) 튜토리얼의 기본 챕터 따라하기: 경로/쿼리/요청 본문과 기본 검증 [backend-1].  \n2) Pydantic 모델 심화: 타입 어노테이션, Optional/Union, 기본값, Field 제약.  \n3) 요청 본문 검증 적용 실습: POST/PUT 엔드포인트에 Pydantic 모델 사용.  \n4) 고급 검증: custom validator, root_validator, regex/범위 검증.  \n5) 오류 처리와 응답 포맷: HTTP 예외와 에러 메시지 정리.  \n6) 의존성(Dependencies)과 보안(인증·권한) 연동 시 입력 검증 고려.  \n7) 테스트: pytest로 잘못된 입력/경계값 케이스 자동화.\n\n실습 과제 예시\n- 간단한 User 모델(Pydantic) 만들고 이메일/비밀번호 규칙 검증 구현.  \n- 커스텀 validator로 날짜 형식·비즈니스 규칙(예: 종료일 > 시작일) 검사.  \n- 잘못된 입력에 대한 에러 응답 통합 테스트 작성.\n\n원하시면 위 학습 순서별로 구체 강의 페이지(튜토리얼 장별 링크)나 예제 코드를 만들어 드리겠습니다. 어떤 수준(초급/중급/입사 준비)인지 알려주세요.",
+      "tools": [
+        "search_documents"
+      ],
+      "sources": [
+        {
+          "id": "backend-1",
+          "title": "백엔드 API 개발 학습 자료",
+          "url": "https://fastapi.tiangolo.com/tutorial/",
+          "note": "FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님."
+        }
+      ],
+      "trace": [
+        {
+          "action": "initial_retrieval",
+          "status": "ok",
+          "document_ids": [
+            "backend-1"
+          ]
+        },
+        {
+          "action": "tool_protocol",
+          "status": "native_no_tool_json_plan",
+          "document_ids": []
+        },
+        {
+          "action": "tool_protocol",
+          "status": "empty_plan_document_fallback",
+          "document_ids": []
+        },
+        {
+          "action": "search_documents",
+          "status": "ok",
+          "document_ids": [
+            "backend-1"
+          ]
+        }
+      ],
+      "ai_generated": true
+    }
+  },
+  "elapsed_seconds": 39.87,
+  "stopped": null
+}

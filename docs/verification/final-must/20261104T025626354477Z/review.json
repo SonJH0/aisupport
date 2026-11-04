@@ -1,0 +1,174 @@
+{
+  "reviewed_kst": "2026-11-04",
+  "scope": "원본 응답 수동 내용 검토. 공식 평가 판정 아님.",
+  "results": [
+    {
+      "file": "agent-1.json",
+      "case": "agent",
+      "attempt": 1,
+      "verdict": "핵심 충족",
+      "note": "compare_requirements 실행, Python 일치·Java 차이·Kotlin 정보 부족, 근거·질문·행동 일관. 세 응답 내용 동일. 모든 Agent 분기 검증으로 확대하지 않음."
+    },
+    {
+      "file": "agent-2.json",
+      "case": "agent",
+      "attempt": 2,
+      "verdict": "핵심 충족",
+      "note": "compare_requirements 실행, Python 일치·Java 차이·Kotlin 정보 부족, 근거·질문·행동 일관. 세 응답 내용 동일. 모든 Agent 분기 검증으로 확대하지 않음."
+    },
+    {
+      "file": "agent-3.json",
+      "case": "agent",
+      "attempt": 3,
+      "verdict": "핵심 충족",
+      "note": "compare_requirements 실행, Python 일치·Java 차이·Kotlin 정보 부족, 근거·질문·행동 일관. 세 응답 내용 동일. 모든 Agent 분기 검증으로 확대하지 않음."
+    },
+    {
+      "file": "chat-1.json",
+      "case": "chat",
+      "attempt": 1,
+      "verdict": "핵심 충족·세부 한계",
+      "note": "backend-1 검색·출처·학습 순서 연결. 세 회차 모두 empty_plan_document_fallback 경로. 상세 API 예시는 버전별 정확성 검증 대상 아님."
+    },
+    {
+      "file": "chat-2.json",
+      "case": "chat",
+      "attempt": 2,
+      "verdict": "핵심 충족·세부 한계",
+      "note": "backend-1 검색·출처·학습 순서 연결. 세 회차 모두 empty_plan_document_fallback 경로. 상세 API 예시는 버전별 정확성 검증 대상 아님."
+    },
+    {
+      "file": "chat-3.json",
+      "case": "chat",
+      "attempt": 3,
+      "verdict": "핵심 충족·세부 한계",
+      "note": "backend-1 검색·출처·학습 순서 연결. 세 회차 모두 empty_plan_document_fallback 경로. 상세 API 예시는 버전별 정확성 검증 대상 아님."
+    },
+    {
+      "file": "consent-1.json",
+      "case": "consent",
+      "attempt": 1,
+      "verdict": "충족",
+      "note": "HTTP 403 및 외부 전송 동의 필요 안내. consent 회차의 HTML 고지·required 존재도 확인. 브라우저 실제 조작 시험 아님."
+    },
+    {
+      "file": "consent-2.json",
+      "case": "consent",
+      "attempt": 2,
+      "verdict": "충족",
+      "note": "HTTP 403 및 외부 전송 동의 필요 안내. consent 회차의 HTML 고지·required 존재도 확인. 브라우저 실제 조작 시험 아님."
+    },
+    {
+      "file": "consent-3.json",
+      "case": "consent",
+      "attempt": 3,
+      "verdict": "충족",
+      "note": "HTTP 403 및 외부 전송 동의 필요 안내. consent 회차의 HTML 고지·required 존재도 확인. 브라우저 실제 조작 시험 아님."
+    },
+    {
+      "file": "image-1.json",
+      "case": "image",
+      "attempt": 1,
+      "verdict": "부분 충족",
+      "note": "회사·직무·지역·Python 최소 2년 대 입력 1년·SQL·AWS 우대·마감 미제공은 정확. 그러나 AWS에 경험이 없거나 아직 정리하지 않은 상태로 보인다는 추측이 있어 엄격 집계에서 제외."
+    },
+    {
+      "file": "image-2.json",
+      "case": "image",
+      "attempt": 2,
+      "verdict": "핵심 충족",
+      "note": "DEMO STUDIO·Frontend Developer·React/TypeScript·가상 표시, 경력/급여/마감 미제공 구분."
+    },
+    {
+      "file": "image-3.json",
+      "case": "image",
+      "attempt": 3,
+      "verdict": "핵심 충족",
+      "note": "DEMO CAFE 영수증·수량/금액/합계 판독, 비공고 판단, 채용 요건 창작 없음."
+    },
+    {
+      "file": "missing-consent-1.json",
+      "case": "missing-consent",
+      "attempt": 1,
+      "verdict": "충족",
+      "note": "HTTP 403 및 외부 전송 동의 필요 안내. consent 회차의 HTML 고지·required 존재도 확인. 브라우저 실제 조작 시험 아님."
+    },
+    {
+      "file": "missing-consent-2.json",
+      "case": "missing-consent",
+      "attempt": 2,
+      "verdict": "충족",
+      "note": "HTTP 403 및 외부 전송 동의 필요 안내. consent 회차의 HTML 고지·required 존재도 확인. 브라우저 실제 조작 시험 아님."
+    },
+    {
+      "file": "missing-consent-3.json",
+      "case": "missing-consent",
+      "attempt": 3,
+      "verdict": "충족",
+      "note": "HTTP 403 및 외부 전송 동의 필요 안내. consent 회차의 HTML 고지·required 존재도 확인. 브라우저 실제 조작 시험 아님."
+    },
+    {
+      "file": "role-1.json",
+      "case": "role",
+      "attempt": 1,
+      "verdict": "핵심 충족",
+      "note": "직무 후보 2개·입력 경험에 근거한 이유·추가 확인 질문. 공고 검색 없음. 적합성 확정이 아닌 잠정 제안."
+    },
+    {
+      "file": "role-2.json",
+      "case": "role",
+      "attempt": 2,
+      "verdict": "핵심 충족",
+      "note": "직무 후보 2개·입력 경험에 근거한 이유·추가 확인 질문. 공고 검색 없음. 적합성 확정이 아닌 잠정 제안."
+    },
+    {
+      "file": "role-3.json",
+      "case": "role",
+      "attempt": 3,
+      "verdict": "핵심 충족",
+      "note": "직무 후보 2개·입력 경험에 근거한 이유·추가 확인 질문. 공고 검색 없음. 적합성 확정이 아닌 잠정 제안."
+    },
+    {
+      "file": "search-1.json",
+      "case": "search",
+      "attempt": 1,
+      "verdict": "핵심 충족",
+      "note": "search_live_jobs 실행·개별 후보·링크·요약 조건 구분·현재 모집 미확인 표시. 목록 혼입 관찰 없음. 검색 원문 전체/제외 후보/현 모집 상태를 독립 검증한 것은 아님."
+    },
+    {
+      "file": "search-2.json",
+      "case": "search",
+      "attempt": 2,
+      "verdict": "핵심 충족",
+      "note": "search_live_jobs 실행·개별 후보·링크·요약 조건 구분·현재 모집 미확인 표시. 목록 혼입 관찰 없음. 검색 원문 전체/제외 후보/현 모집 상태를 독립 검증한 것은 아님."
+    },
+    {
+      "file": "search-3.json",
+      "case": "search",
+      "attempt": 3,
+      "verdict": "핵심 충족",
+      "note": "search_live_jobs 실행·개별 후보·링크·요약 조건 구분·현재 모집 미확인 표시. 목록 혼입 관찰 없음. 검색 원문 전체/제외 후보/현 모집 상태를 독립 검증한 것은 아님."
+    },
+    {
+      "file": "spec-1.json",
+      "case": "spec",
+      "attempt": 1,
+      "verdict": "핵심 충족·세부 주의",
+      "note": "Python API·SQL 경험과 추가 질문 구분. pandas를 ORM 예시에 포함한 기술 용어 오류는 남음."
+    },
+    {
+      "file": "spec-2.json",
+      "case": "spec",
+      "attempt": 2,
+      "verdict": "부분 충족",
+      "note": "SQL 조회 경험에서 기본 CRUD 수준으로 해석을 넓힌 문장이 있어 엄격 집계에서 제외."
+    },
+    {
+      "file": "spec-3.json",
+      "case": "spec",
+      "attempt": 3,
+      "verdict": "핵심 충족",
+      "note": "입력 경험·미기재 프레임워크/운영/성능을 구분. 숙련도·규모를 확정하지 않음."
+    }
+  ]
+}

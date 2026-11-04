@@ -1,0 +1,33 @@
+{
+  "local_revision": "05373a22fc3319ecd042e1f264787fd352abd3b6",
+  "started_utc": "2026-11-04T02:56:26.354842+00:00",
+  "planned_ai_requests": 18,
+  "review": "미판정",
+  "completed": [
+    "consent-1.json",
+    "consent-2.json",
+    "consent-3.json",
+    "missing-consent-1.json",
+    "missing-consent-2.json",
+    "missing-consent-3.json",
+    "spec-1.json",
+    "spec-2.json",
+    "spec-3.json",
+    "role-1.json",
+    "role-2.json",
+    "role-3.json",
+    "chat-1.json",
+    "chat-2.json",
+    "chat-3.json",
+    "agent-1.json",
+    "agent-2.json",
+    "agent-3.json",
+    "search-1.json",
+    "search-2.json",
+    "search-3.json",
+    "image-1.json",
+    "image-2.json",
+    "image-3.json"
+  ],
+  "stopped": null
+}

@@ -1,0 +1,72 @@
+{
+  "case": "chat",
+  "attempt": 2,
+  "local_revision": "05373a22fc3319ecd042e1f264787fd352abd3b6",
+  "time_utc": "2026-11-04T03:02:37.829434+00:00",
+  "request": {
+    "message": "FastAPI 요청 본문 검증을 배우려면 어떤 자료를 참고하나요? 출처와 학습 순서를 알려주세요.",
+    "consent": true,
+    "history": []
+  },
+  "image": null,
+  "expected": "실제 검색 본문과 연결된 출처·학습 조언",
+  "review": "미판정",
+  "health_before": {
+    "status": 200,
+    "request_id": "17938130120145618b276ad68e31ea92",
+    "raw_response": "{\"status\":\"ok\",\"version\":\"0.3.1\",\"revision\":\"05373a22fc3319ecd042e1f264787fd352abd3b6\"}",
+    "response": {
+      "status": "ok",
+      "version": "0.3.1",
+      "revision": "05373a22fc3319ecd042e1f264787fd352abd3b6"
+    }
+  },
+  "result": {
+    "status": 200,
+    "request_id": "b0ee7973441e40699591564576bd4191",
+    "raw_response": "{\"answer\":\"요약: FastAPI 공식 튜토리얼을 중심으로 배우는 것을 권합니다. 제공된 자료는 요청 본문(request body) 정의와 입력 검증을 다루며, Python API에서 잘못된 입력을 처리하는 연습에 적합합니다 [backend-1]. 자료 원문: https://fastapi.tiangolo.com/tutorial/ [backend-1]\\n\\n검색 자료에서 확인한 내용\\n- FastAPI 튜토리얼은 경로·쿼리·요청 본문과 입력 검증을 다룹니다. 학습에 실습용 안내로 적합합니다 [backend-1].  \\n- 튜토리얼은 요청 데이터를 정의하고 잘못된 입력을 처리하는 연습에 활용할 수 있습니다 [backend-1].\\n\\n권장 학습 순서 (단계별)\\n1) 기초 이해: FastAPI 엔드포인트와 요청/응답 흐름 학습.  \\n2) Pydantic 모델로 Request Body 정의: 모델 필드 타입·옵션·기본값 익히기.  \\n3) 기본 검증 익히기: 필수/선택 필드, 형식 오류 시 ValidationError/자동 422 응답 확인.  \\n4) 세부 검증: 길이·범위·포맷 제약, Optional·List·Nested 모델 다루기.  \\n5) 오류 처리와 응답 포맷: 예외 처리(HTTPException), 에러 로그 표준화.  \\n6) 고급: 커스텀 검증기, Depends로 입력 전처리·인증, 파일/폼 데이터 검증.  \\n7) 테스트: TestClient로 잘못된 입력 케이스 자동화 테스트 작성.\\n\\n추가 실습 제안\\n- 튜토리얼 예제를 따라 CRUD 엔드포인트 구현 후 의도적 잘못된 페이로드로 응답 확인.  \\n- 폼/파일 업로드·중첩 모델·경계 값 테스트 케이스 작성.  \\n- 필요하면 제가 단계별 예제 코드(간단한 Pydantic 모델과 테스트 케이스)를 만들어 드릴게요. 원하시는 난이도나 목표(예: 인증 포함, 파일 업로드 등)를 알려주세요.\",\"tools\":[\"search_documents\"],\"sources\":[{\"id\":\"backend-1\",\"title\":\"백엔드 API 개발 학습 자료\",\"url\":\"https://fastapi.tiangolo.com/tutorial/\",\"note\":\"FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님.\"}],\"trace\":[{\"action\":\"initial_retrieval\",\"status\":\"ok\",\"document_ids\":[\"backend-1\"]},{\"action\":\"tool_protocol\",\"status\":\"native_no_tool_json_plan\",\"document_ids\":[]},{\"action\":\"tool_protocol\",\"status\":\"empty_plan_document_fallback\",\"document_ids\":[]},{\"action\":\"search_documents\",\"status\":\"ok\",\"document_ids\":[\"backend-1\"]}],\"ai_generated\":true}",
+    "response": {
+      "answer": "요약: FastAPI 공식 튜토리얼을 중심으로 배우는 것을 권합니다. 제공된 자료는 요청 본문(request body) 정의와 입력 검증을 다루며, Python API에서 잘못된 입력을 처리하는 연습에 적합합니다 [backend-1]. 자료 원문: https://fastapi.tiangolo.com/tutorial/ [backend-1]\n\n검색 자료에서 확인한 내용\n- FastAPI 튜토리얼은 경로·쿼리·요청 본문과 입력 검증을 다룹니다. 학습에 실습용 안내로 적합합니다 [backend-1].  \n- 튜토리얼은 요청 데이터를 정의하고 잘못된 입력을 처리하는 연습에 활용할 수 있습니다 [backend-1].\n\n권장 학습 순서 (단계별)\n1) 기초 이해: FastAPI 엔드포인트와 요청/응답 흐름 학습.  \n2) Pydantic 모델로 Request Body 정의: 모델 필드 타입·옵션·기본값 익히기.  \n3) 기본 검증 익히기: 필수/선택 필드, 형식 오류 시 ValidationError/자동 422 응답 확인.  \n4) 세부 검증: 길이·범위·포맷 제약, Optional·List·Nested 모델 다루기.  \n5) 오류 처리와 응답 포맷: 예외 처리(HTTPException), 에러 로그 표준화.  \n6) 고급: 커스텀 검증기, Depends로 입력 전처리·인증, 파일/폼 데이터 검증.  \n7) 테스트: TestClient로 잘못된 입력 케이스 자동화 테스트 작성.\n\n추가 실습 제안\n- 튜토리얼 예제를 따라 CRUD 엔드포인트 구현 후 의도적 잘못된 페이로드로 응답 확인.  \n- 폼/파일 업로드·중첩 모델·경계 값 테스트 케이스 작성.  \n- 필요하면 제가 단계별 예제 코드(간단한 Pydantic 모델과 테스트 케이스)를 만들어 드릴게요. 원하시는 난이도나 목표(예: 인증 포함, 파일 업로드 등)를 알려주세요.",
+      "tools": [
+        "search_documents"
+      ],
+      "sources": [
+        {
+          "id": "backend-1",
+          "title": "백엔드 API 개발 학습 자료",
+          "url": "https://fastapi.tiangolo.com/tutorial/",
+          "note": "FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님."
+        }
+      ],
+      "trace": [
+        {
+          "action": "initial_retrieval",
+          "status": "ok",
+          "document_ids": [
+            "backend-1"
+          ]
+        },
+        {
+          "action": "tool_protocol",
+          "status": "native_no_tool_json_plan",
+          "document_ids": []
+        },
+        {
+          "action": "tool_protocol",
+          "status": "empty_plan_document_fallback",
+          "document_ids": []
+        },
+        {
+          "action": "search_documents",
+          "status": "ok",
+          "document_ids": [
+            "backend-1"
+          ]
+        }
+      ],
+      "ai_generated": true
+    }
+  },
+  "elapsed_seconds": 90.09,
+  "stopped": null
+}

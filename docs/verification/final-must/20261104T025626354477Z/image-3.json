@@ -1,0 +1,54 @@
+{
+  "case": "image",
+  "attempt": 3,
+  "local_revision": "05373a22fc3319ecd042e1f264787fd352abd3b6",
+  "time_utc": "2026-11-04T03:08:14.262219+00:00",
+  "request": {
+    "message": "이 이미지에서 확인되는 자료의 종류와 주요 내용을 설명해 주세요. 채용공고인지 판단하고, 확인되지 않는 채용 직무·요건은 만들어내지 마세요.",
+    "consent": true,
+    "history": []
+  },
+  "image": {
+    "path": "docs/image-validation/image-03-not-job.png",
+    "sha256": "67f05638c1eb93500ff4cf19dc98da9503198e1b05464b2c11d48d5686b3f3a3",
+    "bytes": 38896
+  },
+  "expected": "이미지 직접 판독: DEMO CAFE 영수증. 아메리카노 2잔 8,000원·차 1잔 4,000원·합계 12,000원. 채용공고 아님, 채용 요건 창작 없음.",
+  "review": "미판정",
+  "health_before": {
+    "status": 200,
+    "request_id": "3ab41fc5c4dd4a70b65390c9d141041d",
+    "raw_response": "{\"status\":\"ok\",\"version\":\"0.3.1\",\"revision\":\"05373a22fc3319ecd042e1f264787fd352abd3b6\"}",
+    "response": {
+      "status": "ok",
+      "version": "0.3.1",
+      "revision": "05373a22fc3319ecd042e1f264787fd352abd3b6"
+    }
+  },
+  "result": {
+    "status": 200,
+    "request_id": "8bdda7c639ea46c2aae4d09400ed84e8",
+    "raw_response": "{\"answer\":\"# 이미지 내용 분석\\n\\n## 자료의 종류\\n**SAMPLE CAFE RECEIPT - TEST ONLY** (가상·테스트 자료)\\n- 이미지는 **카페 영수증**입니다\\n- 실제 채용공고가 아닙니다\\n\\n## 주요 내용\\n- **상호**: DEMO CAFE (가상 카페)\\n- **주문 내역**\\n  - 아메리카노 × 2: KRW 8,000\\n  - 티 × 1: KRW 4,000\\n  - **합계**: KRW 12,000\\n- **명시된 안내**: \\\"This is a cafe receipt, not a job posting.\\\"\\n\\n## 결론\\n이 자료는 **채용공고가 아니며**, 채용 직무, 경력 요건, 급여, 자격 요건 등 어떤 채용 정보도 포함되어 있지 않습니다.\\n\\n**채용 관련 질문이 있으시다면 실제 채용공고 이미지나 공고 정보를 제공해 주세요.**\",\"tools\":[],\"image_analyzed\":true,\"ai_generated\":true,\"sources\":[],\"trace\":[{\"action\":\"initial_retrieval\",\"status\":\"skipped_image_only\",\"document_ids\":[]},{\"action\":\"image_analysis\",\"status\":\"ok\",\"document_ids\":[]}]}",
+    "response": {
+      "answer": "# 이미지 내용 분석\n\n## 자료의 종류\n**SAMPLE CAFE RECEIPT - TEST ONLY** (가상·테스트 자료)\n- 이미지는 **카페 영수증**입니다\n- 실제 채용공고가 아닙니다\n\n## 주요 내용\n- **상호**: DEMO CAFE (가상 카페)\n- **주문 내역**\n  - 아메리카노 × 2: KRW 8,000\n  - 티 × 1: KRW 4,000\n  - **합계**: KRW 12,000\n- **명시된 안내**: \"This is a cafe receipt, not a job posting.\"\n\n## 결론\n이 자료는 **채용공고가 아니며**, 채용 직무, 경력 요건, 급여, 자격 요건 등 어떤 채용 정보도 포함되어 있지 않습니다.\n\n**채용 관련 질문이 있으시다면 실제 채용공고 이미지나 공고 정보를 제공해 주세요.**",
+      "tools": [],
+      "image_analyzed": true,
+      "ai_generated": true,
+      "sources": [],
+      "trace": [
+        {
+          "action": "initial_retrieval",
+          "status": "skipped_image_only",
+          "document_ids": []
+        },
+        {
+          "action": "image_analysis",
+          "status": "ok",
+          "document_ids": []
+        }
+      ]
+    }
+  },
+  "elapsed_seconds": 22.28,
+  "stopped": null
+}

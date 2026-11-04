@@ -1,0 +1,40 @@
+{
+  "case": "consent",
+  "attempt": 1,
+  "local_revision": "05373a22fc3319ecd042e1f264787fd352abd3b6",
+  "time_utc": "2026-11-04T02:56:26.355050+00:00",
+  "request": {
+    "message": "미동의 차단 확인",
+    "consent": false,
+    "history": []
+  },
+  "image": null,
+  "expected": "403 동의 안내",
+  "review": "미판정",
+  "health_before": {
+    "status": 200,
+    "request_id": "c64b8d1533d34f51a3e78837fe8408cd",
+    "raw_response": "{\"status\":\"ok\",\"version\":\"0.3.1\",\"revision\":\"05373a22fc3319ecd042e1f264787fd352abd3b6\"}",
+    "response": {
+      "status": "ok",
+      "version": "0.3.1",
+      "revision": "05373a22fc3319ecd042e1f264787fd352abd3b6"
+    }
+  },
+  "page": {
+    "status": 200,
+    "ai_notice": true,
+    "required_consent": true,
+    "limitation": "HTML 문자열 확인. 실제 브라우저 조작 아님"
+  },
+  "result": {
+    "status": 403,
+    "request_id": "2aaac4c143ed4b46b0b2750b04ef0e2b",
+    "raw_response": "{\"detail\":\"AI 처리를 위한 외부 전송 동의가 필요합니다.\"}",
+    "response": {
+      "detail": "AI 처리를 위한 외부 전송 동의가 필요합니다."
+    }
+  },
+  "elapsed_seconds": 28.95,
+  "stopped": null
+}

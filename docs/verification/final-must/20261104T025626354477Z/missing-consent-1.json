@@ -1,0 +1,33 @@
+{
+  "case": "missing-consent",
+  "attempt": 1,
+  "local_revision": "05373a22fc3319ecd042e1f264787fd352abd3b6",
+  "time_utc": "2026-11-04T02:57:51.282185+00:00",
+  "request": {
+    "message": "동의 누락 차단 확인",
+    "history": []
+  },
+  "image": null,
+  "expected": "403 동의 안내",
+  "review": "미판정",
+  "health_before": {
+    "status": 200,
+    "request_id": "5fea3c4a73a34991b5de3780b2c87867",
+    "raw_response": "{\"status\":\"ok\",\"version\":\"0.3.1\",\"revision\":\"05373a22fc3319ecd042e1f264787fd352abd3b6\"}",
+    "response": {
+      "status": "ok",
+      "version": "0.3.1",
+      "revision": "05373a22fc3319ecd042e1f264787fd352abd3b6"
+    }
+  },
+  "result": {
+    "status": 403,
+    "request_id": "96f06be6fd27470f8f01ca55d27478e6",
+    "raw_response": "{\"detail\":\"AI 처리를 위한 외부 전송 동의가 필요합니다.\"}",
+    "response": {
+      "detail": "AI 처리를 위한 외부 전송 동의가 필요합니다."
+    }
+  },
+  "elapsed_seconds": 17.94,
+  "stopped": null
+}

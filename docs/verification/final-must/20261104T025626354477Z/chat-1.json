@@ -1,0 +1,72 @@
+{
+  "case": "chat",
+  "attempt": 1,
+  "local_revision": "05373a22fc3319ecd042e1f264787fd352abd3b6",
+  "time_utc": "2026-11-04T03:01:43.581071+00:00",
+  "request": {
+    "message": "FastAPI 요청 본문 검증을 배우려면 어떤 자료를 참고하나요? 출처와 학습 순서를 알려주세요.",
+    "consent": true,
+    "history": []
+  },
+  "image": null,
+  "expected": "실제 검색 본문과 연결된 출처·학습 조언",
+  "review": "미판정",
+  "health_before": {
+    "status": 200,
+    "request_id": "2ec268738bbe46d6954ad68f83189c66",
+    "raw_response": "{\"status\":\"ok\",\"version\":\"0.3.1\",\"revision\":\"05373a22fc3319ecd042e1f264787fd352abd3b6\"}",
+    "response": {
+      "status": "ok",
+      "version": "0.3.1",
+      "revision": "05373a22fc3319ecd042e1f264787fd352abd3b6"
+    }
+  },
+  "result": {
+    "status": 200,
+    "request_id": "031b5811753a457ea0b0a5d797f99e31",
+    "raw_response": "{\"answer\":\"요청 본문 검증을 배우려면 공식 튜토리얼을 중심으로 실습 위주로 진행하는 것이 효율적입니다.\\n\\n검색 자료에서 확인한 내용\\n- FastAPI 공식 튜토리얼은 경로·쿼리 매개변수, 요청 본문과 입력 검증을 다루며 Python으로 요청 데이터를 정의하고 잘못된 입력을 처리하는 연습에 활용할 수 있습니다. [backend-1]\\n\\n권장 학습 순서(실습 중심)\\n1. FastAPI 기본 따라하기 — 튜토리얼의 “요청 본문/입력 검증” 섹션을 먼저 실습하세요. [backend-1]\\n2. Pydantic 모델로 스키마 정의(필수/선택 필드, 타입 지정)\\n3. Field(...)와 기본값, 제약(예: min_length, gt) 적용\\n4. 커스텀 밸리데이터(@validator 등)로 복합 검증 처리\\n5. 입력 오류 처리와 예외 응답 포맷(ValidationError 확인)\\n6. response_model로 출력 검증 및 문서화(Swagger 확인)\\n7. 단위/통합 테스트로 잘못된 입력 케이스 자동화\\n\\n추가 실습 제안\\n- 간단한 CRUD API 만들어서 잘못된 JSON, 누락 필드, 타입 불일치 케이스를 Curl/postman으로 확인\\n- 커스텀 에러 메시지·상태 코드 처리 구현\\n- pytest + TestClient로 경계값·에러 케이스 자동화\\n\\n참고 자료\\n- FastAPI 튜토리얼(요청 본문·검증): https://fastapi.tiangolo.com/tutorial/ [backend-1]\\n\\n원하시면 단계별 예제 코드(모델 정의·검증기·테스트 케이스)를 제공해 드릴게요. 어느 수준(초급/중급)인지 알려 주세요.\",\"tools\":[\"search_documents\"],\"sources\":[{\"id\":\"backend-1\",\"title\":\"백엔드 API 개발 학습 자료\",\"url\":\"https://fastapi.tiangolo.com/tutorial/\",\"note\":\"FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님.\"}],\"trace\":[{\"action\":\"initial_retrieval\",\"status\":\"ok\",\"document_ids\":[\"backend-1\"]},{\"action\":\"tool_protocol\",\"status\":\"native_no_tool_json_plan\",\"document_ids\":[]},{\"action\":\"tool_protocol\",\"status\":\"empty_plan_document_fallback\",\"document_ids\":[]},{\"action\":\"search_documents\",\"status\":\"ok\",\"document_ids\":[\"backend-1\"]}],\"ai_generated\":true}",
+    "response": {
+      "answer": "요청 본문 검증을 배우려면 공식 튜토리얼을 중심으로 실습 위주로 진행하는 것이 효율적입니다.\n\n검색 자료에서 확인한 내용\n- FastAPI 공식 튜토리얼은 경로·쿼리 매개변수, 요청 본문과 입력 검증을 다루며 Python으로 요청 데이터를 정의하고 잘못된 입력을 처리하는 연습에 활용할 수 있습니다. [backend-1]\n\n권장 학습 순서(실습 중심)\n1. FastAPI 기본 따라하기 — 튜토리얼의 “요청 본문/입력 검증” 섹션을 먼저 실습하세요. [backend-1]\n2. Pydantic 모델로 스키마 정의(필수/선택 필드, 타입 지정)\n3. Field(...)와 기본값, 제약(예: min_length, gt) 적용\n4. 커스텀 밸리데이터(@validator 등)로 복합 검증 처리\n5. 입력 오류 처리와 예외 응답 포맷(ValidationError 확인)\n6. response_model로 출력 검증 및 문서화(Swagger 확인)\n7. 단위/통합 테스트로 잘못된 입력 케이스 자동화\n\n추가 실습 제안\n- 간단한 CRUD API 만들어서 잘못된 JSON, 누락 필드, 타입 불일치 케이스를 Curl/postman으로 확인\n- 커스텀 에러 메시지·상태 코드 처리 구현\n- pytest + TestClient로 경계값·에러 케이스 자동화\n\n참고 자료\n- FastAPI 튜토리얼(요청 본문·검증): https://fastapi.tiangolo.com/tutorial/ [backend-1]\n\n원하시면 단계별 예제 코드(모델 정의·검증기·테스트 케이스)를 제공해 드릴게요. 어느 수준(초급/중급)인지 알려 주세요.",
+      "tools": [
+        "search_documents"
+      ],
+      "sources": [
+        {
+          "id": "backend-1",
+          "title": "백엔드 API 개발 학습 자료",
+          "url": "https://fastapi.tiangolo.com/tutorial/",
+          "note": "FastAPI 공식 튜토리얼의 학습 항목을 팀이 요약하고 백엔드 학습에 연결한 자료. 채용 필수 조건이 아님."
+        }
+      ],
+      "trace": [
+        {
+          "action": "initial_retrieval",
+          "status": "ok",
+          "document_ids": [
+            "backend-1"
+          ]
+        },
+        {
+          "action": "tool_protocol",
+          "status": "native_no_tool_json_plan",
+          "document_ids": []
+        },
+        {
+          "action": "tool_protocol",
+          "status": "empty_plan_document_fallback",
+          "document_ids": []
+        },
+        {
+          "action": "search_documents",
+          "status": "ok",
+          "document_ids": [
+            "backend-1"
+          ]
+        }
+      ],
+      "ai_generated": true
+    }
+  },
+  "elapsed_seconds": 54.25,
+  "stopped": null
+}
